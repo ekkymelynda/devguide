@@ -22,4 +22,14 @@ class Home extends CI_Controller {
 	{
 		$this->load->view('User/header')->view('User/footer');
 	}
+
+	public function help()
+	{
+		$this->load->view('User/header')->view('User/help')->view('User/footer');
+	}
+
+	public function contact()
+	{
+		$this->load->view('User/header')->view('User/contact')->view('User/footer');
+	}
 }

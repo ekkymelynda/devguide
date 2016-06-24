@@ -1,5 +1,4 @@
 <!-- Header -->
-
 <!DOCTYPE html>
 <html class="no-js before-run" lang="en">
 <head>
@@ -31,8 +30,8 @@
   <link rel="stylesheet" href="<?php  echo base_url(); ?>assets/vendor/datatables-fixedheader/dataTables.fixedHeader.css">
   <link rel="stylesheet" href="<?php  echo base_url(); ?>assets/vendor/datatables-responsive/dataTables.responsive.css">
 
-  <link rel="stylesheet" href="../../assets/vendor/jquery-wizard/jquery-wizard.css">
-  <link rel="stylesheet" href="../../assets/vendor/formvalidation/formValidation.css">
+  <link rel="stylesheet" href="<?php  echo base_url(); ?>assets/vendor/jquery-wizard/jquery-wizard.css">
+  <link rel="stylesheet" href="<?php  echo base_url(); ?>assets/vendor/formvalidation/formValidation.css">
 
   <!-- Fonts -->
   <link rel="stylesheet" href="<?php  echo base_url(); ?>assets/fonts/web-icons/web-icons.min.css">
@@ -68,6 +67,7 @@
     Breakpoints();
   </script>
 </head>
+
 <body>
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -97,58 +97,30 @@
     </div>
 
     <div class="navbar-container container-fluid">
+      
       <!-- Navbar Collapse -->
       <div class="collapse navbar-collapse navbar-collapse-toolbar" id="site-navbar-collapse">
-        <!-- Navbar Toolbar -->
-        <ul class="nav navbar-toolbar">
-          <li class="hidden-float" id="toggleMenubar">
-            <a data-toggle="menubar" href="#" role="button">
-              <i class="icon hamburger hamburger-arrow-left">
-                  <span class="sr-only">Toggle menubar</span>
-                  <span class="hamburger-bar"></span>
-                </i>
-            </a>
-          </li>
-          <li class="hidden-xs" id="toggleFullscreen">
-            <a class="icon icon-fullscreen" data-toggle="fullscreen" href="#" role="button">
-              <span class="sr-only">Toggle fullscreen</span>
-            </a>
-          </li>
-        </ul>
-        <!-- End Navbar Toolbar -->
-
+        
         <!-- Navbar Toolbar Right -->
-        <ul class="nav navbar-toolbar navbar-right navbar-toolbar-right">
+        <ul class="nav navbar-toolbar navbar-left navbar-toolbar-left">
           <li role="presentation">
-            <a href="<?php echo base_url(); ?>log/login" role="menuitem"><i class="icon wb-power" aria-hidden="true"></i> Keluar</a>
+            <a href="" role="menuitem">LPTSI - Panduan Pengembangan Sistem Informasi</a>
           </li>    
         </ul>
         <!-- End Navbar Toolbar Right -->
+
       </div>
       <!-- End Navbar Collapse -->
 
-      <!-- Site Navbar Seach -->
-      <div class="collapse navbar-search-overlap" id="site-navbar-search">
-        <form role="search">
-          <div class="form-group">
-            <div class="input-search">
-              <i class="input-search-icon wb-search" aria-hidden="true"></i>
-              <input type="text" class="form-control" name="site-search" placeholder="Search...">
-              <button type="button" class="input-search-close icon wb-close" data-target="#site-navbar-search"
-              data-toggle="collapse" aria-label="Close"></button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <!-- End Site Navbar Seach -->
     </div>
 
   </nav>
+
 <!-- Menu -->
   <div class="site-menubar">
+
     <div class="site-menubar-body">
-      <div>
-        <div>
+
           <ul class="site-menu">
 
             <li class="site-menu-category">Umum</li>
@@ -168,155 +140,93 @@
             <li class="site-menu-category">Tabel</li>
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
+                  <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
                   <span class="site-menu-title">Pengguna</span>
                 </a>
               </li>
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-user" aria-hidden="true"></i>
+                  <i class="site-menu-icon wb-pencil" aria-hidden="true"></i>
                   <span class="site-menu-title">Kategori</span>
                 </a>
               </li>
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-user" aria-hidden="true"></i>
+                  <i class="site-menu-icon wb-file" aria-hidden="true"></i>
                   <span class="site-menu-title">Post</span>
                 </a>
               </li>
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-user" aria-hidden="true"></i>
+                  <i class="site-menu-icon wb-hammer" aria-hidden="true"></i>
                   <span class="site-menu-title">Gambar</span>
                 </a>
               </li>
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-user" aria-hidden="true"></i>
+                  <i class="site-menu-icon wb-plugin" aria-hidden="true"></i>
                   <span class="site-menu-title">Status</span>
                 </a>
               </li>
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-user" aria-hidden="true"></i>
+                  <i class="site-menu-icon wb-extension" aria-hidden="true"></i>
                   <span class="site-menu-title">Bab</span>
                 </a>
               </li>
+
+              <li class="site-menu-item has-sub">
+                <a href="javascript:void(0)" data-slug="advanced">
+                  <i class="site-menu-icon wb-folder" aria-hidden="true"></i>
+                  <span class="site-menu-title">Sub Bab</span>
+                  <span class="site-menu-arrow"></span>
+                </a>
+                <ul class="site-menu-sub">
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="" data-slug="advanced-animation">
+                      <i class="site-menu-icon " aria-hidden="true"></i>
+                      <span class="site-menu-title">Sub Bab 1</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="" data-slug="advanced-lightbox">
+                      <i class="site-menu-icon " aria-hidden="true"></i>
+                      <span class="site-menu-title">Sub Bab 2</span>
+                    </a>
+                  </li>
+                  <li class="site-menu-item">
+                    <a class="animsition-link" href="" data-slug="advanced-lightbox">
+                      <i class="site-menu-icon " aria-hidden="true"></i>
+                      <span class="site-menu-title">Sub Bab 3</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="site-menu-category">Panduan</li>
               <li class="site-menu-item has-sub">
                 <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                  <span class="site-menu-title">Sub Bab 1</span>
+                  <i class="site-menu-icon wb-library" aria-hidden="true"></i>
+                  <span class="site-menu-title">Sistem Informasi</span>
                 </a>
               </li>
-              <li class="site-menu-item has-sub">
-                <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                  <span class="site-menu-title">Sub Bab 2</span>
-                </a>
-              </li>
-              <li class="site-menu-item has-sub">
-                <a href="javascript:void(0)" data-slug="dashboard">
-                  <i class="site-menu-icon wb-user" aria-hidden="true"></i>
-                  <span class="site-menu-title">Sub Bab 3</span>
-                </a>
-              </li>
-            
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="advanced">
-                <i class="site-menu-icon wb-hammer" aria-hidden="true"></i>
-                <span class="site-menu-title">Transaksi Pembelian</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>pembelian/pembelian_buat" data-slug="advanced-animation">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Buat</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>pembelian/pembelian_lihat" data-slug="advanced-lightbox">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Lihat</span>
-                  </a>
-                </li>
-              </ul>
+
             </li>
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="structure">
-                <i class="site-menu-icon wb-plugin" aria-hidden="true"></i>
-                <span class="site-menu-title">Barang</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>barang/barang_buat" data-slug="uikit-buttons">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Buat</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>barang/barang_lihat" data-slug="uikit-colors">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Lihat</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-              <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="structure">
-                <i class="site-menu-icon wb-folder" aria-hidden="true"></i>
-                <span class="site-menu-title">Laporan</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>laporan/pilih_laporan_pembelian_perbulan" data-slug="uikit-buttons">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Pembelian Perbulan</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>laporan/pilih_laporan_pembelian_perhari" data-slug="uikit-colors">
-                    <i class="site-menu-icon" aria-hidden="true"></i>
-                    <span class="site-menu-title">Pembelian Perhari</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>laporan/pilih_laporan_penjualan_perbulan" data-slug="uikit-dropdowns">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Penjualan Perbulan</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>laporan/pilih_laporan_penjualan_perhari" data-slug="uikit-list">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Penjualan Perhari</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>laporan/ketersediaan_barang" data-slug="uikit-list">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Ketersediaan barang</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>laporan/pilih_keuntungan_perbulan" data-slug="uikit-list">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Total Keuntungan Perbulan</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="<?php echo base_url(); ?>laporan/pilih_keuntungan_perhari" data-slug="uikit-list">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Total Keuntungan Perhari</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+          </ul>
+
         </div>
+
+          <div class="site-menubar-footer">
+            <a href="javascript: void(0);" class="fold-show" data-placement="top" data-toggle="tooltip"
+            data-original-title="Bantuan">
+              <span class="icon wb-settings" aria-hidden="true"></span>
+            </a>
+            <a href="javascript: void(0);" data-placement="top" data-toggle="tooltip" data-original-title="Kontak">
+              <span class="icon wb-eye" aria-hidden="true"></span>
+            </a>
+            <a href="<?php echo base_url(); ?>log/login" data-placement="top" data-toggle="tooltip" data-original-title="Keluar">
+              <span class="icon wb-power" aria-hidden="true"></span>
+            </a>
+          </div>
+
       </div>
-    </div>
-  </div>
-  <!-- End Menu -->
-<!-- End Header -->
