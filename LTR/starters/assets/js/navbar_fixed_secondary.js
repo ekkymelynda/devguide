@@ -23,13 +23,13 @@ $(function() {
 
     // When affixed add top margin to next container
     $('#navbar-second').on('affixed.bs.affix', function() {
-        $(this).next('.page-container').css('margin-top', $(this).outerHeight());
+        $(this).next('.page-header, .page-container').css('margin-top', $(this).outerHeight());
     });
 
 
     // When on top remove margin from the next container
     $('#navbar-second').on('affixed-top.bs.affix', function() {
-        $(this).next('.page-container').css('margin-top', '');
+        $(this).next('.page-header, .page-container').css('margin-top', '');
     });
 
 });

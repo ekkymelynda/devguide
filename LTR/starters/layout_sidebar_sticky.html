@@ -24,11 +24,12 @@
 
 	<!-- Theme JS files -->
 	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<script type="text/javascript" src="assets/js/layout_sidebar_sticky.js"></script>
 	<!-- /theme JS files -->
 
 </head>
 
-<body class="sidebar-xs">
+<body>
 
 	<!-- Main navbar -->
 	<div class="navbar navbar-inverse">
@@ -38,7 +39,6 @@
 			<ul class="nav navbar-nav pull-right visible-xs-block">
 				<li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
 				<li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
-				<li><a class="sidebar-mobile-secondary-toggle"><i class="icon-more"></i></a></li>
 			</ul>
 		</div>
 
@@ -50,10 +50,13 @@
 					</a>
 				</li>
 
+				<li><a href="#">Text link</a></li>
+
 				<li>
-					<a class="sidebar-control sidebar-secondary-hide hidden-xs" data-popup="tooltip" title="Hide secondary" data-placement="bottom" data-container="body">
-						<i class="icon-transmission"></i>
-					</a>
+					<a href="#">
+						<i class="icon-calendar3"></i>
+						<span class="visible-xs-inline-block position-right">Icon link</span>
+					</a>						
 				</li>
 			</ul>
 
@@ -195,7 +198,7 @@
 									<a href="#">Three columns</a>
 									<ul class="dropdown-menu">
 										<li class="dropdown-header highlight">Sidebar position</li>
-										<li class="active"><a href="3_col_dual.html">Dual sidebars</a></li>
+										<li><a href="3_col_dual.html">Dual sidebars</a></li>
 										<li><a href="3_col_double.html">Double sidebars</a></li>
 									</ul>
 								</li>
@@ -213,7 +216,7 @@
 						</li>
 						<li class="dropdown-header">Optional layouts</li>
 						<li><a href="layout_boxed.html"><i class="icon-align-center-horizontal"></i> Fixed width</a></li>
-						<li><a href="layout_sidebar_sticky.html"><i class="icon-flip-vertical3"></i> Sticky sidebar</a></li>
+						<li class="active"><a href="layout_sidebar_sticky.html"><i class="icon-flip-vertical3"></i> Sticky sidebar</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -246,12 +249,12 @@
 	<div class="page-header">
 		<div class="page-header-content">
 			<div class="page-title">
-				<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Starters</span> - Three Columns</h4>
+				<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Starters</span> - Sticky Sidebar</h4>
 
 				<ul class="breadcrumb breadcrumb-caret position-right">
 					<li><a href="index.html">Home</a></li>
-				<li><a href="3_col_dual.html">Starters</a></li>
-				<li class="active">Three columns (dual)</li>
+				<li><a href="layout_sidebar_sticky.html">Starters</a></li>
+				<li class="active">Sticky sidebar</li>
 				</ul>
 			</div>
 
@@ -271,177 +274,57 @@
 
 			<!-- Main sidebar -->
 			<div class="sidebar sidebar-main sidebar-default">
-				<div class="sidebar-content">
+				<div class="sidebar-fixed">
+					<div class="sidebar-content">
 
-					<!-- Main navigation -->
-					<div class="sidebar-category sidebar-category-visible">
-						<div class="category-title h6">
-							<span>Main sidebar</span>
-							<ul class="icons-list">
-								<li><a href="#" data-action="collapse"></a></li>
-							</ul>
+						<!-- Main navigation -->
+						<div class="sidebar-category sidebar-category-visible">
+							<div class="category-title h6">
+								<span>Main sidebar</span>
+								<ul class="icons-list">
+									<li><a href="#" data-action="collapse"></a></li>
+								</ul>
+							</div>
+
+							<div class="category-content no-padding">
+								<ul class="navigation navigation-main navigation-accordion">
+
+									<!-- Main -->
+									<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
+									<li><a href="../index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+									<li>
+										<a href="#"><i class="icon-stack"></i> <span>Starter kit</span></a>
+										<ul>
+											<li><a href="1_col.html">1 column</a></li>
+											<li><a href="2_col.html">2 columns</a></li>
+											<li>
+												<a href="#">3 columns</a>
+												<ul>
+													<li><a href="3_col_dual.html">Dual sidebars</a></li>
+													<li><a href="3_col_double.html">Double sidebars</a></li>
+												</ul>
+											</li>
+											<li><a href="4_col.html">4 columns</a></li>
+											<li><a href="layout_boxed.html">Boxed layout</a></li>
+											<li class="navigation-divider"></li>
+											<li><a href="layout_navbar_fixed_main.html">Fixed top navbar</a></li>
+											<li><a href="layout_navbar_fixed_secondary.html">Fixed secondary navbar</a></li>
+											<li><a href="layout_navbar_fixed_both.html">Both navbars fixed</a></li>
+											<li class="active"><a href="layout_sidebar_sticky.html">Sticky sidebar</a></li>
+										</ul>
+									</li>
+									<li><a href="../changelog.html"><i class="icon-list-unordered"></i> <span>Changelog</span></a></li>
+									<!-- /main -->
+
+								</ul>
+							</div>
 						</div>
+						<!-- /main navigation -->
 
-						<div class="category-content no-padding">
-							<ul class="navigation navigation-main navigation-accordion">
-
-								<!-- Main -->
-								<li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
-								<li><a href="../index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
-								<li>
-									<a href="#"><i class="icon-stack"></i> <span>Starter kit</span></a>
-									<ul>
-										<li><a href="1_col.html">1 column</a></li>
-										<li><a href="2_col.html">2 columns</a></li>
-										<li>
-											<a href="#">3 columns</a>
-											<ul>
-												<li class="active"><a href="3_col_dual.html">Dual sidebars</a></li>
-												<li><a href="3_col_double.html">Double sidebars</a></li>
-											</ul>
-										</li>
-										<li><a href="4_col.html">4 columns</a></li>
-										<li><a href="layout_boxed.html">Boxed layout</a></li>
-										<li class="navigation-divider"></li>
-										<li><a href="layout_navbar_fixed_main.html">Fixed top navbar</a></li>
-										<li><a href="layout_navbar_fixed_secondary.html">Fixed secondary navbar</a></li>
-										<li><a href="layout_navbar_fixed_both.html">Both navbars fixed</a></li>
-										<li><a href="layout_sidebar_sticky.html">Sticky sidebar</a></li>
-									</ul>
-								</li>
-								<li><a href="../changelog.html"><i class="icon-list-unordered"></i> <span>Changelog</span></a></li>
-								<!-- /main -->
-
-							</ul>
-						</div>
 					</div>
-					<!-- /main navigation -->
-
 				</div>
 			</div>
 			<!-- /main sidebar -->
-
-
-			<!-- Secondary sidebar -->
-			<div class="sidebar sidebar-secondary sidebar-default">
-				<div class="sidebar-content">
-
-					<!-- Title -->
-					<div class="category-title h6">
-						<span>Secondary sidebar</span>
-						<ul class="icons-list">
-							<li><a href="#"><i class="icon-gear"></i></a></li>
-						</ul>
-					</div>
-					<!-- /title -->
-
-
-					<!-- Sidebar search -->
-					<div class="sidebar-category">
-						<div class="category-title">
-							<span>Search</span>
-							<ul class="icons-list">
-								<li><a href="#" data-action="collapse"></a></li>
-							</ul>
-						</div>
-
-						<div class="category-content">
-							<form action="#">
-								<div class="has-feedback has-feedback-left">
-									<input type="search" class="form-control" placeholder="Search">
-									<div class="form-control-feedback">
-										<i class="icon-search4 text-size-base text-muted"></i>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-					<!-- /sidebar search -->
-
-
-					<!-- Sub navigation -->
-					<div class="sidebar-category">
-						<div class="category-title">
-							<span>Navigation</span>
-							<ul class="icons-list">
-								<li><a href="#" data-action="collapse"></a></li>
-							</ul>
-						</div>
-
-						<div class="category-content no-padding">
-							<ul class="navigation navigation-alt navigation-accordion">
-								<li class="navigation-header">Category title</li>
-								<li><a href="#"><i class="icon-googleplus5"></i> Link</a></li>
-								<li><a href="#"><i class="icon-googleplus5"></i> Another link</a></li>
-								<li><a href="#"><i class="icon-portfolio"></i> Link with label <span class="label bg-success-400">Online</span></a></li>
-								<li class="navigation-divider"></li>
-								<li>
-									<a href="#"><i class="icon-cog3"></i> Menu levels</a>
-									<ul>
-										<li><a href="#"><i class="icon-IE"></i> Second level</a></li>
-										<li>
-											<a href="#"><i class="icon-firefox"></i> Second level with child</a>
-											<ul>
-												<li><a href="#"><i class="icon-android"></i> Third level</a></li>
-												<li>
-													<a href="#"><i class="icon-apple2"></i> Third level with child</a>
-													<ul>
-														<li><a href="#"><i class="icon-html5"></i> Fourth level</a></li>
-														<li><a href="#"><i class="icon-css3"></i> Fourth level</a></li>
-													</ul>
-												</li>
-												<li><a href="#"><i class="icon-windows"></i> Third level</a></li>
-											</ul>
-										</li>
-										<li><a href="#"><i class="icon-chrome"></i> Second level</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- /sub navigation -->
-
-
-					<!-- Form sample -->
-					<div class="sidebar-category">
-						<div class="category-title">
-							<span>Form example</span>
-							<ul class="icons-list">
-								<li><a href="#" data-action="collapse"></a></li>
-							</ul>
-						</div>
-
-						<form action="#" class="category-content">
-							<div class="form-group">
-								<label>Your name:</label>
-								<input type="text" class="form-control" placeholder="Username">
-							</div>
-
-							<div class="form-group">
-								<label>Your password:</label>
-								<input type="password" class="form-control" placeholder="Password">
-							</div>
-
-							<div class="form-group">
-								<label>Your message:</label>
-								<textarea rows="3" cols="3" class="form-control" placeholder="Default textarea"></textarea>
-							</div>
-
-							<div class="row">
-								<div class="col-xs-6">
-									<button type="reset" class="btn btn-danger btn-block">Reset</button>
-								</div>
-								<div class="col-xs-6">
-									<button type="submit" class="btn btn-info btn-block">Submit</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- /form sample -->
-
-				</div>
-			</div>
-			<!-- /secondary sidebar -->
 
 
 			<!-- Main content -->

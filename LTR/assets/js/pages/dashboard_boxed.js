@@ -500,7 +500,6 @@ $(function() {
 
 
 
-
     // App sales lines chart
     // ------------------------------
 

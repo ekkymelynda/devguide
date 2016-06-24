@@ -13,6 +13,12 @@
 // Main wrapper
 .page-container {
     position: relative;
+    padding: @line-height-computed @grid-gutter-width;
+    padding-bottom: (@line-height-computed * 2);
+
+    .page-header + & {
+        padding-top: 0;
+    }
 
     @media (min-width: @grid-float-breakpoint) {
         width: 100%;
@@ -37,27 +43,10 @@
 
 // Content wrapper
 .content-wrapper {
-    padding-bottom: @line-height-computed;
     width: 100%;
 
     @media (min-width: @grid-float-breakpoint) {
         display: table-cell;
         vertical-align: top;
-    }
-}
-
-// Main content container
-.content {
-    padding: @line-height-computed @grid-gutter-width;
-
-    &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-
-    // If content comes after page header, remove top padding
-    .page-header + & {
-        padding-top: 0;
     }
 }

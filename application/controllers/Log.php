@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Log extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,8 +18,8 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function dashboard()
+	public function login()
 	{
-		$this->load->view('User/header')->view('User/footer');
+		$this->load->view('login');
 	}
 }

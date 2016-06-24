@@ -4,17 +4,28 @@
     },
 
     "nav": {
-        "category": {
-        	"main": "Main",
-        	"form": "Forms",
-        	"appearance": "Appearance",
-        	"layout": "Layout",
-            "options": "Layout options",
-        	"datavis": "Data visualization",
-        	"extensions": "Extensions",
-        	"tables": "Tables",
-        	"pages": "Page kits"
-    	},
+
+        "top": {
+            "dash": "Dashboard",
+            "components": {
+                "main": "Components",
+                "forms": "Forms",
+                "show": "Appearance",
+                "ext": "Extensions",
+                "tables": "Tables"
+            },
+            "features": {
+                "main": "Features",
+                "content": "Main content",
+                "layout": "Layout",
+                "vis": "Data visuzlitaion",
+                "extra": "Extras"
+            },
+            "kits": "Page kits",
+            "starters": "Starter kit",
+            "changelog": "Changelog",
+            "linkback": "Back to parent"
+        },
 
 
         "dash": {
@@ -24,20 +35,23 @@
         "page_layouts": {
             "main": "Page layouts",
             "fixed_navbar": "Fixed navbar",
-            "fixed_all": "Fixed navbar &amp; sidebar",
-            "fixed_native": "Fixed sidebar native scroll",
+            "sticky_custom": "Sticky sidebar (custom scroll)",
+            "sticky_native": "Sticky sidebar (native scroll)",
             "hideable": "Hideable navbar",
-            "fixed_hideable": "Hideable &amp; fixed sidebar",
-            "fixed_footer": "Fixed footer",
-            "boxed_default": "Boxed with default sidebar",
-            "boxed_mini": "Boxed with mini sidebar",
-            "boxed_full": "Boxed full width"
+            "fixed_footer": "Fixed footer"
+        },
+
+        "boxed": {
+            "main": "Fixed width",
+            "full": "Boxed full width",            
+            "default": "Boxed with default sidebar",
+            "mini": "Boxed with mini sidebar"
         },
 
         "layouts": {
             "main": "Layouts",
             "current": "<span class='label bg-warning-400'>Current</span>",
-            "next": "<span class='label'>Coming soon</span>",
+            "next": "<span class='label bg-slate-300'>Coming soon</span>",
             "layout1": "Layout 1",
             "layout2": "Layout 2",
             "layout3": "Layout 3",
@@ -66,31 +80,30 @@
         },
 
         "starter": {
-            "main": "Starter kit",
-            "hnav": "Horizontal navigation",
-            "1col": "1 column",
-            "2col": "2 columns",
-            "3col": {
-                "main": "3 columns",
-                "dual": "Dual sidebars",
-                "double": "Double sidebars"
+            "header_1": "Basic layouts",
+            "header_1_1": "Options",
+            "header_1_2": "Sidebar position",
+            "header_1_3": "Fixed navbars",
+            "header_2": "Optional layouts",
+            "cols": {
+                "main": "Columns",
+                "1col": "One column",
+                "2col": "Two columns",
+                "3col": {
+                    "main": "Three columns",
+                    "dual": "Dual sidebars",
+                    "double": "Double sidebars"
+                },
+                "4col": "Four columns"
             },
-            "4col": "4 columns",
-            "detached": {
-                "main": "Detached layout",
-                "left": "Left sidebar",
-                "right": "Right sidebar",
-                "sticky": "Sticky sidebar"
+            "navs": {
+                "main": "Navbars",
+                "primary": "Fixed main navbar",
+                "secondary": "Fixed secondary navbar",
+                "both": "Both navbars fixed"
             },
             "boxed": "Boxed layout",
-            "fixed_main": "Fixed main navbar",
-            "fixed_secondary": "Fixed secondary navbar",
-            "fixed_both": "Both navbars fixed",
-            "fixed_layout": "Fixed layout"            
-        },
-
-        "changelog": {
-            "main": "Changelog"
+            "sticky": "Sticky sidebar"            
         },
 
 
@@ -165,16 +178,23 @@
             "sliders": "Slider components"
         },
 
-        "appearance": {
-            "main": "Content appearance",
-            "panels": "Content panels",
-            "heading": "Panel heading elements",
-            "draggable": "Draggable panels",
+        "panels": {
+            "main": "Content panels",
+            "base": "Panels",
+            "heading": "Heading elements",
+            "draggable": "Draggable panels"
+        },
+
+        "content": {
+            "main": "Content styling",
             "text": "Text styling",
             "typo": "Typography",
             "helpers": "Helper classes",
-            "syntax": "Syntax highlighter",
-            "grid": "Grid system"
+            "syntax": "Syntax highlighter"
+        },
+
+        "grid": {
+            "main": "Grid system"
         },
 
         "animation": {
@@ -184,10 +204,14 @@
         "extra": {
             "main": "Extra components",
             "affix": "Affix and Scrollspy",
-            "session": "Session timeout",
-            "idle": "Idle timeout",
             "tree": "Dynamic tree views",
             "context": "Context menu"
+        },
+
+        "tools": {
+            "main": "Tools",
+            "session": "Session timeout",
+            "idle": "Idle timeout"
         },
 
         "icons": {
@@ -223,16 +247,9 @@
                 "mfix": "Fix mini width",
                 "ovisible": "Opposite sidebar visible"
             },
-            "detached": {
-                "main": "Detached sidebar",
-                "left": "Left position",
-                "right": "Right position",
-                "custom": "Sticky (custom scroll)",
-                "native": "Sticky (native scroll)",
-                "separate": "Separate categories"
-            },
+            "categories": "Sidebar categories",
             "hidden": "Hidden sidebar",
-            "light": "Light sidebar",
+            "dark": "Dark sidebar",
             "components": "Sidebar components"
         },
 
@@ -262,8 +279,8 @@
             "multiple": {
                 "main": "Multiple navbars",
                 "nn": "Navbar + navbar",
-                "nh": "Navbar + header",
                 "hn": "Header + navbar",
+                "nc": "Navbar + content",
                 "tb": "Top + bottom"
             },
             "colors": "Color options",
@@ -274,14 +291,14 @@
 
         "levels": {
             "main": "Menu levels",
-            "ie": "<i class='icon-IE'></i> Second level",
-            "firefox": "<i class='icon-firefox'></i> Second level with child",
-            "chrome": "<i class='icon-chrome'></i> Second level",
-            "android": "<i class='icon-android'></i> Third level",
-            "apple": "<i class='icon-apple2'></i> Third level with child",
-            "win": "<i class='icon-windows'></i> Third level",
-            "html": "<i class='icon-html5'></i> Fourth level",
-            "css": "<i class='icon-css3'></i> Fourth level"
+            "ie": "Second level",
+            "firefox": "Second level with child",
+            "chrome": "Second level",
+            "android": "Third level",
+            "apple": "Third level with child",
+            "win": "Third level",
+            "html": "Fourth level",
+            "css": "Fourth level"
         },
 
 
@@ -443,14 +460,18 @@
         },
 
         "tresp": {
-            "main": "Responsive options",
-            "basic": "Responsive basic tables",
-            "data": "Responsive data tables"
+            "main": "Responsive tables"
+        },
+
+        "dtresp": {
+            "main": "Responsive datatables"
         },
 
 
         "tasks": {
             "main": "Task manager",
+            "header_apps": "Apps",
+            "header_1": "Options",
             "grid": "Task grid",
             "list": "Task list",
             "detailed": "Task detailed"
@@ -458,6 +479,7 @@
 
         "invoice": {
             "main": "Invoicing",
+            "header_1": "Options",
             "template": "Invoice template",
             "grid": "Invoice grid",
             "archive": "Invoice archive"
@@ -465,6 +487,9 @@
 
         "user": {
             "main": "User pages",
+            "header_user": "User",
+            "header_1": "Basic",
+            "header_2": "Profiles",
             "cards": "User cards",
             "list": "User list",
             "profile": "Simple profile",
@@ -473,6 +498,9 @@
 
         "login": {
             "main": "Login &amp; registration",
+            "header_1": "Basic",
+            "header_2": "Service",
+            "header_3": "Other",
             "simple": "Simple login",
             "advanced": "More login info",
             "reg": "Simple registration",
@@ -493,6 +521,9 @@
 
         "support": {
             "main": "Support",
+            "header_tools": "Tools",
+            "header_1": "Chats",
+            "header_2": "Knowledgebase",
             "chat_layouts": "Conversation layouts",
             "chat_options": "Conversation options",
             "base": "Knowledgebase",
@@ -501,6 +532,9 @@
 
         "search": {
             "main": "Search",
+            "header_kits": "Kits",
+            "header_1": "Basic",
+            "header_2": "Media",
             "basic": "Basic search results",
             "user": "User search results",
             "image": "Image search results",
@@ -509,6 +543,7 @@
 
         "gallery": {
             "main": "Gallery",
+            "header_1": "Options",
             "grid": "Media grid",
             "title": "Media with titles",
             "desc": "Media with description",
@@ -517,6 +552,7 @@
 
         "error": {
             "main": "Error pages",
+            "header_1": "Options",
             "403": "Error 403",
             "404": "Error 404",
             "405": "Error 405",
