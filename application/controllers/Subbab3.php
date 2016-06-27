@@ -22,4 +22,19 @@ class Subbab3 extends CI_Controller {
 	{
 		$this->load->view('user/header')->view('user/subbab3/read')->view('user/footer');
 	}
+
+	public function create()
+	{
+		$this->load->view('user/header')->view('user/subbab3/create')->view('user/footer');
+	}
+
+	public function update()
+	{
+		$this->load->view('user/header')->view('user/subbab3/update')->view('user/footer');
+	}
+
+	public function delete()
+	{
+		$this->load->view('user/header')->view('user/subbab3/delete')->view('user/footer');
+	}
 }

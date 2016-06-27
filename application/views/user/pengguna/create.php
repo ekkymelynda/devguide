@@ -5,7 +5,7 @@
 				<div class="page-header">
 					<div class="page-header-content">
 						<div class="page-title">
-							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Form</span> - Bab</h4>
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Form</span> - Pengguna</h4>
 						</div>
 
 						<!--<div class="heading-elements">
@@ -20,7 +20,7 @@
 					<div class="breadcrumb-line">
 						<ul class="breadcrumb">
 							<li><a href=""><i class="icon-home2 position-left"></i> Tabel</a></li>
-							<li><a href="">Bab</a></li>
+							<li><a href="">Pengguna</a></li>
 							<li class="active">Buat</li>
 						</ul>
 
@@ -815,7 +815,7 @@
 					<form class="form-horizontal" action="#">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
-								<h5 class="panel-title">Data Bab</h5>
+								<h5 class="panel-title">Data Pengguna</h5>
 								<div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
@@ -832,16 +832,44 @@
 											<legend class="text-semibold"><i class="icon-reading position-left"></i> Form</legend>
 
 											<div class="form-group">
-												<label class="col-lg-3 control-label">Masukkan no bab:</label>
+												<label class="col-lg-3 control-label">Masukkan username pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="1">
+													<input type="text" class="form-control" placeholder="Contoh: annyyuniarti">
 												</div>
 											</div>
 
 											<div class="form-group">
-												<label class="col-lg-3 control-label">Masukkan nama bab:</label>
+												<label class="col-lg-3 control-label">Masukkan password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Pendahuluan">
+													<input type="password" class="form-control" placeholder="Contoh: ********">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="col-lg-3 control-label">Masukkan e-mail pengguna:</label>
+												<div class="col-lg-9">
+													<input type="email" class="form-control" placeholder="Contoh: anny@if.its.ac.id">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="col-lg-3 control-label">Masukkan telp pengguna:</label>
+												<div class="col-lg-9">
+													<input type="telp" class="form-control" placeholder="Contoh: 081234567890">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="col-lg-3 control-label">Masukkan alamat pengguna:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Contoh: Sukolilo, ITS">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="col-lg-3 control-label">Masukkan jabatan pengguna:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Contoh: Kepala LPTSI">
 												</div>
 											</div>
 

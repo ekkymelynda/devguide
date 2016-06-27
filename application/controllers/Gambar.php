@@ -22,4 +22,19 @@ class Gambar extends CI_Controller {
 	{
 		$this->load->view('user/header')->view('user/gambar/read')->view('user/footer');
 	}
+
+	public function create()
+	{
+		$this->load->view('user/header')->view('user/gambar/create')->view('user/footer');
+	}
+
+	public function update()
+	{
+		$this->load->view('user/header')->view('user/gambar/update')->view('user/footer');
+	}
+
+	public function delete()
+	{
+		$this->load->view('user/header')->view('user/gambar/delete')->view('user/footer');
+	}
 }

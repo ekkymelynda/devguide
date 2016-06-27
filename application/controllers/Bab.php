@@ -27,4 +27,14 @@ class Bab extends CI_Controller {
 	{
 		$this->load->view('user/header')->view('user/bab/create')->view('user/footer');
 	}
+
+	public function update()
+	{
+		$this->load->view('user/header')->view('user/bab/update')->view('user/footer');
+	}
+
+	public function delete()
+	{
+		$this->load->view('user/header')->view('user/bab/delete')->view('user/footer');
+	}
 }

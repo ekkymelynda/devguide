@@ -832,14 +832,14 @@
 											<legend class="text-semibold"><i class="icon-reading position-left"></i> Form</legend>
 
 											<div class="form-group">
-												<label class="col-lg-3 control-label ">Masukkan no bab:</label>
+												<label class="col-lg-3 control-label ">No bab:</label>
 												<div class="col-lg-9">
 													<input type="text" class="form-control" disabled="disabled" placeholder="1">
 												</div>
 											</div>
 
 											<div class="form-group">
-												<label class="col-lg-3 control-label">Masukkan nama bab:</label>
+												<label class="col-lg-3 control-label">Nama bab:</label>
 												<div class="col-lg-9">
 													<input type="text" class="form-control" disabled="disabled" placeholder="Pendahuluan">
 												</div>

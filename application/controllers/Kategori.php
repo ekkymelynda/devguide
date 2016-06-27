@@ -22,4 +22,19 @@ class Kategori extends CI_Controller {
 	{
 		$this->load->view('user/header')->view('user/kategori/read')->view('user/footer');
 	}
+	
+	public function create()
+	{
+		$this->load->view('user/header')->view('user/kategori/create')->view('user/footer');
+	}
+
+	public function update()
+	{
+		$this->load->view('user/header')->view('user/kategori/update')->view('user/footer');
+	}
+
+	public function delete()
+	{
+		$this->load->view('user/header')->view('user/kategori/delete')->view('user/footer');
+	}
 }

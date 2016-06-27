@@ -31,6 +31,23 @@
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/datatables_extension_fixed_columns.js"></script>
 	<!-- /theme JS files -->
 
+	<!-- Theme JS files -->
+	<!--<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/selects/select2.min.js"></script>-->
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/styling/uniform.min.js"></script>
+
+	<!--<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/app.js"></script>-->
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/form_layouts.js"></script>
+	<!-- /theme JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/ckeditor/ckeditor.js"></script>
+	<<!--script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/selects/select2.min.js"></script>-->
+
+	<!--<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/app.js"></script>-->
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/editor_ckeditor.js"></script>
+	<!-- /theme JS files -->
+
+
 </head>
 
 <body>
@@ -881,6 +898,7 @@
 										<li><a href="">SIPMABA</a></li>
 										<li><a href="">E-SURAT</a></li>
 										<li><a href="">SILACAK</a></li>
+										<li><a href="">SIMPEG</a></li>
 									</ul>
 								</li>
 								<!--<li>
@@ -961,6 +979,13 @@
 									</ul>
 								</li>-->
 								<!-- /halaman -->
+
+
+								<li class="navigation-header"><span>Layanan</span> <i class="icon-menu" title="Page kits"></i></li>
+								<li>
+									<a href=""><i class="icon-help"></i> <span>FAQ</span></a>
+									<a href=""><i class="icon-phone"></i> <span>Kontak</span></a>
+								</li>
 
 							</ul>
 						</div>

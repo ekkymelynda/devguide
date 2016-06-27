@@ -22,4 +22,19 @@ class Status extends CI_Controller {
 	{
 		$this->load->view('user/header')->view('user/status/read')->view('user/footer');
 	}
+
+	public function create()
+	{
+		$this->load->view('user/header')->view('user/status/create')->view('user/footer');
+	}
+
+	public function update()
+	{
+		$this->load->view('user/header')->view('user/status/update')->view('user/footer');
+	}
+
+	public function delete()
+	{
+		$this->load->view('user/header')->view('user/status/delete')->view('user/footer');
+	}
 }

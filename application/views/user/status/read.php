@@ -71,12 +71,12 @@
 						<table class="table datatable-fixed-left" width="100%">
 							<thead>
 						        <tr>
-						            <th>Username</th>
-						            <th>Password</th>
-						            <th>E-mail</th>
-						            <th>Telp</th>
-						            <th>Alamat</th>
-						            <th>Jabatan</th>
+						            <th>Nama</th>
+						            <th></th>
+						            <th></th>
+						            <th></th>
+						            <th></th>
+						            <th></th>
 						            <th>Aksi</th>
 						            <!--<th>Extn.</th>
 						            <th>E-mail</th>-->

@@ -22,4 +22,19 @@ class Pengguna extends CI_Controller {
 	{
 		$this->load->view('user/header')->view('user/pengguna/read')->view('user/footer');
 	}
+
+	public function create()
+	{
+		$this->load->view('user/header')->view('user/pengguna/create')->view('user/footer');
+	}
+
+	public function update()
+	{
+		$this->load->view('user/header')->view('user/pengguna/update')->view('user/footer');
+	}
+
+	public function delete()
+	{
+		$this->load->view('user/header')->view('user/pengguna/delete')->view('user/footer');
+	}
 }

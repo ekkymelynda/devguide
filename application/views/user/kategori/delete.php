@@ -5,7 +5,7 @@
 				<div class="page-header">
 					<div class="page-header-content">
 						<div class="page-title">
-							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Form</span> - Bab</h4>
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Form</span> - Kategori</h4>
 						</div>
 
 						<!--<div class="heading-elements">
@@ -20,7 +20,7 @@
 					<div class="breadcrumb-line">
 						<ul class="breadcrumb">
 							<li><a href=""><i class="icon-home2 position-left"></i> Tabel</a></li>
-							<li><a href="">Bab</a></li>
+							<li><a href="">Kategori</a></li>
 							<li class="active">Hapus</li>
 						</ul>
 
@@ -815,7 +815,7 @@
 					<form class="form-horizontal" action="#">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
-								<h5 class="panel-title">Data Bab</h5>
+								<h5 class="panel-title">Data Kategori</h5>
 								<div class="heading-elements">
 									<ul class="icons-list">
 				                		<li><a data-action="collapse"></a></li>
@@ -832,16 +832,9 @@
 											<legend class="text-semibold"><i class="icon-reading position-left"></i> Form</legend>
 
 											<div class="form-group">
-												<label class="col-lg-3 control-label ">Masukkan no bab:</label>
+												<label class="col-lg-3 control-label">Nama kategori:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="1">
-												</div>
-											</div>
-
-											<div class="form-group">
-												<label class="col-lg-3 control-label">Masukkan nama bab:</label>
-												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="Pendahuluan">
+													<input type="text" class="form-control" disabled="disabled" placeholder="Sistem Informasi Pendataan Mahasiswa Baru ITS">
 												</div>
 											</div>
 

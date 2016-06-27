@@ -71,12 +71,12 @@
 						<table class="table datatable-fixed-left" width="100%">
 							<thead>
 						        <tr>
-						            <th>Username</th>
-						            <th>Password</th>
-						            <th>E-mail</th>
-						            <th>Telp</th>
-						            <th>Alamat</th>
-						            <th>Jabatan</th>
+						            <th>Nama</th>
+						            <th>Tipe</th>
+						            <th>Ukuran</th>
+						            <th>Path</th>
+						            <th>Isi</th>
+						            <th>Tanggal</th>
 						            <th>Aksi</th>
 						            <!--<th>Extn.</th>
 						            <th>E-mail</th>-->
@@ -88,7 +88,7 @@
 						            <td></td>
 						            <td></td>
 						            <td></td>
-						            <td></td>
+						            <td><img src="<?php  echo base_url(); ?>LTR/assets/images/placeholder.jpg" style="width: 58px; height: 58px;" class="img-rounded" alt=""></td>
 						            <td></td>
 					                <td>
 					                	<ul class="icons-list">

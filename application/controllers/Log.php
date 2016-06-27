@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Post extends CI_Controller {
+class Log extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,23 +18,8 @@ class Post extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function read()
+	public function login()
 	{
-		$this->load->view('user/header')->view('user/post/read')->view('user/footer');
-	}
-	
-	public function create()
-	{
-		$this->load->view('user/header')->view('user/post/create')->view('user/footer');
-	}
-
-	public function update()
-	{
-		$this->load->view('user/header')->view('user/post/update')->view('user/footer');
-	}
-
-	public function delete()
-	{
-		$this->load->view('user/header')->view('user/post/delete')->view('user/footer');
+		$this->load->view('login');
 	}
 }

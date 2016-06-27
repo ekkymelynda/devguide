@@ -71,12 +71,14 @@
 						<table class="table datatable-fixed-left" width="100%">
 							<thead>
 						        <tr>
-						            <th>Username</th>
-						            <th>Password</th>
-						            <th>E-mail</th>
-						            <th>Telp</th>
-						            <th>Alamat</th>
-						            <th>Jabatan</th>
+						            <th>Kategori</th>
+						            <th>Status</th>
+						            <th>Bab</th>
+						            <th>Judul</th>
+						            <th>Isi</th>
+						            <th>Link</th>
+						            <th>Tanggal Buat</th>
+						            <th>Tanggal Ubah</th>
 						            <th>Aksi</th>
 						            <!--<th>Extn.</th>
 						            <th>E-mail</th>-->
@@ -84,6 +86,8 @@
 						    </thead>
 						    <tbody>
 						        <tr>
+						            <td></td>
+						            <td></td>
 						            <td></td>
 						            <td></td>
 						            <td></td>

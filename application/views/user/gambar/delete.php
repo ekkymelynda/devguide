@@ -832,16 +832,17 @@
 											<legend class="text-semibold"><i class="icon-reading position-left"></i> Form</legend>
 
 											<div class="form-group">
-												<label class="col-lg-3 control-label ">Masukkan no bab:</label>
+												<label class="col-lg-3 control-label">Gambar yang diupload:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="1">
-												</div>
-											</div>
+													<div class="media no-margin-top">
+														<div class="media-left">
+															<a href="#"><img src="<?php  echo base_url(); ?>LTR/assets/images/placeholder.jpg" style="width: 58px; height: 58px;" class="img-rounded" alt=""></a>
+														</div>
 
-											<div class="form-group">
-												<label class="col-lg-3 control-label">Masukkan nama bab:</label>
-												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="Pendahuluan">
+														<div class="media-body">
+															<span class="help-block">placeholder.jpg</span>
+														</div>
+													</div>
 												</div>
 											</div>
 
