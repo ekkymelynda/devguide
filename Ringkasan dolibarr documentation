@@ -1,0 +1,92 @@
+1. Development organization and tools
+1.1. Organization of project
+1.1.1 Dolibarr history and future (Roadmap)
+      - Mengapa projek dinamai sebagai X?
+      - Sejarah pengembangan projek X. Nama pengembang, Tahun released pertama.
+        > Roadmap: aturan penamaan versi pengembangan projek X
+        > Frezee: aturan2 projek di freeze
+        > Maintenance: aturan2 projek di maintenance
+        > List versi projek X sebelumnya.
+      - Informasi projek X yang sekarang. (dipandu ke Home)
+      - Projek X ke selanjutnya. (dipandu ke Roadmap)
+      
+1.1.2. Core actors and their roles in the Dolibarr galaxy
+       Berisi seluruh data pengembang dan peran pengembang. Pengembang yang aktif dan juga yang telah pensiun.
+       2.1 Developers roles
+       2.1.1 Developer bagian A: apa saja fungsinya dijelaskan
+       2.1.2 Developer bagian B: apa saja fungsinya dijelaskan
+       2.1.n dst.
+       
+       2.2 Other roles on Dolibarr project
+       2.1.1 Roles A: berperan untuk melakukan apa. Dijelaskan.
+       2.1.n dst.
+       
+1.1.3. Partners
+      - Berisi daftar partner yang memberi dukungan, bantuan, dll.
+
+1.1.4. The GIT access (ini tidak perlu)
+      - Informasi mengenai bagaimana memperoleh source dari projek X.
+      - Bagaimana menjadi developer projek X.
+
+1.1.5. The Mailing-lists and groups of information on social networks
+      - Bagaimana mendapat informasi perkembangan Projek X. Misal di Facebook, di twitter, dll.
+      - Mailing list untuk Bug tracker, Users's discussion, Task tracker, dll
+
+1.1.6. Help the project (ini tidak perlu)
+      - Bagaimana cara untuk membantu memecahkan masalah.
+      
+1.1.7. DevCamps Organisation (ini tidak perlu)
+      - Pertemuan antara para kontributor untuk memberikan pelatihan, pertukaran informasi, dll
+      - List DevCamps yang telah diadakan.
+
+1.1.8. Donations
+      - Data pemeberi donasi
+      
+1.2. To known before to start to develop
+    - Syarat untuk menjadi developer di projek X (CV, tujuan, dll, memahami projek, dll)
+    
+1.3. Environment and development tools
+    - IDE dan Tools yang digunakan pengembang. (Termasuk plugin-plugin ynag digunakan)
+    
+1.4. Dependencies and external libraries
+    - Daftar library2 yang digunakan di sistem projek X
+
+1.5. Get or update sources of a development version
+    - Informasi mengenai bagaimana memperoleh source dari projek X.
+
+
+2. Coding rules and best practices
+2.1. Prerequisites
+    - Prasyarat penggunaan projek X: OS yang didukung, Database yang didukung, minimal versi PHP, minimal CPU, minimal Disk Storage.
+    
+2.2. Language and development rules (PHP, SQL, HTML)
+    - versi OS, PHP, Mysql, dll.
+    - CopyRight Norms
+      > PHP: Aturan penamaan variabel, komen, dll pada source code.
+      > SQL: Aturan penamaan table, atribut, dll.
+      > HTML: aturan koding html
+      > Design patterns and Object programming
+      > dll.
+    
+2.3. List of tables
+    - Indeks dari semua tabel database SQL
+    
+2.4. Tree structure of files and classes are available onto doxygen generated documentation
+    - Struktur file dan class 
+
+
+3. List of modules
+   Dokumentasi teknis yang tersedia di dokumentasi pengembang masing-masing modul.
+   (Kayak APSI, Usecase tiap modul gimana)
+  
+3.1. List of Modules
+     Dokumentasi untuk modul standar(modul di projek X) untuk dokumentasi pengguna maupun developer.
+3.2. Complementary modules
+     Modul pelengkap fitur
+
+4. To develop a new module/addon for GUI
+   Bagaimana mengembangkan modul baru di projek X. Membuat Modul pengembangan.
+
+
+5. To develop a batch or command line script
+   Bagaimana melakukan modifikasi script antarmuka GUI.
