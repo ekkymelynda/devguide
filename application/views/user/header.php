@@ -41,10 +41,17 @@
 
 	<!-- Theme JS files -->
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/ckeditor/ckeditor.js"></script>
-	<<!--script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/selects/select2.min.js"></script>-->
+	<!--script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/selects/select2.min.js"></script>-->
 
 	<!--<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/app.js"></script>-->
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/editor_ckeditor.js"></script>
+	<!-- /theme JS files -->
+
+	<!-- Theme JS files -->
+	<!--<script type="text/javascript" src="ckeditor/ckeditor.js"></script>-->
+
+	<!--<script type="text/javascript" src="assets/js/core/app.js"></script>-->
+	<script type="text/javascript" src="assets/js/pages/invoice_template.js"></script>
 	<!-- /theme JS files -->
 
 
@@ -983,7 +990,7 @@
 
 								<li class="navigation-header"><span>Layanan</span> <i class="icon-menu" title="Page kits"></i></li>
 								<li>
-									<a href=""><i class="icon-help"></i> <span>FAQ</span></a>
+									<a href=""><i class="icon-help"></i> <span>Bantuan</span></a>
 									<a href=""><i class="icon-phone"></i> <span>Kontak</span></a>
 								</li>
 

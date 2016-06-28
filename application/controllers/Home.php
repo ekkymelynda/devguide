@@ -18,8 +18,18 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function faq()
+	public function bantuan()
 	{
-		$this->load->view('user/header')->view('user/faq')->view('user/footer');
+		$this->load->view('user/header')->view('user/bantuan')->view('user/footer');
+	}
+
+	public function kontak()
+	{
+		$this->load->view('user/header')->view('user/kontak')->view('user/footer');
+	}
+
+	public function dashboard()
+	{
+		$this->load->view('user/header')->view('user/dashboard')->view('user/footer');
 	}
 }
