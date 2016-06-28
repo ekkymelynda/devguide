@@ -44,13 +44,14 @@
 								<div class="col-md-6 content-group">
 									<img src="<?php  echo base_url(); ?>LTR/assets/images/logo_demo.png" class="content-group mt-10" alt="" style="width: 120px;">
 		 							<ul class="list-condensed list-unstyled">
-										<li>2269 Elba Lane</li>
-										<li>Paris, France</li>
-										<li>888-555-2311</li>
+										<li>LPTSI ITS</li>
+										<li>Sukolilo, Surabaya</li>
+										<li>031-5947270, ext 1132</li>
+										<li>Senin - Jumat 08:00 - 16:00</li>
 									</ul>
 								</div>
 
-								<div class="col-md-6 content-group">
+								<!--div class="col-md-6 content-group">
 									<div class="invoice-details">
 										<h5 class="text-uppercase text-semibold">Invoice #49029</h5>
 										<ul class="list-condensed list-unstyled">
@@ -58,10 +59,10 @@
 											<li>Due date: <span class="text-semibold">May 12, 2015</span></li>
 										</ul>
 									</div>
-								</div>
+								</div-->
 							</div>
 
-							<div class="row">
+							<!--div class="row">
 								<div class="col-md-6 col-lg-9 content-group">
 									<span class="text-muted">Invoice To:</span>
 		 							<ul class="list-condensed list-unstyled">
