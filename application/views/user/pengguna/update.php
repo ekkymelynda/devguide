@@ -812,7 +812,8 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="#">
+					<?php foreach ($h->result() as $row){?>
+					<form class="form-horizontal" action="<?php echo base_url();?>pengguna/ubah/<?php echo $row->id_usr;?>" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Pengguna</h5>
@@ -834,44 +835,45 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Username pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="annyyuniarti">
+													<input type="text" class="form-control" value="<?php echo $row->username_usr;?>" name="username_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="password" class="form-control" value="********">
+													<input type="password" class="form-control" value="<?php echo $row->password_usr;?>" name="password_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">E-mail pengguna:</label>
 												<div class="col-lg-9">
-													<input type="email" class="form-control" value="anny@if.its.ac.id">
+													<input type="email" class="form-control" value="<?php echo $row->email_usr;?>" name="email_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Telp pengguna:</label>
 												<div class="col-lg-9">
-													<input type="telp" class="form-control" value="081234567890">
+													<input type="telp" class="form-control" value="<?php echo $row->notlp_usr;?>" name="notlp_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Alamat pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="Sukolilo, ITS">
+													<input type="text" class="form-control" value="<?php echo $row->alamat_usr;?>" name="alamat_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan jabatan pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="Kepala LPTSI">
+													<input type="text" class="form-control" value="<?php echo $row->jabatan_usr;?>" name="jabatan_usr">
 												</div>
 											</div>
+											<?php }?>
 
 											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Enter your password:</label>

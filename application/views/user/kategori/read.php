@@ -64,41 +64,30 @@
 						</div>
 
 						<div class="panel-body">
-							<button type="button" class="btn btn-primary btn-rounded"><i class="icon-add position-left"></i> Buat</button>
+							<a href="<?php echo base_url(); ?>kategori/create" class="btn btn-primary btn-rounded"><i class="icon-add position-left"></i> Buat</a>
 							<!--When displaying a table which scrolls along the <code>x-axis</code>, it can sometimes be useful to the end user for the left most column to be <code>fixed</code> in place, if it shows grouping, index or similar information. This is basically the same idea as <code>'freeze columns'</code> in Excel. This can be achieved with the <code>FixedColumns</code> plug-in for DataTables, as shown below.-->
 						</div>
 
-						<table class="table datatable-fixed-left" width="100%">
+						<table class="table" width="100%">
 							<thead>
 						        <tr>
 						            <th>Nama</th>
-						            <th></th>
-						            <th></th>
-						            <th></th>
-						            <th></th>
-						            <th></th>
 						            <th>Aksi</th>
-						            <!--<th>Extn.</th>
-						            <th>E-mail</th>-->
 						        </tr>
 						    </thead>
 						    <tbody>
+						    	<?php foreach ($h->result() as $row){?>
 						        <tr>
-						            <td></td>
-						            <td></td>
-						            <td></td>
-						            <td></td>
-						            <td></td>
-						            <td></td>
+						            <td><?php echo $row->nama_ktg;?></td>
 					                <td>
 					                	<ul class="icons-list">
-											<li class="text-primary-600"><a href=""><i class="icon-pencil7"></i></a></li>
-											<li class="text-danger-600"><a href=""><i class="icon-trash"></i></a></li>
+											<li class="text-primary-600"><a href="<?php echo base_url(); ?>kategori/update/<?php echo $row->id_ktg;?>"><i class="icon-pencil7"></i></a></li>
+											<li class="text-danger-600"><a href="<?php echo base_url(); ?>kategori/delete/<?php echo $row->id_ktg;?>"><i class="icon-trash"></i></a></li>
 										</ul>
 									</td>
-						            <!--<td>5421</td>
-						            <td><a href="#">t.nixon@datatables.net</a></td>-->
 						        </tr>
+						        <?php }?>
+
 						        <!--<tr>
 						            <td>Garrett</td>
 						            <td>Winters</td>

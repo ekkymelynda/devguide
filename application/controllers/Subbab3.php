@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Subbab3 extends CI_Controller {
+class subbab3 extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,9 +18,16 @@ class Subbab3 extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('subbab3_model');
+    }
+
 	public function read()
 	{
-		$this->load->view('user/header')->view('user/subbab3/read')->view('user/footer');
+		$data['h'] = $this->subbab3_model->lihat_subbab3();
+		$this->load->view('user/header')->view('user/subbab3/read', $data)->view('user/footer');
 	}
 
 	public function create()
@@ -28,13 +35,41 @@ class Subbab3 extends CI_Controller {
 		$this->load->view('user/header')->view('user/subbab3/create')->view('user/footer');
 	}
 
-	public function update()
+	public function update($id_sbab3)
 	{
-		$this->load->view('user/header')->view('user/subbab3/update')->view('user/footer');
+		$data['h'] = $this->subbab3_model->form_update_subbab3($id_sbab3);
+		$this->load->view('user/header')->view('user/subbab3/update', $data)->view('user/footer');
 	}
 
-	public function delete()
+	public function delete($id_sbab3)
 	{
-		$this->load->view('user/header')->view('user/subbab3/delete')->view('user/footer');
+		$data['h'] = $this->subbab3_model->form_update_subbab3($id_sbab3);
+		$this->load->view('user/header')->view('user/subbab3/delete', $data)->view('user/footer');
 	}
+
+	public function buat()
+    {
+        $no_sbab3=$this->input->post('no_sbab3');
+        $nama_sbab3= $this->input->post('nama_sbab3');
+
+        $this->subbab3_model->buat_subbab3($no_sbab3, $nama_sbab3);       
+
+        redirect(base_url()."subbab3/read");
+    }
+
+    public function ubah($id_sbab3)
+    {
+    	$no_sbab3=$this->input->post('no_sbab3');
+    	$nama_sbab3= $this->input->post('nama_sbab3');
+
+        $this->subbab3_model->ubah_subbab3($id_sbab3, $no_sbab3, $nama_sbab3);
+
+        redirect(base_url()."subbab3/read");
+    }
+
+    public function hapus($id_sbab3)
+    {
+        $this->subbab3_model->hapus_subbab3($id_sbab3);
+        redirect(base_url()."subbab3/read");
+    }
 }

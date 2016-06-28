@@ -812,7 +812,8 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="#">
+					<?php foreach ($h->result() as $row){?>
+					<form class="form-horizontal" action="<?php echo base_url();?>kategori/ubah/<?php echo $row->id_ktg;?>" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Kategori</h5>
@@ -834,9 +835,10 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Nama kategori:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="Sistem Informasi Pendataan Mahasiswa Baru ITS">
+													<input type="text" class="form-control" value="<?php echo $row->nama_ktg;?>" name="nama_ktg">
 												</div>
 											</div>
+											<?php }?>
 
 											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Enter your password:</label>

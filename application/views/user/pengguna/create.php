@@ -812,7 +812,7 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="#">
+					<form class="form-horizontal" action="<?php echo base_url();?>pengguna/buat" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Pengguna</h5>
@@ -834,42 +834,42 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan username pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: annyyuniarti">
+													<input type="text" class="form-control" placeholder="Contoh: annyyuniarti" name="username_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="password" class="form-control" placeholder="Contoh: ********">
+													<input type="password" class="form-control" placeholder="Contoh: ********" name="password_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan e-mail pengguna:</label>
 												<div class="col-lg-9">
-													<input type="email" class="form-control" placeholder="Contoh: anny@if.its.ac.id">
+													<input type="email" class="form-control" placeholder="Contoh: anny@if.its.ac.id" name="email_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan telp pengguna:</label>
 												<div class="col-lg-9">
-													<input type="telp" class="form-control" placeholder="Contoh: 081234567890">
+													<input type="telp" class="form-control" placeholder="Contoh: 081234567890" name="notlp_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan alamat pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Sukolilo, ITS">
+													<input type="text" class="form-control" placeholder="Contoh: Sukolilo, ITS" name="alamat_usr">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan jabatan pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Kepala LPTSI">
+													<input type="text" class="form-control" placeholder="Contoh: Kepala LPTSI" name="jabatan_usr">
 												</div>
 											</div>
 

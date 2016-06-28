@@ -812,7 +812,8 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="#">
+					<?php foreach ($h->result() as $row){?>
+					<form class="form-horizontal" action="<?php echo base_url(); ?>status/hapus/<?php echo $row->id_sts;?>">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Status</h5>
@@ -834,9 +835,10 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Nama status:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="Terlihat">
+													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->nama_sts;?>">
 												</div>
 											</div>
+											<?php }?>
 
 											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Enter your password:</label>

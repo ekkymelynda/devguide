@@ -812,7 +812,7 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="#">
+					<form class="form-horizontal" action="<?php echo base_url();?>subbab3/buat" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Sub Bab 3</h5>
@@ -834,14 +834,14 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan no sub bab 3:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: 1">
+													<input type="text" class="form-control" placeholder="Contoh: 1" name="no_sbab3">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan nama sub bab 3:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Proses Bisnis untuk Daftar Mahasiswa">
+													<input type="text" class="form-control" placeholder="Contoh: Proses Bisnis untuk Daftar Mahasiswa" name="nama_sbab3">
 												</div>
 											</div>
 

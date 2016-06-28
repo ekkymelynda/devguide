@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Status extends CI_Controller {
+class status extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,9 +18,16 @@ class Status extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('status_model');
+    }
+
 	public function read()
 	{
-		$this->load->view('user/header')->view('user/status/read')->view('user/footer');
+		$data['h'] = $this->status_model->lihat_status();
+		$this->load->view('user/header')->view('user/status/read', $data)->view('user/footer');
 	}
 
 	public function create()
@@ -28,13 +35,39 @@ class Status extends CI_Controller {
 		$this->load->view('user/header')->view('user/status/create')->view('user/footer');
 	}
 
-	public function update()
+	public function update($id_sts)
 	{
-		$this->load->view('user/header')->view('user/status/update')->view('user/footer');
+		$data['h'] = $this->status_model->form_update_status($id_sts);
+		$this->load->view('user/header')->view('user/status/update', $data)->view('user/footer');
 	}
 
-	public function delete()
+	public function delete($id_sts)
 	{
-		$this->load->view('user/header')->view('user/status/delete')->view('user/footer');
+		$data['h'] = $this->status_model->form_update_status($id_sts);
+		$this->load->view('user/header')->view('user/status/delete', $data)->view('user/footer');
 	}
+
+	public function buat()
+    {
+        $nama_sts= $this->input->post('nama_sts');
+
+        $this->status_model->buat_status($nama_sts);       
+
+        redirect(base_url()."status/read");
+    }
+
+    public function ubah($id_sts)
+    {
+    	$nama_sts= $this->input->post('nama_sts');
+
+        $this->status_model->ubah_status($id_sts, $nama_sts);
+
+        redirect(base_url()."status/read");
+    }
+
+    public function hapus($id_sts)
+    {
+        $this->status_model->hapus_status($id_sts);
+        redirect(base_url()."status/read");
+    }
 }

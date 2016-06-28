@@ -812,7 +812,7 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="#">
+					<form class="form-horizontal" action="<?php echo base_url();?>status/buat" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Status</h5>
@@ -834,7 +834,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan nama status:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Terlihat">
+													<input type="text" class="form-control" placeholder="Contoh: Terlihat" name="nama_sts">
 												</div>
 											</div>
 

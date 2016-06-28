@@ -812,7 +812,7 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="#">
+					<form class="form-horizontal" action="<?php echo base_url();?>bab/buat" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Bab</h5>
@@ -834,14 +834,14 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan no bab:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: 1">
+													<input type="text" class="form-control" placeholder="Contoh: 1" name="no_bab">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan nama bab:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Pendahuluan">
+													<input type="text" class="form-control" placeholder="Contoh: Pendahuluan" name="nama_bab">
 												</div>
 											</div>
 
