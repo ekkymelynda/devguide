@@ -18,9 +18,16 @@ class post extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('post_model');
+    }
+
 	public function read()
 	{
-		$this->load->view('user/header')->view('user/post/read')->view('user/footer');
+		$data['h'] = $this->post_model->lihat_post();
+		$this->load->view('user/header')->view('user/post/read', $data)->view('user/footer');
 	}
 	
 	public function create()
@@ -28,13 +35,53 @@ class post extends CI_Controller {
 		$this->load->view('user/header')->view('user/post/create')->view('user/footer');
 	}
 
-	public function update()
+	public function update($id_pst)
 	{
-		$this->load->view('user/header')->view('user/post/update')->view('user/footer');
+		$data['h'] = $this->post_model->form_update_post($id_pst);
+		$this->load->view('user/header')->view('user/post/update', $data)->view('user/footer');
 	}
 
-	public function delete()
+	public function delete($id_pst)
 	{
-		$this->load->view('user/header')->view('user/post/delete')->view('user/footer');
+		$data['h'] = $this->post_model->form_update_post($id_pst);
+		$this->load->view('user/header')->view('user/post/delete', $data)->view('user/footer');
 	}
+
+	public function buat()
+    {
+        $id_ktg=$this->input->post('id_ktg');
+        $id_sts= $this->input->post('id_sts');
+        $id_bab=$this->input->post('id_bab');
+        $judul_pst= $this->input->post('judul_pst');
+        $isi_pst= $this->input->post('isi_pst');
+        $link_pst=$this->input->post('link_pst');
+        $create_pst= $this->input->post('create_pst');
+        $update_pst=$this->input->post('update_pst');
+
+        $this->post_model->buat_post($id_ktg, $id_sts, $id_bab, $judul_pst, $isi_pst, $link_pst, $create_pst, $update_pst);       
+
+        redirect(base_url()."post/read");
+    }
+
+    public function ubah($id_pst)
+    {
+    	$id_ktg=$this->input->post('id_ktg');
+        $id_sts= $this->input->post('id_sts');
+        $id_bab=$this->input->post('id_bab');
+        $judul_pst= $this->input->post('judul_pst');
+        $isi_pst= $this->input->post('isi_pst');
+        $link_pst=$this->input->post('link_pst');
+        $create_pst= $this->input->post('create_pst');
+        $update_pst=$this->input->post('update_pst');
+
+        $this->post_model->ubah_post($id_pst, $id_ktg, $id_sts, $id_bab, $judul_pst, $isi_pst, $link_pst, $create_pst, $update_pst);
+
+        redirect(base_url()."post/read");
+    }
+
+    public function hapus($id_pst)
+    {
+        $this->post_model->hapus_post($id_pst);
+        redirect(base_url()."post/read");
+    }
 }
