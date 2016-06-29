@@ -189,19 +189,19 @@
 					<!-- Editable invoice -->
 					<div class="panel panel-white">
 						<div class="panel-heading">
-							<h6 class="panel-title">Daftar Isi</h6>
-							<div class="heading-elements">
+							<h3 class="panel-title">Daftar Isi</h3>
+							<!--div class="heading-elements">
 								<button type="button" class="btn btn-default btn-xs heading-btn"><i class="icon-file-check position-left"></i> Save</button>
 								<button type="button" class="btn btn-default btn-xs heading-btn"><i class="icon-printer position-left"></i> Print</button>
-		                	</div>
+		                	</div-->
 						</div>
 
-						<div id="invoice-editable" contenteditable="true">
+						<!--div id="invoice-editable" contenteditable="true"-->
 							<div class="panel-body no-padding-bottom">
 								<div class="row">
 									<div class="col-md-12 content-group">
 										<!--<img src="assets/images/logo_demo.png" class="content-group mt-10" alt="" style="width: 120px;">-->
-										<h2>Sistem Informasi Pendataan Mahasiswa Baru ITS</h2>
+										<h4>Sistem Informasi Pendataan Mahasiswa Baru ITS</h4>
 			 							<ul class="list-condensed list-unstyled">
 											<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
 												<ul class="list-condensed list-unstyled">
@@ -281,6 +281,7 @@
 										</div>
 									</div>-->
 								</div>
+							</div>
 
 
 								<!--<div class="row">
