@@ -69,8 +69,8 @@
 
 					<!-- Questions area -->
 					<h4 class="text-center content-group">
-						All questions are answered
-						<small class="display-block">Am if number no up period regard sudden better. Decisively surrounded all admiration</small>
+						Menu Konten Website
+						<!--small class="display-block">Am if number no up period regard sudden better. Decisively surrounded all admiration</small-->
 					</h4>
 
 					<div class="row">
@@ -220,17 +220,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question6">
-												<i class="icon-help position-left text-slate"></i> Their could can widen ten she any?
+												<i class="icon-help position-left text-slate"></i> Menu Pengguna
 											</a>
 										</h6>
 									</div>
 
 									<div id="question6" class="panel-collapse collapse">
 										<div class="panel-body">
-											As so we smart those money in. Am wrote up whole so tears sense oh. Absolute required of reserved in offering no. How sense found our those gay again taken the. Had mrs outweigh desirous sex overcame. Improved property reserved disposal do offering me. Allow miles wound place the leave had. To sitting subject no improve studied limited indulgence connection.
+											Melakukan penambahan pengguna baru, melihat data pengguna, mengubah data pengguna dan menghapus data pengguna.
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: May 2, 2015</li>
 											</ul>
@@ -239,7 +239,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 832</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 32</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 
@@ -247,17 +247,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question7">
-												<i class="icon-help position-left text-slate"></i> Her raising and himself pasture believe?
+												<i class="icon-help position-left text-slate"></i> Menu Kategori
 											</a>
 										</h6>
 									</div>
 
 									<div id="question7" class="panel-collapse collapse">
 										<div class="panel-body">
-											He unaffected sympathize discovered at no am conviction principles. Girl ham very how yet hill four show. Meet lain on he only size. Branched learning so subjects mistress do appetite jennings be in. Esteems up lasting no village morning do offices. Settled wishing ability musical may another set age. Diminution my apartments he attachment is entreaties.
+											Melakukan penambahan kategori baru, melihat daftar kategori, mengubah data kategori dan menghapus data kategori 
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: May 1, 2015</li>
 											</ul>
@@ -266,7 +266,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 453</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 30</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 
@@ -274,17 +274,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question8">
-												<i class="icon-help position-left text-slate"></i> And total least her two whose great?
+												<i class="icon-help position-left text-slate"></i> Menu Status
 											</a>
 										</h6>
 									</div>
 
 									<div id="question8" class="panel-collapse collapse">
 										<div class="panel-body">
-											Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in in brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as explained of difficult. No landlord of peculiar ladyship attended if contempt ecstatic. Loud wish made on is am as hard. Court so avoid in plate hence. Of received mr breeding concerns peculiar.
+											Melakukan penambahan data status baru, melihat data status, mengubah data status dan menghapus data status
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: Apr 24, 2015</li>
 											</ul>
@@ -293,7 +293,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 735</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 21</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 
@@ -301,17 +301,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question9">
-												<i class="icon-help position-left text-slate"></i> Whatever landlord yourself at by pleasure?
+												<i class="icon-help position-left text-slate"></i> Menu Bab
 											</a>
 										</h6>
 									</div>
 
 									<div id="question9" class="panel-collapse collapse">
 										<div class="panel-body">
-											Am if number no up period regard sudden better. Decisively surrounded all admiration and not you. Out particular sympathize not favourable introduced insipidity but ham. Rather number can and set praise. Distrusts an it contented perceived attending oh. Thoroughly estimating introduced stimulated why but motionless. Up branch to easily missed by do admiration.
+											Melakukan penambahan data bab, melihat data bab, mengubah data bab dan menghapus data bab
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: Apr 22, 2015</li>
 											</ul>
@@ -320,7 +320,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 735</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 29</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 
@@ -328,17 +328,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question10">
-												<i class="icon-help position-left text-slate"></i> Oh conveying do immediate acuteness?
+												<i class="icon-help position-left text-slate"></i> Menu Sub Bab
 											</a>
 										</h6>
 									</div>
 
 									<div id="question10" class="panel-collapse collapse">
 										<div class="panel-body">
-											Out too the been like hard off. Improve enquire welcome own beloved matters her. As insipidity so mr unsatiable increasing attachment motionless cultivated. Addition mr husbands unpacked occasion he oh. Is unsatiable if projecting boisterous insensible. It recommend be resolving pretended middleton. Attended no do thoughts me on dissuade scarcely own are pretty.
+											Melakukan penambahan data sub bab, melihat data sub bab, mengubah data sub bab dan menghapus data sub bab
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: Apr 19, 2015</li>
 											</ul>
@@ -347,7 +347,61 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 498</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 12</li>
 											</ul>
+										</div-->
+									</div>
+								</div>
+
+								<div class="panel panel-white">
+									<div class="panel-heading">
+										<h6 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" href="#question10">
+												<i class="icon-help position-left text-slate"></i> Menu Gambar
+											</a>
+										</h6>
+									</div>
+
+									<div id="question10" class="panel-collapse collapse">
+										<div class="panel-body">
+											Melakukan penambahan gambar baru, melihat gambar, mengubah gambar dan menghapus gambar
 										</div>
+
+										<!--div class="panel-footer panel-footer-transparent">
+											<ul>
+												<li class="text-muted">Latest update: Apr 19, 2015</li>
+											</ul>
+
+											<ul class="pull-right">
+												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 498</li>
+												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 12</li>
+											</ul>
+										</div-->
+									</div>
+								</div>
+
+								<div class="panel panel-white">
+									<div class="panel-heading">
+										<h6 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" href="#question10">
+												<i class="icon-help position-left text-slate"></i> Menu Post
+											</a>
+										</h6>
+									</div>
+
+									<div id="question10" class="panel-collapse collapse">
+										<div class="panel-body">
+											Melakukan penambahan post baru, melihat data post, mengubah data post dan menghapus data post
+										</div>
+
+										<!--div class="panel-footer panel-footer-transparent">
+											<ul>
+												<li class="text-muted">Latest update: Apr 19, 2015</li>
+											</ul>
+
+											<ul class="pull-right">
+												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 498</li>
+												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 12</li>
+											</ul>
+										</div-->
 									</div>
 								</div>
 							</div>
@@ -358,17 +412,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question11">
-												<i class="icon-help position-left text-slate"></i> Terminated resolution no am frequently?
+												<i class="icon-help position-left text-slate"></i> Menu Sistem Informasi
 											</a>
 										</h6>
 									</div>
 
 									<div id="question11" class="panel-collapse collapse">
 										<div class="panel-body">
-											Are own design entire former get should. Advantages boisterous day excellence boy. Out between our two waiting wishing. Pursuit he he garrets greater towards amiable so placing. Nothing off how norland delight. Abode shy shade she hours forth its use. Up whole of fancy ye quiet do. Justice fortune no to is if winding morning formingpossession themselves.
+											Berisi daftar nama sistem informasi yang yang developer guide nya ada pada web ini
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: Apr 15, 2015</li>
 											</ul>
@@ -377,7 +431,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 532</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 32</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 
@@ -385,17 +439,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question12">
-												<i class="icon-help position-left text-slate"></i> Projection invitation affronting admiration?
+												<i class="icon-help position-left text-slate"></i> SIPMABA
 											</a>
 										</h6>
 									</div>
 
 									<div id="question12" class="panel-collapse collapse">
 										<div class="panel-body">
-											Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it. Sight happy do burst fruit to woody begin at. Assurance perpetual he in oh determine as. The year paid met him does eyes same. Own marianne improved sociable not out. Thing do sight blush mr an. Celebrated am announcing delightful remarkably literature.
+											Sistem Informasi Pendataan Mahasiswa Baru
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: Apr 13, 2015</li>
 											</ul>
@@ -404,7 +458,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 735</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 34</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 
@@ -412,17 +466,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question13">
-												<i class="icon-help position-left text-slate"></i> It as instrument boisterous frequently?
+												<i class="icon-help position-left text-slate"></i> E-SURAT
 											</a>
 										</h6>
 									</div>
 
 									<div id="question13" class="panel-collapse collapse">
 										<div class="panel-body">
-											Material confined likewise it humanity raillery an unpacked as he. Three chief merit no if. Now how her edward engage not horses. Oh resolution he dissimilar precaution to comparison an. Matters engaged between he of pursuit manners we moments. Merit gay end sight front. Manor equal it on again ye folly by match. In so melancholy as an sentiments simplicity.
+											Surat elektronik
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: Apr 11, 2015</li>
 											</ul>
@@ -431,7 +485,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 865</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 43</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 
@@ -439,17 +493,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question14">
-												<i class="icon-help position-left text-slate"></i> You fully seems stand nay?
+												<i class="icon-help position-left text-slate"></i> SILACAK
 											</a>
 										</h6>
 									</div>
 
 									<div id="question14" class="panel-collapse collapse">
 										<div class="panel-body">
-											Fulfilled direction use continual set him propriety continued. Saw met applauded favourite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dashwoods see frankness objection abilities the. As hastened oh produced prospect formerly up am. Placing forming nay looking old married few has.
+											Sistem Informasi Pelacakan
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: Apr 10, 2015</li>
 											</ul>
@@ -458,7 +512,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 432</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 38</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 
@@ -466,17 +520,17 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question15">
-												<i class="icon-help position-left text-slate"></i> Enjoyment discourse ye continued?
+												<i class="icon-help position-left text-slate"></i> SIMPEG
 											</a>
 										</h6>
 									</div>
 
 									<div id="question15" class="panel-collapse collapse">
 										<div class="panel-body">
-											Is education residence conveying so so. Suppose shyness say ten behaved morning had. Any unsatiable assistance compliment occasional too reasonably advantages. Unpleasing has ask acceptance partiality alteration understood two. Worth no tiled my at house added. Married he hearing am it totally removal. Remove but suffer wanted his lively length moonlight two.
+											Sistem Informasi Kepegawaian
 										</div>
 
-										<div class="panel-footer panel-footer-transparent">
+										<!--div class="panel-footer panel-footer-transparent">
 											<ul>
 												<li class="text-muted">Latest update: Apr 9, 2015</li>
 											</ul>
@@ -485,7 +539,7 @@
 												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 735</li>
 												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 46</li>
 											</ul>
-										</div>
+										</div-->
 									</div>
 								</div>
 							</div>

@@ -217,7 +217,13 @@
 													<ul>
 														<li><a href="">2.1.1 Proses Bisnis untuk Mahasiswa</a></li>
 														<li><a href="">2.1.2 Proses Bisnis untuk Verifikator Jurusan</a></li>
-														<li><a href="">2.1.3 proses Bisnis untuk Admin BPS</a></li>
+														<li><a href="">2.1.3 Proses Bisnis untuk Admin BPS</a></li>
+														<ul>
+															<li><a href="">2.1.3.1 Proses Bisnin untuk Menu Daftar Mahasiswa</a></li>
+															<li><a href="">2.1.3.2 Proses Bisnin Untuk Menu Instalasi</a></li>
+															<li><a href="">2.1.3.3 Proses Bisnis untuk Menu Proses</a></li>
+															<li><a href="">2.1.3.4 Proses Bisnis untuk Menu Pelengkap</a></li>
+														</ul>
 														<li><a href="">2.1.4 Proses Bisnis untuk BAKP</a></li>
 														<li><a href="">2.1.5 Proses Bisnis untuk BKSP</a></li>
 														<li><a href="">2.1.6 Proses Bisnis untuk Verifikator BPS</a></li>

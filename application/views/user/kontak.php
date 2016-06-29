@@ -42,9 +42,9 @@
 						<div class="panel-body no-padding-bottom">
 							<div class="row">
 								<div class="col-md-6 content-group">
-									<img src="<?php  echo base_url(); ?>LTR/assets/images/logo_demo.png" class="content-group mt-10" alt="" style="width: 120px;">
+									<!--img src="<?php  echo base_url(); ?>LTR/assets/images/logo_demo.png" class="content-group mt-10" alt="" style="width: 120px;"-->
 		 							<ul class="list-condensed list-unstyled">
-										<li>LPTSI ITS</li>
+										<li><a href="http://lptsi.its.ac.id/">LPTSI - Lembaga Pengembangan Teknologi Sistem Informasi ITS</a></li>
 										<li>Sukolilo, Surabaya</li>
 										<li>031-5947270, ext 1132</li>
 										<li>Senin - Jumat 08:00 - 16:00</li>
