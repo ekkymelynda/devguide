@@ -22,4 +22,14 @@ class log extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+
+	public function read()
+	{
+		$this->load->view('user/header')->view('user/profil/read')->view('user/footer');
+	}
+
+	public function update()
+	{
+		$this->load->view('user/header')->view('user/profil/update')->view('user/footer');
+	}
 }

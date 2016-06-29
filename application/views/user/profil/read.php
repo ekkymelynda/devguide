@@ -5,7 +5,7 @@
 				<div class="page-header">
 					<div class="page-header-content">
 						<div class="page-title">
-							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Form</span> - Pengguna</h4>
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Profil</span> - Pengguna</h4>
 						</div>
 
 						<!--<div class="heading-elements">
@@ -19,9 +19,9 @@
 
 					<div class="breadcrumb-line">
 						<ul class="breadcrumb">
-							<li><a href=""><i class="icon-home2 position-left"></i> Tabel</a></li>
+							<li><a href=""><i class="icon-home2 position-left"></i> Profil</a></li>
 							<li><a href="">Pengguna</a></li>
-							<li class="active">Ubah</li>
+							<li class="active">Lihat</li>
 						</ul>
 
 						<!--<ul class="breadcrumb-elements">
@@ -812,8 +812,7 @@
 
 
 					<!-- 2 columns form -->
-					<?php foreach ($h->result() as $row){?>
-					<form class="form-horizontal" action="<?php echo base_url();?>pengguna/ubah/<?php echo $row->id_usr;?>" method="post">
+					<form class="form-horizontal" action="" method="">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Pengguna</h5>
@@ -830,50 +829,49 @@
 								<div class="row">
 									<div class="col-md-12">
 										<fieldset>
-											<legend class="text-semibold"><i class="icon-reading position-left"></i> Form</legend>
+											<legend class="text-semibold"><i class="icon-reading position-left"></i> Profil</legend>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Username pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="<?php echo $row->username_usr;?>" name="username_usr">
+													<input type="text" class="form-control" value="" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="password" class="form-control" value="<?php echo $row->password_usr;?>" name="password_usr">
+													<input type="password" class="form-control" value="" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">E-mail pengguna:</label>
 												<div class="col-lg-9">
-													<input type="email" class="form-control" value="<?php echo $row->email_usr;?>" name="email_usr">
+													<input type="email" class="form-control" value="" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Telp pengguna:</label>
 												<div class="col-lg-9">
-													<input type="telp" class="form-control" value="<?php echo $row->notlp_usr;?>" name="notlp_usr">
+													<input type="telp" class="form-control" value="" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Alamat pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="<?php echo $row->alamat_usr;?>" name="alamat_usr">
+													<input type="text" class="form-control" value="" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Jabatan pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="<?php echo $row->jabatan_usr;?>" name="jabatan_usr">
+													<input type="text" class="form-control" value="" readonly="readonly">
 												</div>
 											</div>
-											<?php }?>
 
 											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Enter your password:</label>
@@ -1007,9 +1005,9 @@
 									</div>-->
 								</div>
 
-								<div class="text-right">
+								<!--<div class="text-right">
 									<button type="submit" class="btn btn-primary">Ubah <i class="icon-arrow-right14 position-right"></i></button>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</form>

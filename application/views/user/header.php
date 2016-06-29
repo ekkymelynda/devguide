@@ -51,9 +51,8 @@
 	<!--<script type="text/javascript" src="ckeditor/ckeditor.js"></script>-->
 
 	<!--<script type="text/javascript" src="assets/js/core/app.js"></script>-->
-	<script type="text/javascript" src="assets/js/pages/invoice_template.js"></script>
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/invoice_template.js"></script>
 	<!-- /theme JS files -->
-
 
 </head>
 
@@ -351,7 +350,7 @@
 				<div class="sidebar-content">
 
 					<!-- User menu -->
-					<div class="sidebar-user">
+					<!--<div class="sidebar-user">
 						<div class="category-content">
 							<div class="media">
 								<a href="#" class="media-left"><img src="<?php  echo base_url(); ?>LTR/assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></a>
@@ -371,7 +370,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<!-- /user menu -->
 
 
