@@ -813,7 +813,7 @@
 
 					<!-- 2 columns form -->
 					<?php foreach ($h->result() as $row){?>
-					<form class="form-horizontal" action="<?php echo base_url();?>kategori/ubah/<?php echo $row->id_ktg;?>" method="post">
+					<form class="form-horizontal" action="<?php echo base_url();?>kategori/ubah/<?php echo $row->ID_KTG;?>" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Kategori</h5>
@@ -835,7 +835,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Nama kategori:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="<?php echo $row->nama_ktg;?>" name="nama_ktg">
+													<input type="text" class="form-control" value="<?php echo $row->NAMA_KTG;?>" name="NAMA_KTG">
 												</div>
 											</div>
 											<?php }?>

@@ -87,18 +87,18 @@
 						    <tbody>
 						    	<?php foreach ($h->result() as $row){?>
 						        <tr>
-						            <td><?php echo $row->id_ktg;?></td>
-						            <td><?php echo $row->id_sts;?></td>
-						            <td><?php echo $row->id_bab;?></td>
-						            <td><?php echo $row->judul_pst;?></td>
-						            <td><?php echo $row->isi_pst;?></td>
-						            <td><?php echo $row->link_pst;?></td>
-						            <td><?php echo $row->create_pst;?></td>
-						            <td><?php echo $row->update_pst;?></td>
+						            <td><?php echo $row->ID_KTG;?></td>
+						            <td><?php echo $row->ID_STS;?></td>
+						            <td><?php echo $row->ID_BAB;?></td>
+						            <td><?php echo $row->JUDUL_PST;?></td>
+						            <td><?php echo $row->ISI_PST;?></td>
+						            <td><?php echo $row->LINK_PST;?></td>
+						            <td><?php echo $row->CREATE_PST;?></td>
+						            <td><?php echo $row->UPDATE_PST;?></td>
 					                <td>
 					                	<ul class="icons-list">
-											<li class="text-primary-600"><a href="<?php echo base_url(); ?>post/update/<?php echo $row->id_pst;?>"><i class="icon-pencil7"></i></a></li>
-											<li class="text-danger-600"><a href="<?php echo base_url(); ?>post/delete/<?php echo $row->id_pst;?>"><i class="icon-trash"></i></a></li>
+											<li class="text-primary-600"><a href="<?php echo base_url(); ?>post/update/<?php echo $row->ID_PST;?>"><i class="icon-pencil7"></i></a></li>
+											<li class="text-danger-600"><a href="<?php echo base_url(); ?>post/delete/<?php echo $row->ID_PST;?>"><i class="icon-trash"></i></a></li>
 										</ul>
 									</td>
 						        </tr>

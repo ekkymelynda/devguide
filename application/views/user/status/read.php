@@ -78,11 +78,11 @@
 						    <tbody>
 						    	<?php foreach ($h->result() as $row){?>
 						        <tr>
-						            <td><?php echo $row->nama_sts;?></td>
+						            <td><?php echo $row->NAMA_STS;?></td>
 					                <td>
 					                	<ul class="icons-list">
-											<li class="text-primary-600"><a href="<?php echo base_url(); ?>status/update/<?php echo $row->id_sts;?>"><i class="icon-pencil7"></i></a></li>
-											<li class="text-danger-600"><a href="<?php echo base_url(); ?>status/delete/<?php echo $row->id_sts;?>"><i class="icon-trash"></i></a></li>
+											<li class="text-primary-600"><a href="<?php echo base_url(); ?>status/update/<?php echo $row->ID_STS;?>"><i class="icon-pencil7"></i></a></li>
+											<li class="text-danger-600"><a href="<?php echo base_url(); ?>status/delete/<?php echo $row->ID_STS;?>"><i class="icon-trash"></i></a></li>
 										</ul>
 									</td>
 						        </tr>

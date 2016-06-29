@@ -813,7 +813,7 @@
 
 					<!-- 2 columns form -->
 					<?php foreach ($h->result() as $row){?>
-					<form class="form-horizontal" action="<?php echo base_url(); ?>subbab1/hapus/<?php echo $row->id_sbab1;?>">
+					<form class="form-horizontal" action="<?php echo base_url(); ?>subbab1/hapus/<?php echo $row->ID_SBAB1;?>">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Sub Bab 1</h5>
@@ -835,14 +835,14 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label ">No sub bab 1:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->no_sbab1;?>">
+													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->NO_SBAB1;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Nama sub bab 1:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->nama_sbab1;?>">
+													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->NAMA_SBAB1;?>">
 												</div>
 											</div>
 											<?php }?>

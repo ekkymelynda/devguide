@@ -35,41 +35,41 @@ class bab extends CI_Controller {
 		$this->load->view('user/header')->view('user/bab/create')->view('user/footer');
 	}
 
-	public function update($id_bab)
+	public function update($ID_BAB)
 	{
-        $data['h'] = $this->bab_model->form_update_bab($id_bab);
+        $data['h'] = $this->bab_model->form_update_bab($ID_BAB);
 		$this->load->view('user/header')->view('user/bab/update', $data)->view('user/footer');
 	}
 
-	public function delete($id_bab)
+	public function delete($ID_BAB)
 	{
-		$data['h'] = $this->bab_model->form_update_bab($id_bab);
+		$data['h'] = $this->bab_model->form_update_bab($ID_BAB);
 		$this->load->view('user/header')->view('user/bab/delete', $data)->view('user/footer');
 	}
 
 	public function buat()
     {
-        $no_bab=$this->input->post('no_bab');
-        $nama_bab= $this->input->post('nama_bab');
+        $NO_BAB=$this->input->post('NO_BAB');
+        $NAMA_BAB= $this->input->post('NAMA_BAB');
 
-        $this->bab_model->buat_bab($no_bab, $nama_bab);       
-
-        redirect(base_url()."bab/read");
-    }
-
-    public function ubah($id_bab)
-    {
-    	$no_bab=$this->input->post('no_bab');
-    	$nama_bab= $this->input->post('nama_bab');
-
-        $this->bab_model->ubah_bab($id_bab, $no_bab, $nama_bab);
+        $this->bab_model->buat_bab($NO_BAB, $NAMA_BAB);       
 
         redirect(base_url()."bab/read");
     }
 
-    public function hapus($id_bab)
+    public function ubah($ID_BAB)
     {
-        $this->bab_model->hapus_bab($id_bab);
+    	$NO_BAB=$this->input->post('NO_BAB');
+    	$NAMA_BAB= $this->input->post('NAMA_BAB');
+
+        $this->bab_model->ubah_bab($ID_BAB, $NO_BAB, $NAMA_BAB);
+
+        redirect(base_url()."bab/read");
+    }
+
+    public function hapus($ID_BAB)
+    {
+        $this->bab_model->hapus_bab($ID_BAB);
         redirect(base_url()."bab/read");
     }
 }

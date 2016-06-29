@@ -53,7 +53,6 @@
 	<!--<script type="text/javascript" src="assets/js/core/app.js"></script>-->
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/invoice_template.js"></script>
 	<!-- /theme JS files -->
-
 </head>
 
 <body>
@@ -324,12 +323,12 @@
 						</a>
 
 						<ul class="dropdown-menu dropdown-menu-right">
-							<li><a href="#"><i class="icon-user-plus"></i> Profil</a></li>
+							<li><a href="<?php echo base_url(); ?>log/read"><i class="icon-user-plus"></i> Profil</a></li>
 							<!--<li><a href="#"><i class="icon-coins"></i> My balance</a></li>
 							<li><a href="#"><span class="badge bg-blue pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>-->
 							<li class="divider"></li>
-							<li><a href="#"><i class="icon-cog5"></i> Pengaturan</a></li>
-							<li><a href="#"><i class="icon-switch2"></i> Keluar</a></li>
+							<li><a href="<?php echo base_url(); ?>log/update"><i class="icon-cog5"></i> Pengaturan</a></li>
+							<li><a href="<?php echo base_url(); ?>log/logout"><i class="icon-switch2"></i> Keluar</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -381,7 +380,7 @@
 
 								<!-- Utama -->
 								<li class="navigation-header"><span>Utama</span> <i class="icon-menu" title="Main pages"></i></li>
-								<li><a href=""><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+								<li><a href="<?php echo base_url(); ?>home/dashboard"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
 								<!--<li>
 									<a href="#"><i class="icon-stack2"></i> <span>Page layouts</span></a>
 									<ul>
@@ -835,7 +834,7 @@
 								<!-- Tabel -->
 								<li class="navigation-header"><span>Tabel</span> <i class="icon-menu" title="Tables"></i></li>
 								<li>
-									<a href=""><i class="icon-user"></i> <span>Pengguna</span></a>
+									<a href="<?php echo base_url(); ?>pengguna/read"><i class="icon-user"></i> <span>Pengguna</span></a>
 									<!--<ul>
 										<li><a href="table_basic.html">Basic examples</a></li>
 										<li><a href="table_sizing.html">Table sizing</a></li>
@@ -845,7 +844,7 @@
 									</ul>-->
 								</li>
 								<li>
-									<a href=""><i class="icon-task"></i> <span>Kategori</span></a>
+									<a href="<?php echo base_url(); ?>kategori/read"><i class="icon-task"></i> <span>Kategori</span></a>
 									<!--<ul>
 										<li><a href="datatable_basic.html">Basic initialization</a></li>
 										<li><a href="datatable_styling.html">Basic styling</a></li>
@@ -856,7 +855,7 @@
 									</ul>-->
 								</li>
 								<li>
-									<a href=""><i class="icon-alignment-unalign"></i> <span>Status</span></a>
+									<a href="<?php echo base_url(); ?>status/read"><i class="icon-alignment-unalign"></i> <span>Status</span></a>
 									<!--<ul>
 										<li><a href="datatable_extension_reorder.html">Columns reorder</a></li>
 										<li class="active"><a href="datatable_extension_fixed_columns.html">Fixed columns</a></li>
@@ -866,7 +865,7 @@
 									</ul>-->
 								</li>
 								<li>
-									<a href=""><i class="icon-book"></i> <span>Bab</span></a>
+									<a href="<?php echo base_url(); ?>bab/read"><i class="icon-book"></i> <span>Bab</span></a>
 									<!--<ul>
 										<li><a href="table_responsive.html">Responsive basic tables</a></li>
 										<li><a href="datatable_responsive.html">Responsive data tables</a></li>
@@ -875,20 +874,20 @@
 								<li>
 									<a href=""><i class="icon-versions"></i> <span>Sub Bab</span></a>
 									<ul>
-										<li><a href="">Sub Bab 1</a></li>
-										<li><a href="">Sub Bab 2</a></li>
-										<li><a href="">Sub Bab 3</a></li>
+										<li><a href="<?php echo base_url(); ?>subbab1/read">Sub Bab 1</a></li>
+										<li><a href="<?php echo base_url(); ?>subbab2/read">Sub Bab 2</a></li>
+										<li><a href="<?php echo base_url(); ?>subbab3/read">Sub Bab 3</a></li>
 									</ul>
 								</li>
-								<li>
+								<!--<li>
 									<a href=""><i class="icon-images2"></i> <span>Gambar</span></a>
-									<!--<ul>
+									<ul>
 										<li><a href="table_responsive.html">Responsive basic tables</a></li>
 										<li><a href="datatable_responsive.html">Responsive data tables</a></li>
-									</ul>-->
-								</li>
+									</ul>
+								</li>-->
 								<li>
-									<a href=""><i class="icon-magazine"></i> <span>Post</span></a>
+									<a href="<?php echo base_url(); ?>post/read"><i class="icon-magazine"></i> <span>Post</span></a>
 									<!--<ul>
 										<li><a href="table_responsive.html">Responsive basic tables</a></li>
 										<li><a href="datatable_responsive.html">Responsive data tables</a></li>
@@ -901,7 +900,7 @@
 								<li>
 									<a href=""><i class="icon-select2"></i> <span>Sistem Informasi</span></a>
 									<ul>
-										<li><a href="">SIPMABA</a></li>
+										<li><a href="<?php echo base_url(); ?>sipmaba/daftar_isi">SIPMABA</a></li>
 										<li><a href="">E-SURAT</a></li>
 										<li><a href="">SILACAK</a></li>
 										<li><a href="">SIMPEG</a></li>
@@ -989,8 +988,8 @@
 
 								<li class="navigation-header"><span>Layanan</span> <i class="icon-menu" title="Page kits"></i></li>
 								<li>
-									<a href=""><i class="icon-help"></i> <span>Bantuan</span></a>
-									<a href=""><i class="icon-phone"></i> <span>Kontak</span></a>
+									<a href="<?php echo base_url(); ?>home/bantuan"><i class="icon-help"></i> <span>Bantuan</span></a>
+									<a href="<?php echo base_url(); ?>home/kontak"><i class="icon-phone"></i> <span>Kontak</span></a>
 								</li>
 
 							</ul>

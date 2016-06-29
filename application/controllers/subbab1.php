@@ -35,41 +35,41 @@ class subbab1 extends CI_Controller {
 		$this->load->view('user/header')->view('user/subbab1/create')->view('user/footer');
 	}
 
-	public function update($id_sbab1)
+	public function update($ID_SBAB1)
 	{
-		$data['h'] = $this->subbab1_model->form_update_subbab1($id_sbab1);
+		$data['h'] = $this->subbab1_model->form_update_subbab1($ID_SBAB1);
 		$this->load->view('user/header')->view('user/subbab1/update', $data)->view('user/footer');
 	}
 
-	public function delete($id_sbab1)
+	public function delete($ID_SBAB1)
 	{
-		$data['h'] = $this->subbab1_model->form_update_subbab1($id_sbab1);
+		$data['h'] = $this->subbab1_model->form_update_subbab1($ID_SBAB1);
 		$this->load->view('user/header')->view('user/subbab1/delete', $data)->view('user/footer');
 	}
 
 	public function buat()
     {
-        $no_sbab1=$this->input->post('no_sbab1');
-        $nama_sbab1= $this->input->post('nama_sbab1');
+        $NO_SBAB1=$this->input->post('NO_SBAB1');
+        $NAMA_SBAB1= $this->input->post('NAMA_SBAB1');
 
-        $this->subbab1_model->buat_subbab1($no_sbab1, $nama_sbab1);       
-
-        redirect(base_url()."subbab1/read");
-    }
-
-    public function ubah($id_sbab1)
-    {
-    	$no_sbab1=$this->input->post('no_sbab1');
-    	$nama_sbab1= $this->input->post('nama_sbab1');
-
-        $this->subbab1_model->ubah_subbab1($id_sbab1, $no_sbab1, $nama_sbab1);
+        $this->subbab1_model->buat_subbab1($NO_SBAB1, $NAMA_SBAB1);       
 
         redirect(base_url()."subbab1/read");
     }
 
-    public function hapus($id_sbab1)
+    public function ubah($ID_SBAB1)
     {
-        $this->subbab1_model->hapus_subbab1($id_sbab1);
+    	$NO_SBAB1=$this->input->post('NO_SBAB1');
+    	$NAMA_SBAB1= $this->input->post('NAMA_SBAB1');
+
+        $this->subbab1_model->ubah_subbab1($ID_SBAB1, $NO_SBAB1, $NAMA_SBAB1);
+
+        redirect(base_url()."subbab1/read");
+    }
+
+    public function hapus($ID_SBAB1)
+    {
+        $this->subbab1_model->hapus_subbab1($ID_SBAB1);
         redirect(base_url()."subbab1/read");
     }
 }

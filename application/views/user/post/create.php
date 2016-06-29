@@ -834,12 +834,11 @@
 											<div class="form-group">
 													<label class="col-lg-3 control-label">Masukkan kategori post:</label>
 												<div class="col-lg-9">
-					                                <select data-placeholder="Pilih kategori" class="select" name="id_ktg">
-					                                    <option value=""></option> 
-					                                    <option value="1">Sistem Informasi Pendataan Mahasiswa Baru ITS</option> 
-					                                    <option value="2">E-Surat</option> 
-					                                    <option value="3">Sistem Informasi Pelacakan</option> 
-					                                    <option value="4">Sistem Informasi Kepegawaian</option> 
+					                                <select data-placeholder="Pilih kategori" class="select" name="ID_KTG">
+					                                    <option value=""></option>
+					                                    <?php foreach ($k as $row1) {?>
+					                                    <option value="<?php echo $row1->ID_KTG;?>"><?php echo $row1->NAMA_KTG;?></option>
+					                                    <?php } ?>
 					                                </select>
 				                                </div>
 					                		</div>
@@ -847,10 +846,11 @@
 					                		<div class="form-group">
 													<label class="col-lg-3 control-label">Masukkan status post:</label>
 												<div class="col-lg-9">
-					                                <select data-placeholder="Pilih status" class="select" name="id_sts">
+					                                <select data-placeholder="Pilih status" class="select" name="ID_STS">
 					                                    <option value=""></option>
-					                                    <option value="1">Terlihat</option> 
-					                                    <option value="2">Sembunyikan</option> 
+					                                    <?php foreach ($s as $row2) {?>
+					                                    <option value="<?php echo $row2->ID_STS;?>"><?php echo $row2->NAMA_STS;?></option>
+					                                    <?php } ?>
 					                                </select>
 				                                </div>
 					                		</div>
@@ -858,13 +858,11 @@
 					                		<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan bab post:</label>
 												<div class="col-lg-9">
-					                                <select data-placeholder="Pilih bab" class="select" name="id_bab">
-					                                    <option value=""></option> 
-					                                    <option value="1">Pendahuluan</option> 
-					                                    <option value="2">Analisis Proses Bisnis</option>
-					                                    <option value="3">Analisis Sistem</option> 
-					                                    <option value="4">Implementasi Basis Data</option>
-					                                    <option value="5">Implementasi Program</option>
+					                                <select data-placeholder="Pilih bab" class="select" name="ID_BAB">
+					                                    <option value=""></option>
+					                                    <?php foreach ($b as $row3) {?>
+					                                    <option value="<?php echo $row3->ID_BAB;?>"><?php echo $row3->NAMA_BAB;?></option>
+					                                    <?php } ?>
 					                                </select>
 				                                </div>
 					                		</div>
@@ -872,30 +870,30 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan judul post:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Deskripsi Umum Sistem" name="judul_pst">
+													<input type="text" class="form-control" placeholder="Contoh: Deskripsi Umum Sistem" name="JUDUL_PST">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan link post:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: localhost/devguide/trunk/post/create" name="link_pst">
+													<input type="text" class="form-control" placeholder="Contoh: localhost/devguide/trunk/post/create" name="LINK_PST">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan tanggal buat post:</label>
 												<div class="col-lg-9">
-													<input type="date" class="form-control" name="create_pst">
+													<input type="date" class="form-control" name="CREATE_PST">
 												</div>
 											</div>
 
-											<div class="form-group">
+											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan tanggal ubah post:</label>
 												<div class="col-lg-9">
-													<input type="date" class="form-control" name="update_pst">
+													<input type="date" class="form-control" name="UPDATE_PST">
 												</div>
-											</div>
+											</div>-->
 
 											<!-- CKEditor default -->
 											<div class="panel panel-flat">
@@ -914,7 +912,7 @@
 													<!--<p class="content-group">CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.</p>-->
 													<div class="form-group">
 														<div class="content-group">
-															<textarea name="isi_pst" id="editor-full" rows="4" cols="4">
+															<textarea name="ISI_PST" id="editor-full" rows="4" cols="4">
 												            </textarea>
 											            </div>
 										             </div>

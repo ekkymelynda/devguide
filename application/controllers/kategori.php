@@ -35,39 +35,39 @@ class kategori extends CI_Controller {
 		$this->load->view('user/header')->view('user/kategori/create')->view('user/footer');
 	}
 
-	public function update($id_ktg)
+	public function update($ID_KTG)
 	{
-		$data['h'] = $this->kategori_model->form_update_kategori($id_ktg);
+		$data['h'] = $this->kategori_model->form_update_kategori($ID_KTG);
 		$this->load->view('user/header')->view('user/kategori/update', $data)->view('user/footer');
 	}
 
-	public function delete($id_ktg)
+	public function delete($ID_KTG)
 	{
-		$data['h'] = $this->kategori_model->form_update_kategori($id_ktg);
+		$data['h'] = $this->kategori_model->form_update_kategori($ID_KTG);
 		$this->load->view('user/header')->view('user/kategori/delete', $data)->view('user/footer');
 	}
 
 	public function buat()
     {
-        $nama_ktg= $this->input->post('nama_ktg');
+        $NAMA_KTG= $this->input->post('NAMA_KTG');
 
-        $this->kategori_model->buat_kategori($nama_ktg);       
-
-        redirect(base_url()."kategori/read");
-    }
-
-    public function ubah($id_ktg)
-    {
-    	$nama_ktg= $this->input->post('nama_ktg');
-
-        $this->kategori_model->ubah_kategori($id_ktg, $nama_ktg);
+        $this->kategori_model->buat_kategori($NAMA_KTG);       
 
         redirect(base_url()."kategori/read");
     }
 
-    public function hapus($id_ktg)
+    public function ubah($ID_KTG)
     {
-        $this->kategori_model->hapus_kategori($id_ktg);
+    	$NAMA_KTG= $this->input->post('NAMA_KTG');
+
+        $this->kategori_model->ubah_kategori($ID_KTG, $NAMA_KTG);
+
+        redirect(base_url()."kategori/read");
+    }
+
+    public function hapus($ID_KTG)
+    {
+        $this->kategori_model->hapus_kategori($ID_KTG);
         redirect(base_url()."kategori/read");
     }
 }

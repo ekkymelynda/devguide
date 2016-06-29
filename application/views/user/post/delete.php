@@ -812,7 +812,8 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="#">
+					<?php foreach ($h as $row){?>
+					<form class="form-horizontal" action="<?php echo base_url(); ?>post/hapus/<?php echo $row->ID_PST;?>">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Post</h5>
@@ -835,11 +836,10 @@
 													<label class="col-lg-3 control-label">Kategori post:</label>
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih kategori" class="select" disabled="disabled">
-					                                    <option value=""></option> 
-					                                    <option value="1">Sistem Informasi Pendataan Mahasiswa Baru ITS</option> 
-					                                    <option value="2">E-Surat</option> 
-					                                    <option value="3">Sistem Informasi </option> 
-					                                    <option value="4">Sistem Informasi Kepegawaian</option> 
+					                                    <option value="<?php echo $row->ID_KTG;?>"><?php echo $row->NAMA_KTG;?></option> 
+					                                    <?php foreach ($k as $row1) {?>
+					                                    <option value="<?php echo $row1->ID_KTG;?>"><?php echo $row1->NAMA_KTG;?></option>
+					                                    <?php } ?> 
 					                                </select>
 				                                </div>
 					                		</div>
@@ -848,9 +848,10 @@
 													<label class="col-lg-3 control-label">Status post:</label>
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih status" class="select" disabled="disabled">
-					                                    <option value=""></option>
-					                                    <option value="1">Terlihat</option> 
-					                                    <option value="2">Sembunyikan</option> 
+					                                    <option value="<?php echo $row->ID_STS;?>"><?php echo $row->NAMA_STS;?></option>
+					                                    <?php foreach ($s as $row2) {?>
+					                                    <option value="<?php echo $row2->ID_STS;?>"><?php echo $row2->NAMA_STS;?></option>
+					                                    <?php } ?> 
 					                                </select>
 				                                </div>
 					                		</div>
@@ -859,12 +860,10 @@
 												<label class="col-lg-3 control-label">Bab post:</label>
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih bab" class="select" disabled="disabled">
-					                                    <option value=""></option> 
-					                                    <option value="1">Pendahuluan</option> 
-					                                    <option value="2">Analisis Proses Bisnis</option>
-					                                    <option value="3">Analisis Sistem</option> 
-					                                    <option value="4">Implementasi Basis Data</option>
-					                                    <option value="5">Implementasi Program</option>
+					                                    <option value="<?php echo $row->ID_BAB;?>"><?php echo $row->NAMA_BAB;?></option> 
+					                                    <?php foreach ($b as $row3) {?>
+					                                    <option value="<?php echo $row3->ID_BAB;?>"><?php echo $row3->NAMA_BAB;?></option>
+					                                    <?php } ?>
 					                                </select>
 				                                </div>
 					                		</div>
@@ -872,28 +871,28 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Judul post:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="Deskripsi Umum Sistem">
+													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->JUDUL_PST;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Link post:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="localhost/devguide/trunk/post/create">
+													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->LINK_PST;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Tanggal buat post:</label>
 												<div class="col-lg-9">
-													<input type="date" class="form-control" disabled="disabled">
+													<input type="date" class="form-control" disabled="disabled" placeholder="<?php echo $row->CREATE_PST;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Tanggal ubah post:</label>
 												<div class="col-lg-9">
-													<input type="date" class="form-control" disabled="disabled">
+													<input type="date" class="form-control" disabled="disabled" placeholder="<?php echo $row->UPDATE_PST;?>">
 												</div>
 											</div>
 
@@ -914,54 +913,13 @@
 													<!--<p class="content-group">CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.</p>-->
 													<div class="form-group">
 														<div class="content-group">
-															<textarea name="editor-full" id="editor-full" rows="4" cols="4" disabled="disabled">
-																<h2>Apollo 11</h2>
-																<div class="pull-right" style="margin-left: 20px;"><img alt="Saturn V carrying Apollo 11" class="right" src="http://c.cksource.com/a/1/img/sample.jpg"></div>
-
-																<p><strong>Apollo 11</strong> was the spaceflight that landed the first humans, Americans <a href="#">Neil Armstrong</a> and <a href="#">Buzz Aldrin</a>, on the Moon on July 20, 1969, at 20:18 UTC. Armstrong became the first to step onto the lunar surface 6 hours later on July 21 at 02:56 UTC.</p>
-
-																<p class="mb-15">Armstrong spent about <s>three and a half</s> two and a half hours outside the spacecraft, Aldrin slightly less; and together they collected 47.5 pounds (21.5&nbsp;kg) of lunar material for return to Earth. A third member of the mission, <a href="#">Michael Collins</a>, piloted the <a href="#">command</a> spacecraft alone in lunar orbit until Armstrong and Aldrin returned to it for the trip back to Earth.</p>
-
-																<h5 class="text-semibold">Technical details</h5>
-																<p>Launched by a <strong>Saturn V</strong> rocket from <a href="#">Kennedy Space Center</a> in Merritt Island, Florida on July 16, Apollo 11 was the fifth manned mission of <a href="#">NASA</a>'s Apollo program. The Apollo spacecraft had three parts:</p>
-																<ol>
-																	<li><strong>Command Module</strong> with a cabin for the three astronauts which was the only part which landed back on Earth</li>
-																	<li><strong>Service Module</strong> which supported the Command Module with propulsion, electrical power, oxygen and water</li>
-																	<li><strong>Lunar Module</strong> for landing on the Moon.</li>
-																</ol>
-																<p class="mb-15">After being sent to the Moon by the Saturn V's upper stage, the astronauts separated the spacecraft from it and travelled for three days until they entered into lunar orbit. Armstrong and Aldrin then moved into the Lunar Module and landed in the <a href="#">Sea of Tranquility</a>. They stayed a total of about 21 and a half hours on the lunar surface. After lifting off in the upper part of the Lunar Module and rejoining Collins in the Command Module, they returned to Earth and landed in the <a href="#">Pacific Ocean</a> on July 24.</p>
-
-																<h5 class="text-semibold">Misson crew</h5>
-
-																<table class="table table-bordered" style="width: 100%">
-																	<thead>
-																		<tr>
-																			<th>Position</th>
-																			<th>Astronaut</th>
-																		</tr>
-																	</thead>
-																	<tbody>
-																		<tr>
-																			<td>Commander</td>
-																			<td>Neil A. Armstrong</td>
-																		</tr>
-																		<tr>
-																			<td>Command Module Pilot</td>
-																			<td>Michael Collins</td>
-																		</tr>
-																		<tr>
-																			<td>Lunar Module Pilot</td>
-																			<td>Edwin "Buzz" E. Aldrin, Jr.</td>
-																		</tr>
-																	</tbody>
-																</table>
-
-																Source: <a href="http://en.wikipedia.org/wiki/Apollo_11">Wikipedia.org</a>
+															<textarea name="editor-full" id="editor-full" rows="4" cols="4" disabled="disabled"><?php echo $row->ISI_PST;?>
 												            </textarea>
 											            </div>
 										             </div>
 												</div>
 											</div>
+											<?php }?>
 											<!-- /CKEditor default -->
 
 											<!--<div class="form-group">

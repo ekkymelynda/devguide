@@ -20,6 +20,11 @@ class sipmaba extends CI_Controller {
 	 */
 	public function daftar_isi()
 	{
-		$this->load->view('user/header')->view('user/sipmaba/daftar_isi', $data)->view('user/footer');
+		$this->load->view('user/header')->view('user/sipmaba/daftar_isi')->view('user/footer');
+	}
+
+	public function halaman()
+	{
+		$this->load->view('user/header')->view('user/sipmaba/halaman')->view('user/footer');
 	}
 }

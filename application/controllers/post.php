@@ -32,56 +32,65 @@ class post extends CI_Controller {
 	
 	public function create()
 	{
-		$this->load->view('user/header')->view('user/post/create')->view('user/footer');
+		$data['k'] = $this->post_model->lihat_kategori();
+		$data['s'] = $this->post_model->lihat_status();
+		$data['b'] = $this->post_model->lihat_bab();
+		$this->load->view('user/header')->view('user/post/create', $data)->view('user/footer');
 	}
 
-	public function update($id_pst)
+	public function update($ID_PST)
 	{
-		$data['h'] = $this->post_model->form_update_post($id_pst);
+		$data['h'] = $this->post_model->form_update_post($ID_PST);
+		$data['k'] = $this->post_model->lihat_kategori();
+		$data['s'] = $this->post_model->lihat_status();
+		$data['b'] = $this->post_model->lihat_bab();
 		$this->load->view('user/header')->view('user/post/update', $data)->view('user/footer');
 	}
 
-	public function delete($id_pst)
+	public function delete($ID_PST)
 	{
-		$data['h'] = $this->post_model->form_update_post($id_pst);
+		$data['h'] = $this->post_model->form_update_post($ID_PST);
+		$data['k'] = $this->post_model->lihat_kategori();
+		$data['s'] = $this->post_model->lihat_status();
+		$data['b'] = $this->post_model->lihat_bab();
 		$this->load->view('user/header')->view('user/post/delete', $data)->view('user/footer');
 	}
 
 	public function buat()
     {
-        $id_ktg=$this->input->post('id_ktg');
-        $id_sts= $this->input->post('id_sts');
-        $id_bab=$this->input->post('id_bab');
-        $judul_pst= $this->input->post('judul_pst');
-        $isi_pst= $this->input->post('isi_pst');
-        $link_pst=$this->input->post('link_pst');
-        $create_pst= $this->input->post('create_pst');
-        $update_pst=$this->input->post('update_pst');
+        $ID_KTG=$this->input->post('ID_KTG');
+        $ID_STS= $this->input->post('ID_STS');
+        $ID_BAB=$this->input->post('ID_BAB');
+        $JUDUL_PST= $this->input->post('JUDUL_PST');
+        $ISI_PST= $this->input->post('ISI_PST');
+        $LINK_PST=$this->input->post('LINK_PST');
+        $CREATE_PST= $this->input->post('CREATE_PST');
+        $UPDATE_PST=$this->input->post('UPDATE_PST');
 
-        $this->post_model->buat_post($id_ktg, $id_sts, $id_bab, $judul_pst, $isi_pst, $link_pst, $create_pst, $update_pst);       
-
-        redirect(base_url()."post/read");
-    }
-
-    public function ubah($id_pst)
-    {
-    	$id_ktg=$this->input->post('id_ktg');
-        $id_sts= $this->input->post('id_sts');
-        $id_bab=$this->input->post('id_bab');
-        $judul_pst= $this->input->post('judul_pst');
-        $isi_pst= $this->input->post('isi_pst');
-        $link_pst=$this->input->post('link_pst');
-        $create_pst= $this->input->post('create_pst');
-        $update_pst=$this->input->post('update_pst');
-
-        $this->post_model->ubah_post($id_pst, $id_ktg, $id_sts, $id_bab, $judul_pst, $isi_pst, $link_pst, $create_pst, $update_pst);
+        $this->post_model->buat_post($ID_KTG, $ID_STS, $ID_BAB, $JUDUL_PST, $ISI_PST, $LINK_PST, $CREATE_PST);       
 
         redirect(base_url()."post/read");
     }
 
-    public function hapus($id_pst)
+    public function ubah($ID_PST)
     {
-        $this->post_model->hapus_post($id_pst);
+    	$ID_KTG=$this->input->post('ID_KTG');
+        $ID_STS= $this->input->post('ID_STS');
+        $ID_BAB=$this->input->post('ID_BAB');
+        $JUDUL_PST= $this->input->post('JUDUL_PST');
+        $ISI_PST= $this->input->post('ISI_PST');
+        $LINK_PST=$this->input->post('LINK_PST');
+        $CREATE_PST= $this->input->post('CREATE_PST');
+        $UPDATE_PST=$this->input->post('UPDATE_PST');
+
+        $this->post_model->ubah_post($ID_PST, $ID_KTG, $ID_STS, $ID_BAB, $JUDUL_PST, $ISI_PST, $LINK_PST, $UPDATE_PST);
+
+        redirect(base_url()."post/read");
+    }
+
+    public function hapus($ID_PST)
+    {
+        $this->post_model->hapus_post($ID_PST);
         redirect(base_url()."post/read");
     }
 }

@@ -35,39 +35,39 @@ class status extends CI_Controller {
 		$this->load->view('user/header')->view('user/status/create')->view('user/footer');
 	}
 
-	public function update($id_sts)
+	public function update($ID_STS)
 	{
-		$data['h'] = $this->status_model->form_update_status($id_sts);
+		$data['h'] = $this->status_model->form_update_status($ID_STS);
 		$this->load->view('user/header')->view('user/status/update', $data)->view('user/footer');
 	}
 
-	public function delete($id_sts)
+	public function delete($ID_STS)
 	{
-		$data['h'] = $this->status_model->form_update_status($id_sts);
+		$data['h'] = $this->status_model->form_update_status($ID_STS);
 		$this->load->view('user/header')->view('user/status/delete', $data)->view('user/footer');
 	}
 
 	public function buat()
     {
-        $nama_sts= $this->input->post('nama_sts');
+        $NAMA_STS= $this->input->post('NAMA_STS');
 
-        $this->status_model->buat_status($nama_sts);       
-
-        redirect(base_url()."status/read");
-    }
-
-    public function ubah($id_sts)
-    {
-    	$nama_sts= $this->input->post('nama_sts');
-
-        $this->status_model->ubah_status($id_sts, $nama_sts);
+        $this->status_model->buat_status($NAMA_STS);       
 
         redirect(base_url()."status/read");
     }
 
-    public function hapus($id_sts)
+    public function ubah($ID_STS)
     {
-        $this->status_model->hapus_status($id_sts);
+    	$NAMA_STS= $this->input->post('NAMA_STS');
+
+        $this->status_model->ubah_status($ID_STS, $NAMA_STS);
+
+        redirect(base_url()."status/read");
+    }
+
+    public function hapus($ID_STS)
+    {
+        $this->status_model->hapus_status($ID_STS);
         redirect(base_url()."status/read");
     }
 }

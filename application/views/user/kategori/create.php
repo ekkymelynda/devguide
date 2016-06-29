@@ -834,7 +834,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan nama kategori:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Sistem Informasi Pendataan Mahasiswa Baru ITS" name="nama_ktg">
+													<input type="text" class="form-control" placeholder="Contoh: Sistem Informasi Pendataan Mahasiswa Baru ITS" name="NAMA_KTG">
 												</div>
 											</div>
 

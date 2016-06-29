@@ -83,16 +83,16 @@
 						    <tbody>
 						    	<?php foreach ($h->result() as $row){?>
 						        <tr>
-						            <td><?php echo $row->username_usr;?></td>
-						            <td><?php echo $row->password_usr;?></td>
-						            <td><?php echo $row->email_usr;?></td>
-						            <td><?php echo $row->notlp_usr;?></td>
-						            <td><?php echo $row->alamat_usr;?></td>
-						            <td><?php echo $row->jabatan_usr;?></td>
+						            <td><?php echo $row->USERNAME_USR;?></td>
+						            <td><?php echo $row->PASSWORD_USR;?></td>
+						            <td><?php echo $row->EMAIL_USR;?></td>
+						            <td><?php echo $row->NOTLP_USR;?></td>
+						            <td><?php echo $row->ALAMAT_USR;?></td>
+						            <td><?php echo $row->JABATAN_USR;?></td>
 					                <td>
 					                	<ul class="icons-list">
-											<li class="text-primary-600"><a href="<?php echo base_url(); ?>pengguna/update/<?php echo $row->id_usr;?>"><i class="icon-pencil7"></i></a></li>
-											<li class="text-danger-600"><a href="<?php echo base_url(); ?>pengguna/delete/<?php echo $row->id_usr;?>"><i class="icon-trash"></i></a></li>
+											<li class="text-primary-600"><a href="<?php echo base_url(); ?>pengguna/update/<?php echo $row->ID_USR;?>"><i class="icon-pencil7"></i></a></li>
+											<li class="text-danger-600"><a href="<?php echo base_url(); ?>pengguna/delete/<?php echo $row->ID_USR;?>"><i class="icon-trash"></i></a></li>
 										</ul>
 									</td>
 						        </tr>

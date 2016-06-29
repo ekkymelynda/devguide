@@ -46,7 +46,7 @@
 				<div class="content">
 
 					<!-- Advanced login -->
-					<form action="index.html">
+					<form action="">
 						<div class="panel panel-body login-form">
 							<div class="text-center">
 								<div class="icon-object border-warning-400 text-warning-400"><i class="icon-people"></i></div>

@@ -812,8 +812,8 @@
 
 
 					<!-- 2 columns form -->
-					<?php foreach ($h->result() as $row){?>
-					<form class="form-horizontal" action="<?php echo base_url();?>post/ubah/<?php echo $row->id_pst;?>" method="post">
+					<?php foreach ($h as $row){?>
+					<form class="form-horizontal" action="<?php echo base_url();?>post/ubah/<?php echo $row->ID_PST;?>" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Post</h5>
@@ -835,12 +835,11 @@
 											<div class="form-group">
 													<label class="col-lg-3 control-label">Kategori post:</label>
 												<div class="col-lg-9">
-					                                <select data-placeholder="Pilih kategori" class="select" name="id_ktg">
-					                                    <option value="<?php echo $row->id_ktg;?>"><?php echo $row->id_ktg;?></option> 
-					                                    <option value="1">Sistem Informasi Pendataan Mahasiswa Baru ITS</option> 
-					                                    <option value="2">E-Surat</option> 
-					                                    <option value="3">Sistem Informasi </option> 
-					                                    <option value="4">Sistem Informasi Kepegawaian</option> 
+					                                <select data-placeholder="Pilih kategori" class="select" name="ID_KTG">
+					                                    <option value="<?php echo $row->ID_KTG;?>"><?php echo $row->NAMA_KTG;?></option> 
+					                                    <?php foreach ($k as $row1) {?>
+					                                    <option value="<?php echo $row1->ID_KTG;?>"><?php echo $row1->NAMA_KTG;?></option>
+					                                    <?php } ?> 
 					                                </select>
 				                                </div>
 					                		</div>
@@ -848,10 +847,11 @@
 					                		<div class="form-group">
 													<label class="col-lg-3 control-label">Status post:</label>
 												<div class="col-lg-9">
-					                                <select data-placeholder="Pilih status" class="select" name="id_sts">
-					                                    <option value="<?php echo $row->id_sts;?>"><?php echo $row->id_sts;?></option>
-					                                    <option value="1">Terlihat</option> 
-					                                    <option value="2">Sembunyikan</option> 
+					                                <select data-placeholder="Pilih status" class="select" name="ID_STS">
+					                                    <option value="<?php echo $row->ID_STS;?>"><?php echo $row->NAMA_STS;?></option>
+					                                    <?php foreach ($s as $row2) {?>
+					                                    <option value="<?php echo $row2->ID_STS;?>"><?php echo $row2->NAMA_STS;?></option>
+					                                    <?php } ?> 
 					                                </select>
 				                                </div>
 					                		</div>
@@ -859,13 +859,11 @@
 					                		<div class="form-group">
 												<label class="col-lg-3 control-label">Bab post:</label>
 												<div class="col-lg-9">
-					                                <select data-placeholder="Pilih bab" class="select" name="id_bab">
-					                                    <option value="<?php echo $row->id_bab;?>"><?php echo $row->id_bab;?></option> 
-					                                    <option value="1">Pendahuluan</option> 
-					                                    <option value="2">Analisis Proses Bisnis</option>
-					                                    <option value="3">Analisis Sistem</option> 
-					                                    <option value="4">Implementasi Basis Data</option>
-					                                    <option value="5">Implementasi Program</option>
+					                                <select data-placeholder="Pilih bab" class="select" name="ID_BAB">
+					                                    <option value="<?php echo $row->ID_BAB;?>"><?php echo $row->NAMA_BAB;?></option> 
+					                                    <?php foreach ($b as $row3) {?>
+					                                    <option value="<?php echo $row3->ID_BAB;?>"><?php echo $row3->NAMA_BAB;?></option>
+					                                    <?php } ?>
 					                                </select>
 				                                </div>
 					                		</div>
@@ -873,28 +871,28 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Judul post:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="<?php echo $row->judul_pst;?>" name="judul_pst">
+													<input type="text" class="form-control" value="<?php echo $row->JUDUL_PST;?>" name="JUDUL_PST">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Link post:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="<?php echo $row->link_pst;?>" name="link_pst">
+													<input type="text" class="form-control" value="<?php echo $row->LINK_PST;?>" name="LINK_PST">
 												</div>
 											</div>
 
-											<div class="form-group">
+											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Tanggal buat post:</label>
 												<div class="col-lg-9">
-													<input type="date" class="form-control" value="<?php echo $row->create_pst;?>" name="create_pst">
+													<input type="date" class="form-control" value="<?php echo $row->CREATE_PST;?>" name="CREATE_PST">
 												</div>
-											</div>
+											</div>-->
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Tanggal ubah post:</label>
 												<div class="col-lg-9">
-													<input type="date" class="form-control" valu="<?php echo $row->update_pst;?>" name="update_pst">
+													<input type="date" class="form-control" value="<?php echo $row->UPDATE_PST;?>" name="UPDATE_PST">
 												</div>
 											</div>
 
@@ -915,7 +913,7 @@
 													<!--<p class="content-group">CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. It's a WYSIWYG editor that brings common word processor features directly to your web pages. It benefits from an active community that is constantly evolving the application with free add-ons and a transparent development process.</p>-->
 													<div class="form-group">
 														<div class="content-group">
-															<textarea  name="isi_pst" id="editor-full" rows="4" cols="4"><?php echo $row->isi_pst;?>
+															<textarea  name="ISI_PST" id="editor-full" rows="4" cols="4"><?php echo $row->ISI_PST;?>
 												            </textarea>
 											            </div>
 										             </div>

@@ -79,12 +79,12 @@
 						    <tbody>
 						    	<?php foreach ($h->result() as $row){?>
 						        <tr>
-						            <td><?php echo $row->no_sbab1;?></td>
-						            <td><?php echo $row->nama_sbab1;?></td>
+						            <td><?php echo $row->NO_SBAB1;?></td>
+						            <td><?php echo $row->NAMA_SBAB1;?></td>
 					                <td>
 					                	<ul class="icons-list">
-											<li class="text-primary-600"><a href="<?php echo base_url(); ?>subbab1/update/<?php echo $row->id_sbab1;?>"><i class="icon-pencil7"></i></a></li>
-											<li class="text-danger-600"><a href="<?php echo base_url(); ?>subbab1/delete/<?php echo $row->id_sbab1;?>"><i class="icon-trash"></i></a></li>
+											<li class="text-primary-600"><a href="<?php echo base_url(); ?>subbab1/update/<?php echo $row->ID_SBAB1;?>"><i class="icon-pencil7"></i></a></li>
+											<li class="text-danger-600"><a href="<?php echo base_url(); ?>subbab1/delete/<?php echo $row->ID_SBAB1;?>"><i class="icon-trash"></i></a></li>
 										</ul>
 									</td>
 						        </tr>

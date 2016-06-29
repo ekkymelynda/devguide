@@ -35,49 +35,49 @@ class pengguna extends CI_Controller {
 		$this->load->view('user/header')->view('user/pengguna/create')->view('user/footer');
 	}
 
-	public function update($id_usr)
+	public function update($ID_USR)
 	{
-		$data['h'] = $this->pengguna_model->form_update_pengguna($id_usr);
+		$data['h'] = $this->pengguna_model->form_update_pengguna($ID_USR);
 		$this->load->view('user/header')->view('user/pengguna/update', $data)->view('user/footer');
 	}
 
-	public function delete($id_usr)
+	public function delete($ID_USR)
 	{
-		$data['h'] = $this->pengguna_model->form_update_pengguna($id_usr);
+		$data['h'] = $this->pengguna_model->form_update_pengguna($ID_USR);
 		$this->load->view('user/header')->view('user/pengguna/delete', $data)->view('user/footer');
 	}
 
 	public function buat()
     {
-        $username_usr=$this->input->post('username_usr');
-        $password_usr= $this->input->post('password_usr');
-        $email_usr=$this->input->post('email_usr');
-        $notlp_usr= $this->input->post('notlp_usr');
-        $alamat_usr=$this->input->post('alamat_usr');
-        $jabatan_usr= $this->input->post('jabatan_usr');
+        $USERNAME_USR=$this->input->post('USERNAME_USR');
+        $PASSWORD_USR= $this->input->post('PASSWORD_USR');
+        $EMAIL_USR=$this->input->post('EMAIL_USR');
+        $NOTLP_USR= $this->input->post('NOTLP_USR');
+        $ALAMAT_USR=$this->input->post('ALAMAT_USR');
+        $JABATAN_USR= $this->input->post('JABATAN_USR');
 
-        $this->pengguna_model->buat_pengguna($username_usr, $password_usr, $email_usr, $notlp_usr, $alamat_usr, $jabatan_usr);       
-
-        redirect(base_url()."pengguna/read");
-    }
-
-    public function ubah($id_usr)
-    {
-    	$username_usr=$this->input->post('username_usr');
-        $password_usr= $this->input->post('password_usr');
-        $email_usr=$this->input->post('email_usr');
-        $notlp_usr= $this->input->post('notlp_usr');
-        $alamat_usr=$this->input->post('alamat_usr');
-        $jabatan_usr= $this->input->post('jabatan_usr');
-
-        $this->pengguna_model->ubah_pengguna($username_usr, $password_usr, $email_usr, $notlp_usr, $alamat_usr, $jabatan_usr);
+        $this->pengguna_model->buat_pengguna($USERNAME_USR, $PASSWORD_USR, $EMAIL_USR, $NOTLP_USR, $ALAMAT_USR, $JABATAN_USR);       
 
         redirect(base_url()."pengguna/read");
     }
 
-    public function hapus($id_usr)
+    public function ubah($ID_USR)
     {
-        $this->pengguna_model->hapus_pengguna($id_usr);
+    	$USERNAME_USR=$this->input->post('USERNAME_USR');
+        $PASSWORD_USR= $this->input->post('PASSWORD_USR');
+        $EMAIL_USR=$this->input->post('EMAIL_USR');
+        $NOTLP_USR= $this->input->post('NOTLP_USR');
+        $ALAMAT_USR=$this->input->post('ALAMAT_USR');
+        $JABATAN_USR= $this->input->post('JABATAN_USR');
+
+        $this->pengguna_model->ubah_pengguna($ID_USR, $USERNAME_USR, $PASSWORD_USR, $EMAIL_USR, $NOTLP_USR, $ALAMAT_USR, $JABATAN_USR);
+
+        redirect(base_url()."pengguna/read");
+    }
+
+    public function hapus($ID_USR)
+    {
+        $this->pengguna_model->hapus_pengguna($ID_USR);
         redirect(base_url()."pengguna/read");
     }
 }

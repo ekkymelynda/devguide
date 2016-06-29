@@ -834,14 +834,14 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan no sub bab 3:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: 1" name="no_sbab3">
+													<input type="text" class="form-control" placeholder="Contoh: 1" name="NO_SBAB3">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan nama sub bab 3:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Proses Bisnis untuk Daftar Mahasiswa" name="nama_sbab3">
+													<input type="text" class="form-control" placeholder="Contoh: Proses Bisnis untuk Daftar Mahasiswa" name="NAMA_SBAB3">
 												</div>
 											</div>
 

@@ -834,7 +834,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan nama status:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: Terlihat" name="nama_sts">
+													<input type="text" class="form-control" placeholder="Contoh: Terlihat" name="NAMA_STS">
 												</div>
 											</div>
 

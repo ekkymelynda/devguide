@@ -35,15 +35,15 @@ class subbab3 extends CI_Controller {
 		$this->load->view('user/header')->view('user/subbab3/create')->view('user/footer');
 	}
 
-	public function update($id_sbab3)
+	public function update($ID_SBAB3)
 	{
-		$data['h'] = $this->subbab3_model->form_update_subbab3($id_sbab3);
+		$data['h'] = $this->subbab3_model->form_update_subbab3($ID_SBAB3);
 		$this->load->view('user/header')->view('user/subbab3/update', $data)->view('user/footer');
 	}
 
-	public function delete($id_sbab3)
+	public function delete($ID_SBAB3)
 	{
-		$data['h'] = $this->subbab3_model->form_update_subbab3($id_sbab3);
+		$data['h'] = $this->subbab3_model->form_update_subbab3($ID_SBAB3);
 		$this->load->view('user/header')->view('user/subbab3/delete', $data)->view('user/footer');
 	}
 
@@ -57,19 +57,19 @@ class subbab3 extends CI_Controller {
         redirect(base_url()."subbab3/read");
     }
 
-    public function ubah($id_sbab3)
+    public function ubah($ID_SBAB3)
     {
     	$no_sbab3=$this->input->post('no_sbab3');
     	$nama_sbab3= $this->input->post('nama_sbab3');
 
-        $this->subbab3_model->ubah_subbab3($id_sbab3, $no_sbab3, $nama_sbab3);
+        $this->subbab3_model->ubah_subbab3($ID_SBAB3, $no_sbab3, $nama_sbab3);
 
         redirect(base_url()."subbab3/read");
     }
 
-    public function hapus($id_sbab3)
+    public function hapus($ID_SBAB3)
     {
-        $this->subbab3_model->hapus_subbab3($id_sbab3);
+        $this->subbab3_model->hapus_subbab3($ID_SBAB3);
         redirect(base_url()."subbab3/read");
     }
 }
