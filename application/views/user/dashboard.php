@@ -283,19 +283,18 @@
 									</ul>
 								</div>
 							</div>
-						</div>
-
+					
 
 						<div class="panel panel-white">
 							<div class="panel-heading">
 								<h6 class="panel-title">
-									<a class="collapsed" data-toggle="collapse" href="#question1">
+									<a class="collapsed" data-toggle="collapse" href="#question2">
 										<h4>E - SURAT</h4>
 									</a>
 								</h6>
-							</div>
+							</div>	
 
-							<div id="question1" class="panel-collapse collapse">
+							<div id="question2" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul class="list-condensed list-unstyled">
 										<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
@@ -306,7 +305,7 @@
 												<li><a href="">1.4 Lingkungan Pengembangan Sistem</a></li>
 												<li><a href="">1.5 Definisi dan Singkatan</a></li>
 											</ul>
-										<li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
+										<!--li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">2.1 Proses Bisnis Utama</a></li>
 												<ul>
@@ -368,12 +367,187 @@
 													<li><a href="">5.2.1 Struktur MVC</a></li>
 													<li><a href="">5.2.2 Detail Program</a></li>
 												</ul>
-											</ul>
+											</ul-->
 									</ul>
 								</div>
 							</div>
-						</div>
+						
 
+						<div class="panel panel-white">
+							<div class="panel-heading">
+								<h6 class="panel-title">
+									<a class="collapsed" data-toggle="collapse" href="#question3">
+										<h4>Sistem Informasi Pelacakan</h4>
+									</a>
+								</h6>
+							</div>	
+
+							<div id="question3" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="list-condensed list-unstyled">
+										<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">1.1 Deskripsi Umum Sistem</a></li>
+												<li><a href="">1.2 Fitur Sistem</a></li>
+												<li><a href="">1.3 Batasan Sistem</a></li>
+												<li><a href="">1.4 Lingkungan Pengembangan Sistem</a></li>
+												<li><a href="">1.5 Definisi dan Singkatan</a></li>
+											</ul>
+										<!--li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">2.1 Proses Bisnis Utama</a></li>
+												<ul>
+													<li><a href="">2.1.1 Proses Bisnis untuk Mahasiswa</a></li>
+													<li><a href="">2.1.2 Proses Bisnis untuk Verifikator Jurusan</a></li>
+													<li><a href="">2.1.3 Proses Bisnis untuk Admin BPS</a></li>
+							 						<ul>
+														<li><a href="">2.1.3.1 Proses Bisnis untuk Menu Daftar Mahasiswa</a></li>
+														<li><a href="">2.1.3.2 Proses Bisnis Untuk Menu Instalasi</a></li>
+														<li><a href="">2.1.3.3 Proses Bisnis untuk Menu Proses</a></li>
+														<li><a href="">2.1.3.4 Proses Bisnis untuk Menu Pelengkap</a></li>
+													</ul>
+													<li><a href="">2.1.4 Proses Bisnis untuk BAKP</a></li>
+													<li><a href="">2.1.5 Proses Bisnis untuk BKSP</a></li>
+													<li><a href="">2.1.6 Proses Bisnis untuk Verifikator BPS</a></li>
+												</ul>
+													<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
+											</ul>
+										<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
+												<li><a href="">3.2 Pengguna Sebagai Verifikator Jurusana</a></li>
+												<li><a href="">3.3 Pengguna Sebagai Admin BPS</a></li>
+												<ul>
+													<li><a href="">3.3.1 Daftar Mahasiswa</a></li>
+													<li><a href="">3.3.2 Instalasi</a></li>
+													<li><a href="">3.3.3 Proses</a></li>
+													<li><a href="">3.3.1 Pelengkap</a></li>
+												</ul>
+												<li><a href="">3.4 Pengguna Sebagai BAKP</a></li>
+												<li><a href="">3.5 Pengguna Sebagai BKSP</a></li>
+												<li><a href="">3.6 Pengguna Sebagai Verifikator BPS</a></li>
+											</ul>
+										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">4.1 Struktur Tabel</a></li>
+												<ul>
+													<li><a href="">4.1.1 data Master</a></li>
+													<li><a href="">4.1.2 Data Transaksional</a></li>
+													<li><a href="">4.1.3 Data Referensi</a></li>
+													<li><a href="">4.1.4 Data Tambahan</a></li>
+													<li><a href="">4.1.5 Penjelasan Atribut Pada Tiap Tabel</a></li>
+												</ul>
+												<li><a href="">4.2 Struktur Basis Data</a></li>
+												<ul>
+													<li><a href="">4.2.1 Pengguna Sebagai Mahasiswa</a></li>
+													<li><a href="">4.2.2 Pengguna Sebagai Verifikator Jurusan</a></li>
+													<li><a href="">4.2.3 Pengguna Sebagai BPS Admin</a></li>
+													<li><a href="">4.2.4 Pengguna Sebagai BAKP</a></li>
+													<li><a href="">4.2.5 Pengguna Sebagai BKSP</a></li>
+													<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
+												</ul>
+											</ul>
+										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">5.1 Skema Program</a></li>		
+												<li><a href="">5.2 Struktur Program</a></li>
+												<ul>
+													<li><a href="">5.2.1 Struktur MVC</a></li>
+													<li><a href="">5.2.2 Detail Program</a></li>
+												</ul>
+											</ul-->
+									</ul>
+								</div>
+							</div>
+						
+
+						<div class="panel panel-white">
+							<div class="panel-heading">
+								<h6 class="panel-title">
+									<a class="collapsed" data-toggle="collapse" href="#question4">
+										<h4>Sistem Informasi Kepegawaian</h4>
+									</a>
+								</h6>
+							</div>	
+
+							<div id="question4" class="panel-collapse collapse">
+								<div class="panel-body">
+									<ul class="list-condensed list-unstyled">
+										<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">1.1 Deskripsi Umum Sistem</a></li>
+												<li><a href="">1.2 Fitur Sistem</a></li>
+												<li><a href="">1.3 Batasan Sistem</a></li>
+												<li><a href="">1.4 Lingkungan Pengembangan Sistem</a></li>
+												<li><a href="">1.5 Definisi dan Singkatan</a></li>
+											</ul>
+										<!--li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">2.1 Proses Bisnis Utama</a></li>
+												<ul>
+													<li><a href="">2.1.1 Proses Bisnis untuk Mahasiswa</a></li>
+													<li><a href="">2.1.2 Proses Bisnis untuk Verifikator Jurusan</a></li>
+													<li><a href="">2.1.3 Proses Bisnis untuk Admin BPS</a></li>
+							 						<ul>
+														<li><a href="">2.1.3.1 Proses Bisnis untuk Menu Daftar Mahasiswa</a></li>
+														<li><a href="">2.1.3.2 Proses Bisnis Untuk Menu Instalasi</a></li>
+														<li><a href="">2.1.3.3 Proses Bisnis untuk Menu Proses</a></li>
+														<li><a href="">2.1.3.4 Proses Bisnis untuk Menu Pelengkap</a></li>
+													</ul>
+													<li><a href="">2.1.4 Proses Bisnis untuk BAKP</a></li>
+													<li><a href="">2.1.5 Proses Bisnis untuk BKSP</a></li>
+													<li><a href="">2.1.6 Proses Bisnis untuk Verifikator BPS</a></li>
+												</ul>
+													<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
+											</ul>
+										<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
+												<li><a href="">3.2 Pengguna Sebagai Verifikator Jurusana</a></li>
+												<li><a href="">3.3 Pengguna Sebagai Admin BPS</a></li>
+												<ul>
+													<li><a href="">3.3.1 Daftar Mahasiswa</a></li>
+													<li><a href="">3.3.2 Instalasi</a></li>
+													<li><a href="">3.3.3 Proses</a></li>
+													<li><a href="">3.3.1 Pelengkap</a></li>
+												</ul>
+												<li><a href="">3.4 Pengguna Sebagai BAKP</a></li>
+												<li><a href="">3.5 Pengguna Sebagai BKSP</a></li>
+												<li><a href="">3.6 Pengguna Sebagai Verifikator BPS</a></li>
+											</ul>
+										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">4.1 Struktur Tabel</a></li>
+												<ul>
+													<li><a href="">4.1.1 data Master</a></li>
+													<li><a href="">4.1.2 Data Transaksional</a></li>
+													<li><a href="">4.1.3 Data Referensi</a></li>
+													<li><a href="">4.1.4 Data Tambahan</a></li>
+													<li><a href="">4.1.5 Penjelasan Atribut Pada Tiap Tabel</a></li>
+												</ul>
+												<li><a href="">4.2 Struktur Basis Data</a></li>
+												<ul>
+													<li><a href="">4.2.1 Pengguna Sebagai Mahasiswa</a></li>
+													<li><a href="">4.2.2 Pengguna Sebagai Verifikator Jurusan</a></li>
+													<li><a href="">4.2.3 Pengguna Sebagai BPS Admin</a></li>
+													<li><a href="">4.2.4 Pengguna Sebagai BAKP</a></li>
+													<li><a href="">4.2.5 Pengguna Sebagai BKSP</a></li>
+													<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
+												</ul>
+											</ul>
+										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">5.1 Skema Program</a></li>		
+												<li><a href="">5.2 Struktur Program</a></li>
+												<ul>
+													<li><a href="">5.2.1 Struktur MVC</a></li>
+													<li><a href="">5.2.2 Detail Program</a></li>
+												</ul>
+											</ul-->
+									</ul>
+								</div>
+							</div>
+						
 						<!--div id="invoice-editable" contenteditable="true">
 							<div class="panel-body no-padding-bottom">
 								<div class="row">

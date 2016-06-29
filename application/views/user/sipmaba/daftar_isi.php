@@ -5,12 +5,12 @@
 				<div class="page-header">
 					<div class="page-header-content">
 						<div class="page-title">
-							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Umum</span> - Dashboard</h4>
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Halaman</span> - Sipmaba</h4>
 
 							<ul class="breadcrumb position-right">
-								<li><a href="index.html">Umum</a></li>
+								<li><a href="index.html">Halaman</a></li>
 								<!--<li><a href="invoice_template.html">Invoices</a></li>-->
-								<li class="active">Dashboard</li>
+								<li class="active">Sipmaba</li>
 							</ul>
 						</div>
 
@@ -218,6 +218,12 @@
 														<li><a href="">2.1.1 Proses Bisnis untuk Mahasiswa</a></li>
 														<li><a href="">2.1.2 Proses Bisnis untuk Verifikator Jurusan</a></li>
 														<li><a href="">2.1.3 proses Bisnis untuk Admin BPS</a></li>
+														<ul>
+															<li><a href="">2.1.3.1 Proses Bisnis untuk Menu Daftar Mahasiswa</a></li>
+															<li><a href="">2.1.3.2 Proses Bisnis Untuk Menu Instalasi</a></li>
+															<li><a href="">2.1.3.3 Proses Bisnis untuk Menu Proses</a></li>
+															<li><a href="">2.1.3.4 Proses Bisnis untuk Menu Pelengkap</a></li>
+														</ul>
 														<li><a href="">2.1.4 Proses Bisnis untuk BAKP</a></li>
 														<li><a href="">2.1.5 Proses Bisnis untuk BKSP</a></li>
 														<li><a href="">2.1.6 Proses Bisnis untuk Verifikator BPS</a></li>

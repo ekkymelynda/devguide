@@ -354,13 +354,13 @@
 								<div class="panel panel-white">
 									<div class="panel-heading">
 										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question10">
+											<a class="collapsed" data-toggle="collapse" href="#question11">
 												<i class="icon-help position-left text-slate"></i> Menu Gambar
 											</a>
 										</h6>
 									</div>
 
-									<div id="question10" class="panel-collapse collapse">
+									<div id="question11" class="panel-collapse collapse">
 										<div class="panel-body">
 											Melakukan penambahan gambar baru, melihat gambar, mengubah gambar dan menghapus gambar
 										</div>
@@ -381,13 +381,13 @@
 								<div class="panel panel-white">
 									<div class="panel-heading">
 										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question10">
+											<a class="collapsed" data-toggle="collapse" href="#question12">
 												<i class="icon-help position-left text-slate"></i> Menu Post
 											</a>
 										</h6>
 									</div>
 
-									<div id="question10" class="panel-collapse collapse">
+									<div id="question12" class="panel-collapse collapse">
 										<div class="panel-body">
 											Melakukan penambahan post baru, melihat data post, mengubah data post dan menghapus data post
 										</div>
@@ -411,13 +411,13 @@
 								<div class="panel panel-white">
 									<div class="panel-heading">
 										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question11">
+											<a class="collapsed" data-toggle="collapse" href="#question13">
 												<i class="icon-help position-left text-slate"></i> Menu Sistem Informasi
 											</a>
 										</h6>
 									</div>
 
-									<div id="question11" class="panel-collapse collapse">
+									<div id="question13" class="panel-collapse collapse">
 										<div class="panel-body">
 											Berisi daftar nama sistem informasi yang yang developer guide nya ada pada web ini
 										</div>
@@ -438,13 +438,13 @@
 								<div class="panel panel-white">
 									<div class="panel-heading">
 										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question12">
+											<a class="collapsed" data-toggle="collapse" href="#question14">
 												<i class="icon-help position-left text-slate"></i> SIPMABA
 											</a>
 										</h6>
 									</div>
 
-									<div id="question12" class="panel-collapse collapse">
+									<div id="question14" class="panel-collapse collapse">
 										<div class="panel-body">
 											Sistem Informasi Pendataan Mahasiswa Baru
 										</div>
@@ -465,13 +465,13 @@
 								<div class="panel panel-white">
 									<div class="panel-heading">
 										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question13">
+											<a class="collapsed" data-toggle="collapse" href="#question15">
 												<i class="icon-help position-left text-slate"></i> E-SURAT
 											</a>
 										</h6>
 									</div>
 
-									<div id="question13" class="panel-collapse collapse">
+									<div id="question15" class="panel-collapse collapse">
 										<div class="panel-body">
 											Surat elektronik
 										</div>
@@ -492,13 +492,13 @@
 								<div class="panel panel-white">
 									<div class="panel-heading">
 										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question14">
+											<a class="collapsed" data-toggle="collapse" href="#question16">
 												<i class="icon-help position-left text-slate"></i> SILACAK
 											</a>
 										</h6>
 									</div>
 
-									<div id="question14" class="panel-collapse collapse">
+									<div id="question16" class="panel-collapse collapse">
 										<div class="panel-body">
 											Sistem Informasi Pelacakan
 										</div>
@@ -519,13 +519,13 @@
 								<div class="panel panel-white">
 									<div class="panel-heading">
 										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question15">
+											<a class="collapsed" data-toggle="collapse" href="#question17">
 												<i class="icon-help position-left text-slate"></i> SIMPEG
 											</a>
 										</h6>
 									</div>
 
-									<div id="question15" class="panel-collapse collapse">
+									<div id="question17" class="panel-collapse collapse">
 										<div class="panel-body">
 											Sistem Informasi Kepegawaian
 										</div>
