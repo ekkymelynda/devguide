@@ -212,68 +212,192 @@
 													<li><a href="">1.5 Definisi dan Singkatan</a></li>
 												</ul>
 											<li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
-												<ul class="list-condensed list-unstyled">
-													<li><a href="">2.1 Proses Bisnis Utama</a></li>
-													<ul>
-														<li><a href="">2.1.1 Proses Bisnis untuk Mahasiswa</a></li>
-														<li><a href="">2.1.2 Proses Bisnis untuk Verifikator Jurusan</a></li>
-														<li><a href="">2.1.3 Proses Bisnis untuk Admin BPS</a></li>
-														<ul>
-															<li><a href="">2.1.3.1 Proses Bisnis untuk Menu Daftar Mahasiswa</a></li>
-															<li><a href="">2.1.3.2 Proses Bisnis Untuk Menu Instalasi</a></li>
-															<li><a href="">2.1.3.3 Proses Bisnis untuk Menu Proses</a></li>
-															<li><a href="">2.1.3.4 Proses Bisnis untuk Menu Pelengkap</a></li>
-														</ul>
-														<li><a href="">2.1.4 Proses Bisnis untuk BAKP</a></li>
-														<li><a href="">2.1.5 Proses Bisnis untuk BKSP</a></li>
-														<li><a href="">2.1.6 Proses Bisnis untuk Verifikator BPS</a></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">2.1 Proses Bisnis Utama</a></li>
+												<ul>
+													<li><a href="">2.1.1 Proses Bisnis untuk Mahasiswa</a></li>
+													<li><a href="">2.1.2 Proses Bisnis untuk Verifikator Jurusan</a></li>
+													<li><a href="">2.1.3 Proses Bisnis untuk Admin BPS</a></li>
+							 						<ul>
+														<li><a href="">2.1.3.1 Proses Bisnis untuk Menu Daftar Mahasiswa</a></li>
+														<li><a href="">2.1.3.2 Proses Bisnis Untuk Menu Instalasi</a></li>
+														<li><a href="">2.1.3.3 Proses Bisnis untuk Menu Proses</a></li>
+														<li><a href="">2.1.3.4 Proses Bisnis untuk Menu Pelengkap</a></li>
 													</ul>
+													<li><a href="">2.1.4 Proses Bisnis untuk BAKP</a></li>
+													<li><a href="">2.1.5 Proses Bisnis untuk BKSP</a></li>
+													<li><a href="">2.1.6 Proses Bisnis untuk Verifikator BPS</a></li>
+												</ul>
 													<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
+											</ul>
+										<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
+												<ul>
+													<li><a href="">3.1.1 Menampilkan RIncian Pembayaran UKT</a></li>
+													<li><a href="">3.1.2 Mencetak Bukti Pengisian Data</a></li>
+													<li><a href="">3.1.3 Mengisi Data Diri</a></li>
+													<li><a href="">3.1.4 Mengisi Data Pendidikan</a></li>
+													<li><a href="">3.1.5 Mengisi Data Keluarga</a></li>
+													<li><a href="">3.1.6 Mengisi Data Rumah</a></li>
+													<li><a href="">3.1.7 Mengisi Data Catatan Khusus</a></li>
+													<li><a href="">3.1.8 Mengisi Data Pendukung</a></li>
+													<li><a href="">3.1.9 Mengupload Berkas</a></li>
 												</ul>
-											<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
-												<ul class="list-condensed list-unstyled">
-													<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
-													<li><a href="">3.2 Pengguna Sebagai Verifikator Jurusana</a></li>
-													<li><a href="">3.3 Pengguna Sebagai Admin BPS</a></li>
-													<ul>
-														<li><a href="">3.3.1 Daftar Mahasiswa</a></li>
-														<li><a href="">3.3.2 Instalasi</a></li>
-														<li><a href="">3.3.3 Proses</a></li>
-														<li><a href="">3.3.1 Pelengkap</a></li>
-													</ul>
-													<li><a href="">3.4 Pengguna Sebagai BAKP</a></li>
-													<li><a href="">3.5 Pengguna Sebagai BKSP</a></li>
-													<li><a href="">3.6 Pengguna Sebagai Verifikator BPS</a></li>
+												<li><a href="">3.2 Pengguna Sebagai Verifikator Jurusan</a></li>
+												<ul>
+													<li><a href="">3.2.1 Melihat Daftar Mahasiswa</a></li>
+													<li><a href="">3.2.2 Memverifikasi Data Mahasiswa</a></li>
 												</ul>
-											<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
-												<ul class="list-condensed list-unstyled">
-													<li><a href="">4.1 Struktur Tabel</a></li>
+												<li><a href="">3.3 Pengguna Sebagai Admin BPS</a></li>
+												<ul>
+													<li><a href="">3.3.1 Daftar Mahasiswa</a></li>
 													<ul>
-														<li><a href="">4.1.1 Data Master</a></li>
-														<li><a href="">4.1.2 Data Transaksional</a></li>
-														<li><a href="">4.1.3 Data Referensi</a></li>
-														<li><a href="">4.1.4 Data Tambahan</a></li>
-														<li><a href="">4.1.5 Penjelasan Atribut Pada Tiap Tabel</a></li>
+														<li><a href="">3.3.1.1 Pencarian Data Mahasiswa Berdasarkan Kategori</a></li>
+														<li><a href="">3.3.1.2 Menambah Data Mahasiswa</a></li>
+														<li><a href="">3.3.1.3 Mengubah Data Mahasiswa</a></li>
+														<li><a href="">3.3.1.4 Menon Aktifkan Mahasiswa</a></li>
+														<li><a href="">3.3.1.5 Memutus Studikan Mahasiswa</a></li>
+														<li><a href="">3.3.1.6 Memindah Prodikan Mahasiswa</a></li>
+														<li><a href="">3.3.1.7 memindah Jalurkan Mahasiswa</a></li>
+														<li><a href="">3.3.1.8 Tidak Melakukan Permanen Data Mahasiswa</a></li>
 													</ul>
-													<li><a href="">4.2 Struktur Basis Data</a></li>
+													<li><a href="">3.3.2 Instalasi</a></li>
 													<ul>
-														<li><a href="">4.2.1 Pengguna Sebagai Mahasiswa</a></li>
-														<li><a href="">4.2.2 Pengguna Sebagai Verifikator Jurusan</a></li>
-														<li><a href="">4.2.3 Pengguna Sebagai BPS Admin</a></li>
-														<li><a href="">4.2.4 Pengguna Sebagai BAKP</a></li>
-														<li><a href="">4.2.5 Pengguna Sebagai BKSP</a></li>
-														<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
+														<li><a href="">3.3.2.1 Mengaktifkan Periode</a></li>
+														<li><a href="">3.3.2.2 Melakukan Penetapan Verifikator</a></li>
+														<li><a href="">3.3.2.3 Mengelompokkan Indikator</a></li>
+														<li><a href="">3.3.2.4 mengimport Data Mahasiswa</a></li>
 													</ul>
-												</ul>
-											<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
-												<ul class="list-condensed list-unstyled">
-													<li><a href="">5.1 Skema Program</a></li>		
-													<li><a href="">5.2 Struktur Program</a></li>
+													<li><a href="">3.3.3 Proses</a></li>
 													<ul>
-														<li><a href="">5.2.1 Struktur MVC</a></li>
-														<li><a href="">5.2.2 Detail Program</a></li>
+														<li><a href="">3.3.3.1 Melakukan Pengaturan UKT</a></li>
+														<li><a href="">3.3.3.2 Mengelola Transfer SPP</a></li>
+														<li><a href="">3.3.3.3 Melakukan Rekap UKT</a></li>
+													</ul>
+													<li><a href="">3.3.1 Pelengkap</a></li>
+													<ul>
+														<li><a href="">3.3.4.1 Mengelola Data Pengumuman</a></li>
+														<li><a href="">3.3.4.1 Mengelola Data Tarif Non UKT</a></li>
+														<li><a href="">3.3.4.3 Mengelola Label Data Tarif Non UKT</a></li>
+														<li><a href="">3.3.4.4 Mengelola Data Menu</a></li>
+														<li><a href="">3.3.4.5 Mengelola Data Roles</a></li>
+														<li><a href="">3.3.4.6 Mengelola Data User</a></li>
+														<li><a href="">3.3.4.7 Mengelola Data Master UKT</a></li>
 													</ul>
 												</ul>
+												<li><a href="">3.4 Pengguna Sebagai BAKP</a></li>
+												<ul>
+													<li><a href="">3.4.1 Mengimpor Calon Mahasiswa</a></li>
+													<ul>
+														<li><a href="">3.4.1.1 Pencarian Data Calon Mahasiswa Berdasarkan Kategori</a></li>
+													</ul>
+												</ul>
+												<li><a href="">3.5 Pengguna Sebagai BKSP</a></li>
+												<ul>
+													<li><a href="">3.5.1 Pencarian Data Transfer SPP Berdasarkan Kategori</a></li>
+													<li><a href="">3.5.2 Menampilkan Data Transfer SPP</a></li>
+												</ul>
+												<li><a href="">3.6 Pengguna Sebagai Verifikator BPS</a></li>
+												<ul>
+													<li><a href="">3.6.1 Melihat Data Revisi Mahasiswa</a></li>
+													<li><a href="">3.6.2 Memverifikasi Data Revisi Mahasiswa</a></li>
+												</ul>
+											</ul>
+										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">4.1 Struktur Tabel</a></li>
+												<ul>
+													<li><a href="">4.1.1 Data Master</a></li>
+													<li><a href="">4.1.2 Data Transaksional</a></li>
+													<li><a href="">4.1.3 Data Referensi</a></li>
+													<li><a href="">4.1.4 Data Tambahan</a></li>
+													<li><a href="">4.1.5 Penjelasan Atribut Pada Tiap Tabel</a></li>
+													<ul>
+														<li><a href="">A. dbo.announcement</a></li>
+														<li><a href="">B. dbo.berkas</a></li>
+														<li><a href="">C. dbo.berkas_mahasiswa</a></li>
+														<li><a href="">D. dbo.biaya_pokok</a></li>
+														<li><a href="">E. dbo.biaya_pokok_label</a></li>
+														<li><a href="">F. dbo.biaya_pokok_mahasiswa</a></li>
+														<li><a href="">G. dbo.bobot</a></li>
+														<li><a href="">H. dbo.cluster</a></li>
+														<li><a href="">I. dbo.cluster_mahasiswa</a></li>
+														<li><a href="">J. dbo.event</a></li>
+														<li><a href="">K. dbo.event_period</a></li>
+														<li><a href="">L. dbo.fakultas</a></li>
+														<li><a href="">M. dbo.indikator</a></li>
+														<li><a href="">N. dbo.jalur</a></li>
+														<li><a href="">O. dbo.log_perubahan_ukt</a></li>
+														<li><a href="">P. dbo.log_pindah_jalur</a></li>
+														<li><a href="">Q. dbo.log_pindah_prodi</a></li>
+														<li><a href="">R. dbo.mahasiswa</a></li>
+														<li><a href="">S. dbo.mahasiswa_non_ukt</a></li>
+														<li><a href="">T. dbo.mahasiswa_ukt</a></li>
+														<li><a href="">U. dbo.nominalbm</a></li>
+														<li><a href="">V. dbo.password_resets</a></li>
+														<li><a href="">W. dbo.pekerjaan</a></li>
+														<li><a href="">X. dbo.pendidikan</a></li>
+														<li><a href="">Y. dbo.period</a></li>
+														<li><a href="">Z. dbo.permissions</a></li>
+														<li><a href="">AB. dbo.permissions_role</a></li>
+														<li><a href="">AC. dbo.prodi</a></li>
+														<li><a href="">AD. dbo.ref_agama</a></li>
+														<li><a href="">AE. dbo.ref_daya_listrik</a></li>
+														<li><a href="">AF. dbo.ref_jurusan_sma</a></li>
+														<li><a href="">AG. dbo.ref_kepemilikan</a></li>
+														<li><a href="">AH. dbo.ref_kota</a></li>
+														<li><a href="">AI. dbo.ref_mck</a></li>
+														<li><a href="">AJ. dbo.ref_pendidikan</a></li>
+														<li><a href="">AK. dbo.ref_provinsi</a></li>
+														<li><a href="">AL. dbo.ref_sekolah</a></li>
+														<li><a href="">AM. dbo.ref_sponsor</a></li>
+														<li><a href="">AN. dbo.ref_sumberair</a></li>
+														<li><a href="">AO. dbo.ref_sumberlistrik</a></li>
+														<li><a href="">AP. dbo.ref_tempattinggal</a></li>
+														<li><a href="">AQ. dbo.ref_transportasi</a></li>
+														<li><a href="">AR. dbo.rekomendasi</a></li>
+														<li><a href="">AS. dbo.roles</a></li>
+														<li><a href="">AT. dbo.role_user</a></li>
+														<li><a href="">AU. dbo.tarif</a></li>
+														<li><a href="">AV. dbo.ukt</a></li>
+														<li><a href="">AW. dbo.user</a></li>
+														<li><a href="">AX. dbo.verifikator</a></li>
+													</ul>
+												</ul>
+												<li><a href="">4.2 Struktur Basis Data</a></li>
+												<ul>
+													<li><a href="">4.2.1 Pengguna Sebagai Mahasiswa</a></li>
+													<li><a href="">4.2.2 Pengguna Sebagai Verifikator Jurusan</a></li>
+													<li><a href="">4.2.3 Pengguna Sebagai BPS Admin</a></li>
+													<ul>
+														<li><a href="">4.2.3.1 Menu Daftar Mahasiswa</a></li>
+														<li><a href="">4.2.3.1 Menu Instalasi</a></li>
+														<li><a href="">4.2.3.3 Proses</a></li>
+														<li><a href="">4.2.3.4 Pelengkap</a></li>
+													</ul>
+													<li><a href="">4.2.4 Pengguna Sebagai BAKP</a></li>
+													<li><a href="">4.2.5 Pengguna Sebagai BKSP</a></li>
+													<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
+												</ul>
+											</ul>
+										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
+											<ul class="list-condensed list-unstyled">
+												<li><a href="">5.1 Skema Program</a></li>		
+												<li><a href="">5.2 Struktur Program</a></li>
+												<ul>
+													<li><a href="">5.2.1 Struktur MVC</a></li>
+													<li><a href="">5.2.2 Detail Program</a></li>
+													<ul>
+														<li><a href="">5.2.2.1 pengguna Sebagai Mahasiswa</a></li>
+														<li><a href="">5.2.2.2 Pengguna Sebagai Verifikator Jurusan</a></li>
+														<li><a href="">5.2.2.3 Pengguna Sebagai BPS Admin</a></li>
+														<li><a href="">5.2.2.4 Pengguna Sebagai BAKP</a></li>
+														<li><a href="">5.2.2.5 Pengguna Sebagai BKSP</a></li>
+														<li><a href="">5.2.2.6 Pengguna Sebagai Verifikator BPS</a></li>
+													</ul>
+												</ul>
+											</u>
 										</ul>
 									</div>
 
