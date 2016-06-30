@@ -28,9 +28,8 @@ class bab_model extends CI_Model
 		$this->db->where('ID_BAB',$ID_BAB)->update('bab',$data);
 	}
 
-	//hapus bab belum bisa
 	function hapus_bab($ID_BAB)
 	{
-		$this->db->where('ID_BAB',$ID_BAB)->delete('bab',$data);
+		$this->db->where('ID_BAB',$ID_BAB)->delete('bab');
 	}
 }

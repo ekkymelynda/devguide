@@ -26,9 +26,8 @@ class kategori_model extends CI_Model
 		$this->db->where('ID_KTG',$ID_KTG)->update('kategori',$data);
 	}
 
-	//hapus kategori belum bisa
 	function hapus_kategori($ID_KTG)
 	{
-		$this->db->where('ID_BAB',$ID_BAB)->delete('bab',$data);
+		$this->db->where('ID_KTG',$ID_KTG)->delete('kategori');
 	}
 }
