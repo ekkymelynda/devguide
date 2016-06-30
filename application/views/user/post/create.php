@@ -861,7 +861,43 @@
 					                                <select data-placeholder="Pilih bab" class="select" name="ID_BAB">
 					                                    <option value=""></option>
 					                                    <?php foreach ($b as $row3) {?>
-					                                    <option value="<?php echo $row3->ID_BAB;?>"><?php echo $row3->NAMA_BAB;?></option>
+					                                    <option value="<?php echo $row3->ID_BAB;?>"><?php echo $row3->NO_BAB;?>. <?php echo $row3->NAMA_BAB;?></option>
+					                                    <?php } ?>
+					                                </select>
+				                                </div>
+					                		</div>
+
+					                		<div class="form-group">
+												<label class="col-lg-3 control-label">Masukkan sub bab 1 post:</label>
+												<div class="col-lg-9">
+					                                <select data-placeholder="Pilih bab" class="select" name="ID_SBAB1">
+					                                    <option value=""></option>
+					                                    <?php foreach ($sb1 as $row4) {?>
+					                                    <option value="<?php echo $row4->ID_SBAB1;?>"><?php echo $row4->NO_SBAB1;?>. <?php echo $row4->NAMA_SBAB1;?></option>
+					                                    <?php } ?>
+					                                </select>
+				                                </div>
+					                		</div>
+
+					                		<div class="form-group">
+												<label class="col-lg-3 control-label">Masukkan sub bab 2 post:</label>
+												<div class="col-lg-9">
+					                                <select data-placeholder="Pilih bab" class="select" name="ID_SBAB2">
+					                                    <option value=""></option>
+					                                    <?php foreach ($sb2 as $row5) {?>
+					                                    <option value="<?php echo $row5->ID_SBAB2;?>"><?php echo $row5->NO_SBAB2;?>. <?php echo $row5->NAMA_SBAB2;?></option>
+					                                    <?php } ?>
+					                                </select>
+				                                </div>
+					                		</div>
+
+					                		<div class="form-group">
+												<label class="col-lg-3 control-label">Masukkan sub bab 3 post:</label>
+												<div class="col-lg-9">
+					                                <select data-placeholder="Pilih bab" class="select" name="ID_SBAB3">
+					                                    <option value=""></option>
+					                                    <?php foreach ($sb3 as $row6) {?>
+					                                    <option value="<?php echo $row6->ID_SBAB3;?>"><?php echo $row6->NO_SBAB3;?>. <?php echo $row6->NAMA_SBAB3;?></option>
 					                                    <?php } ?>
 					                                </select>
 				                                </div>
@@ -885,6 +921,13 @@
 												<label class="col-lg-3 control-label">Masukkan tanggal buat post:</label>
 												<div class="col-lg-9">
 													<input type="date" class="form-control" name="CREATE_PST">
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label class="col-lg-3 control-label">Masukkan pengguna post:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Contoh: annyyuniarti" name="ID_USR">
 												</div>
 											</div>
 

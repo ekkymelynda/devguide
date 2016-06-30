@@ -35,6 +35,9 @@ class post extends CI_Controller {
 		$data['k'] = $this->post_model->lihat_kategori();
 		$data['s'] = $this->post_model->lihat_status();
 		$data['b'] = $this->post_model->lihat_bab();
+		$data['sb1'] = $this->post_model->lihat_subbab1();
+		$data['sb2'] = $this->post_model->lihat_subbab2();
+		$data['sb3'] = $this->post_model->lihat_subbab3();
 		$this->load->view('user/header')->view('user/post/create', $data)->view('user/footer');
 	}
 
@@ -67,8 +70,31 @@ class post extends CI_Controller {
         $CREATE_PST= $this->input->post('CREATE_PST');
         $UPDATE_PST=$this->input->post('UPDATE_PST');
 
-        $this->post_model->buat_post($ID_KTG, $ID_STS, $ID_BAB, $JUDUL_PST, $ISI_PST, $LINK_PST, $CREATE_PST);       
+        $ID_SBAB1=$this->input->post('ID_SBAB1');
+        $ID_SBAB2=$this->input->post('ID_SBAB2');
+        $ID_SBAB3=$this->input->post('ID_SBAB3');
 
+        $this->post_model->buat_post($ID_KTG, $ID_STS, $ID_BAB, $JUDUL_PST, $ISI_PST, $LINK_PST, $CREATE_PST);
+
+        if (!empty($ID_SBAB1))
+        {
+        	$this->post_model->buat_terdiri_subbab1($ID_BAB, $ID_SBAB1);
+        	
+        	if (!empty($ID_SBAB2))
+        	{
+        		$this->post_model->buat_terdiri_subbab2($ID_SBAB1, $ID_SBAB2);
+
+        		if (!empty($ID_SBAB3))
+    			{
+        			$this->post_model->buat_terdiri_subbab3($ID_SBAB2, $ID_SBAB3);
+        		}
+        		else
+        		redirect(base_url()."post/read");
+    		}
+    		else
+    		redirect(base_url()."post/read");
+    	}
+    	else
         redirect(base_url()."post/read");
     }
 
