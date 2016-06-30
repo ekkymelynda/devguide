@@ -1,4 +1,4 @@
-<!-- Main content -->
+			<!-- Main content -->
 			<div class="content-wrapper">
 
 				<!-- Page header -->
@@ -907,7 +907,7 @@
 					                		<div class="form-group">
 												<label class="col-lg-3 control-label">Pengguna post:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="<?php echo $row->ID_PGN;?>" name="ID_PGN">
+													<input type="text" class="form-control" readonly="readonly" value="<?php echo $this->session->userdata('USERNAME_PGN') ?>" name="USERNAME_PGN">
 												</div>
 											</div>
 

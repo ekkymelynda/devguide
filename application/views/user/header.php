@@ -318,7 +318,7 @@
 					<li class="dropdown dropdown-user">
 						<a class="dropdown-toggle" data-toggle="dropdown">
 							<img src="<?php  echo base_url(); ?>LTR/assets/images/placeholder.jpg" alt="">
-							<span>Victoria</span>
+							<span><?php echo $this->session->userdata('USERNAME_PGN') ?></span>
 							<i class="caret"></i>
 						</a>
 

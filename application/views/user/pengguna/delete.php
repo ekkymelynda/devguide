@@ -813,7 +813,7 @@
 
 					<!-- 2 columns form -->
 					<?php foreach ($h->result() as $row){?>
-					<form class="form-horizontal" action="<?php echo base_url(); ?>pengguna/hapus/<?php echo $row->ID_PGN;?>">
+					<form class="form-horizontal" action="<?php echo base_url(); ?>pengguna/hapus/<?php echo $row->USERNAME_PGN;?>">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Pengguna</h5>

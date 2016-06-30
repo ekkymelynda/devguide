@@ -813,7 +813,7 @@
 
 					<!-- 2 columns form -->
 					<?php foreach ($h->result() as $row){?>
-					<form class="form-horizontal" action="<?php echo base_url();?>pengguna/ubah/<?php echo $row->ID_PGN;?>" method="post">
+					<form class="form-horizontal" action="<?php echo base_url();?>pengguna/ubah/<?php echo $row->USERNAME_PGN;?>" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Pengguna</h5>
@@ -842,7 +842,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="password" class="form-control" value="<?php echo $row->PASSWORD_PGN;?>" name="PASSWORD_PGN">
+													<input type="password" class="form-control" name="PASSWORD_PGN">
 												</div>
 											</div>
 

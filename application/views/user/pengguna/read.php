@@ -91,8 +91,8 @@
 						            <td><?php echo $row->JABATAN_PGN;?></td>
 					                <td>
 					                	<ul class="icons-list">
-											<li class="text-primary-600"><a href="<?php echo base_url(); ?>pengguna/update/<?php echo $row->ID_PGN;?>"><i class="icon-pencil7"></i></a></li>
-											<li class="text-danger-600"><a href="<?php echo base_url(); ?>pengguna/delete/<?php echo $row->ID_PGN;?>"><i class="icon-trash"></i></a></li>
+											<li class="text-primary-600"><a href="<?php echo base_url(); ?>pengguna/update/<?php echo $row->USERNAME_PGN;?>"><i class="icon-pencil7"></i></a></li>
+											<li class="text-danger-600"><a href="<?php echo base_url(); ?>pengguna/delete/<?php echo $row->USERNAME_PGN;?>"><i class="icon-trash"></i></a></li>
 										</ul>
 									</td>
 						        </tr>

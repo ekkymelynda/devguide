@@ -66,13 +66,13 @@ class post extends CI_Controller {
         $ID_SBAB1=$this->input->post('ID_SBAB1');
         $ID_SBAB2=$this->input->post('ID_SBAB2');
         $ID_SBAB3=$this->input->post('ID_SBAB3');
-        $ID_PGN=$this->input->post('ID_PGN');
+        $USERNAME_PGN=$this->input->post('USERNAME_PGN');
         $JUDUL_PST= $this->input->post('JUDUL_PST');
         $ISI_PST= $this->input->post('ISI_PST');
         $LINK_PST=$this->input->post('LINK_PST');
         $CREATE_PST= $this->input->post('CREATE_PST');
         
-        $this->post_model->buat_post($ID_KTG, $ID_STS, $ID_BAB, $ID_SBAB1, $ID_SBAB2, $ID_SBAB3, $ID_PGN, $JUDUL_PST, $ISI_PST, $LINK_PST, $CREATE_PST);
+        $this->post_model->buat_post($ID_KTG, $ID_STS, $ID_BAB, $ID_SBAB1, $ID_SBAB2, $ID_SBAB3, $USERNAME_PGN, $JUDUL_PST, $ISI_PST, $LINK_PST, $CREATE_PST);
 
         redirect(base_url()."post/read");
     }
@@ -85,13 +85,13 @@ class post extends CI_Controller {
         $ID_SBAB1=$this->input->post('ID_SBAB1');
         $ID_SBAB2=$this->input->post('ID_SBAB2');
         $ID_SBAB3=$this->input->post('ID_SBAB3');
-        $ID_PGN=$this->input->post('ID_PGN');
+        $USERNAME_PGN=$this->input->post('USERNAME_PGN');
         $JUDUL_PST= $this->input->post('JUDUL_PST');
         $ISI_PST= $this->input->post('ISI_PST');
         $LINK_PST=$this->input->post('LINK_PST');
         $UPDATE_PST= $this->input->post('UPDATE_PST');
         
-        $this->post_model->ubah_post($ID_PST, $ID_KTG, $ID_STS, $ID_BAB, $ID_SBAB1, $ID_SBAB2, $ID_SBAB3, $ID_PGN, $JUDUL_PST, $ISI_PST, $LINK_PST, $UPDATE_PST);
+        $this->post_model->ubah_post($ID_PST, $ID_KTG, $ID_STS, $ID_BAB, $ID_SBAB1, $ID_SBAB2, $ID_SBAB3, $USERNAME_PGN, $JUDUL_PST, $ISI_PST, $LINK_PST, $UPDATE_PST);
         
         redirect(base_url()."post/read");
     }

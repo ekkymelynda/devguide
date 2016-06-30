@@ -35,15 +35,15 @@ class pengguna extends CI_Controller {
 		$this->load->view('user/header')->view('user/pengguna/create')->view('user/footer');
 	}
 
-	public function update($ID_PGN)
+	public function update($USERNAME_PGN)
 	{
-		$data['h'] = $this->pengguna_model->form_update_pengguna($ID_PGN);
+		$data['h'] = $this->pengguna_model->form_update_pengguna($USERNAME_PGN);
 		$this->load->view('user/header')->view('user/pengguna/update', $data)->view('user/footer');
 	}
 
-	public function delete($ID_PGN)
+	public function delete($USERNAME_PGN)
 	{
-		$data['h'] = $this->pengguna_model->form_update_pengguna($ID_PGN);
+		$data['h'] = $this->pengguna_model->form_update_pengguna($USERNAME_PGN);
 		$this->load->view('user/header')->view('user/pengguna/delete', $data)->view('user/footer');
 	}
 
@@ -61,7 +61,7 @@ class pengguna extends CI_Controller {
         redirect(base_url()."pengguna/read");
     }
 
-    public function ubah($ID_PGN)
+    public function ubah($USERNAME_PGN)
     {
     	$USERNAME_PGN=$this->input->post('USERNAME_PGN');
         $PASSWORD_PGN= $this->input->post('PASSWORD_PGN');
@@ -70,14 +70,14 @@ class pengguna extends CI_Controller {
         $ALAMAT_PGN=$this->input->post('ALAMAT_PGN');
         $JABATAN_PGN= $this->input->post('JABATAN_PGN');
 
-        $this->pengguna_model->ubah_pengguna($ID_PGN, $USERNAME_PGN, $PASSWORD_PGN, $EMAIL_PGN, $NOTLP_PGN, $ALAMAT_PGN, $JABATAN_PGN);
+        $this->pengguna_model->ubah_pengguna($USERNAME_PGN, $PASSWORD_PGN, $EMAIL_PGN, $NOTLP_PGN, $ALAMAT_PGN, $JABATAN_PGN);
 
         redirect(base_url()."pengguna/read");
     }
 
-    public function hapus($ID_PGN)
+    public function hapus($USERNAME_PGN)
     {
-        $this->pengguna_model->hapus_pengguna($ID_PGN);
+        $this->pengguna_model->hapus_pengguna($USERNAME_PGN);
         redirect(base_url()."pengguna/read");
     }
 }

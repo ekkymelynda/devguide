@@ -46,7 +46,7 @@
 				<div class="content">
 
 					<!-- Advanced login -->
-					<form action="">
+					<form action="<?php echo base_url(); ?>log/validasi" method="post">
 						<div class="panel panel-body login-form">
 							<div class="text-center">
 								<div class="icon-object border-warning-400 text-warning-400"><i class="icon-people"></i></div>
@@ -54,14 +54,14 @@
 							</div>
 
 							<div class="form-group has-feedback has-feedback-left">
-								<input type="text" class="form-control" placeholder="Username">
+								<input type="text" class="form-control" placeholder="Username" name="USERNAME_PGN">
 								<div class="form-control-feedback">
 									<i class="icon-user text-muted"></i>
 								</div>
 							</div>
 
 							<div class="form-group has-feedback has-feedback-left">
-								<input type="text" class="form-control" placeholder="Password">
+								<input type="password" class="form-control" placeholder="Password" name="PASSWORD_PGN">
 								<div class="form-control-feedback">
 									<i class="icon-lock2 text-muted"></i>
 								</div>

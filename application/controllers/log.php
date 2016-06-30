@@ -18,10 +18,43 @@ class log extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function login()
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('pengguna_model');
+    }
+    
+	public function index()
 	{
 		$this->load->view('login');
 	}
+
+	public function validasi()
+	{
+		$data=array(
+			'USERNAME_PGN'=>$this->input->post('USERNAME_PGN'),
+			'PASSWORD_PGN'=>$this->input->post('PASSWORD_PGN')
+		);
+		 
+		// Berfungsi untuk memanggil fungsi ambil_data pada class login_model
+		$cek = $this->pengguna_model->ambil_data($data);
+		
+		if($cek == 1) { // Berfungsi untuk mengecek kebenaran data login yang diinput
+			// Berfungsi untuk menyimpan user data
+			$sesi = $this->session->set_userdata($data);
+			// Jika data yang dimasukkan valid maka akan redirect ke halaman Dashboard
+			redirect('home/dashboard');
+		}
+		else
+			// Jika data yang diinput tidak valid maka akan dialihkan ke view login gagal
+ 			$this->load->view('log/index');
+ 	}
+
+ 	public function logout()
+ 	{
+		session_destroy();
+	 	redirect('log/index');
+	} 
 
 	public function read()
 	{
@@ -33,8 +66,4 @@ class log extends CI_Controller {
 		$this->load->view('user/header')->view('user/profil/update')->view('user/footer');
 	}
 
-	public function logout()
-	{
-	
-	}
 }
