@@ -189,7 +189,7 @@
 					<!-- Editable invoice -->
 					<div class="panel panel-white">
 						<div class="panel-heading">
-							<h3 class="panel-title">Daftar Isi</h3>
+							<h3 class="panel-title">Sistem Informasi Pendataan Mahasiswa Baru ITS</h3>
 							<!--div class="heading-elements">
 								<button type="button" class="btn btn-default btn-xs heading-btn"><i class="icon-file-check position-left"></i> Save</button>
 								<button type="button" class="btn btn-default btn-xs heading-btn"><i class="icon-printer position-left"></i> Print</button>
@@ -201,7 +201,7 @@
 								<div class="row">
 									<div class="col-md-12 content-group">
 										<!--<img src="assets/images/logo_demo.png" class="content-group mt-10" alt="" style="width: 120px;">-->
-										<h4>Sistem Informasi Pendataan Mahasiswa Baru ITS</h4>
+										<h4>Daftar Isi</h4>
 			 							<ul class="list-condensed list-unstyled">
 											<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
 												<ul class="list-condensed list-unstyled">
@@ -217,7 +217,7 @@
 													<ul>
 														<li><a href="">2.1.1 Proses Bisnis untuk Mahasiswa</a></li>
 														<li><a href="">2.1.2 Proses Bisnis untuk Verifikator Jurusan</a></li>
-														<li><a href="">2.1.3 proses Bisnis untuk Admin BPS</a></li>
+														<li><a href="">2.1.3 Proses Bisnis untuk Admin BPS</a></li>
 														<ul>
 															<li><a href="">2.1.3.1 Proses Bisnis untuk Menu Daftar Mahasiswa</a></li>
 															<li><a href="">2.1.3.2 Proses Bisnis Untuk Menu Instalasi</a></li>
@@ -249,7 +249,7 @@
 												<ul class="list-condensed list-unstyled">
 													<li><a href="">4.1 Struktur Tabel</a></li>
 													<ul>
-														<li><a href="">4.1.1 data Master</a></li>
+														<li><a href="">4.1.1 Data Master</a></li>
 														<li><a href="">4.1.2 Data Transaksional</a></li>
 														<li><a href="">4.1.3 Data Referensi</a></li>
 														<li><a href="">4.1.4 Data Tambahan</a></li>
@@ -410,7 +410,7 @@
 
 								<h6>Other information</h6>
 								<p class="text-muted">Thank you for using Limitless. This invoice can be paid via PayPal, Bank transfer, Skrill or Payoneer. Payment is due within 30 days from the date of delivery. Late payment is possible, but with with a fee of 10% per month. Company registered in England and Wales #6893003, registered office: 3 Goodman Street, London E1 8BF, United Kingdom. Phone number: 888-555-2311</p>
-							</div>-->
+							</div>
 						</div>
-					</div>
+					</div>-->
 					<!-- /editable invoice -->
