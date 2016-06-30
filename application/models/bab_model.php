@@ -23,11 +23,13 @@ class bab_model extends CI_Model
 
 	function ubah_bab($ID_BAB, $NO_BAB, $NAMA_BAB)
 	{
-		
+		$data['NO_BAB'] = $NO_BAB;
+		$data['NAMA_BAB'] = $NAMA_BAB;
+		$this->db->where('ID_BAB',$ID_BAB)->update('bab',$data);
 	}
 
 	function hapus_bab($ID_BAB)
 	{
-
+		$this->db->where('ID_BAB',$ID_BAB)->delete('bab',$data);
 	}
 }
