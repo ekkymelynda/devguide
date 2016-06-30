@@ -82,14 +82,14 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question1">
-												<i class="icon-help position-left text-slate"></i> Dashboard
+												<i class="icon-help position-left text-slate"></i> Utama
 											</a>
 										</h6>
 									</div>
 
 									<div id="question1" class="panel-collapse collapse">
 										<div class="panel-body">
-											Menyediakan daftar isi untuk setiap sistem
+											Memiliki Menu Dashboard. Dashboard berisi daftar isi panduan pengembangan Sistem Informasi.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -109,14 +109,14 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question2">
-												<i class="icon-help position-left text-slate"></i> Bantuan
+												<i class="icon-help position-left text-slate"></i> Tabel
 											</a>
 										</h6>
 									</div>
 
 									<div id="question2" class="panel-collapse collapse">
 										<div class="panel-body">
-											Penjelasan setiap menu pada website
+											Berisi Menu Pengguna, Menu Kategori, Menu Status, Menu Bab, Menu Sub Bab dan Menu Post.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -136,14 +136,41 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question3">
-												<i class="icon-help position-left text-slate"></i> Kontak
+												<i class="icon-help position-left text-slate"></i> Halaman
 											</a>
 										</h6>
 									</div>
 
 									<div id="question3" class="panel-collapse collapse">
 										<div class="panel-body">
-											Berisi kontak LPTSI ITS
+											Berisi halaman SIPMABA, E_SURAT 2016, SILACAK, dan SIMPEG.
+										</div>
+
+										<!--div class="panel-footer panel-footer-transparent">
+											<ul>
+												<li class="text-muted">Latest update: May 12, 2015</li>
+											</ul>
+
+											<ul class="pull-right">
+												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 438</li>
+												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 16</li>
+											</ul>
+										</div-->
+									</div>
+								</div>
+
+								<div class="panel panel-white">
+									<div class="panel-heading">
+										<h6 class="panel-title">
+											<a class="collapsed" data-toggle="collapse" href="#question4">
+												<i class="icon-help position-left text-slate"></i> Layanan
+											</a>
+										</h6>
+									</div>
+
+									<div id="question4" class="panel-collapse collapse">
+										<div class="panel-body">
+											Berisi bantuan dan kontak.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -354,33 +381,6 @@
 								<div class="panel panel-white">
 									<div class="panel-heading">
 										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question11">
-												<i class="icon-help position-left text-slate"></i> Menu Gambar
-											</a>
-										</h6>
-									</div>
-
-									<div id="question11" class="panel-collapse collapse">
-										<div class="panel-body">
-											Melakukan penambahan gambar baru, melihat gambar, mengubah gambar dan menghapus gambar
-										</div>
-
-										<!--div class="panel-footer panel-footer-transparent">
-											<ul>
-												<li class="text-muted">Latest update: Apr 19, 2015</li>
-											</ul>
-
-											<ul class="pull-right">
-												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 498</li>
-												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 12</li>
-											</ul>
-										</div-->
-									</div>
-								</div>
-
-								<div class="panel panel-white">
-									<div class="panel-heading">
-										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question12">
 												<i class="icon-help position-left text-slate"></i> Menu Post
 											</a>
@@ -408,32 +408,6 @@
 
 							<div class="text-size-small text-uppercase text-semibold text-muted mb-10">Halaman</div>
 							<div class="panel-group panel-group-control panel-group-control-right">
-								<div class="panel panel-white">
-									<div class="panel-heading">
-										<h6 class="panel-title">
-											<a class="collapsed" data-toggle="collapse" href="#question13">
-												<i class="icon-help position-left text-slate"></i> Menu Sistem Informasi
-											</a>
-										</h6>
-									</div>
-
-									<div id="question13" class="panel-collapse collapse">
-										<div class="panel-body">
-											Berisi daftar nama sistem informasi yang yang developer guide nya ada pada web ini
-										</div>
-
-										<!--div class="panel-footer panel-footer-transparent">
-											<ul>
-												<li class="text-muted">Latest update: Apr 15, 2015</li>
-											</ul>
-
-											<ul class="pull-right">
-												<li><a href="#"><i class="icon-thumbs-up2 position-left"></i></a> 532</li>
-												<li><a href="#"><i class="icon-thumbs-down2 position-left"></i></a> 32</li>
-											</ul>
-										</div-->
-									</div>
-								</div>
 
 								<div class="panel panel-white">
 									<div class="panel-heading">
@@ -446,7 +420,8 @@
 
 									<div id="question14" class="panel-collapse collapse">
 										<div class="panel-body">
-											Sistem Informasi Pendataan Mahasiswa Baru
+											Sistem Informasi Pendataan Mahasiswa Baru. 
+											Di halaman SIPMABA, pengguna dapat menampilkan data halaman SIPMABA dan mengubah data halaman SIPMABA.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -466,14 +441,15 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question15">
-												<i class="icon-help position-left text-slate"></i> E-SURAT
+												<i class="icon-help position-left text-slate"></i> E-SURAT 2016
 											</a>
 										</h6>
 									</div>
 
 									<div id="question15" class="panel-collapse collapse">
 										<div class="panel-body">
-											Surat elektronik
+											E-Surat 2016. 
+											Di halaman E-Surat, pengguna dapat menampilkan data halaman E-Surat dan mengubah data halaman E-Surat.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -500,7 +476,8 @@
 
 									<div id="question16" class="panel-collapse collapse">
 										<div class="panel-body">
-											Sistem Informasi Pelacakan
+											Sistem Informasi Pelacakan.
+											Di halaman SILACAK, pengguna dapat menampilkan data halaman SILACAK dan mengubah data halaman SILACAK.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -528,6 +505,7 @@
 									<div id="question17" class="panel-collapse collapse">
 										<div class="panel-body">
 											Sistem Informasi Kepegawaian
+											Di halaman SIMPEG. pengguna dapat menampilkan data halaman SIMPEG dan mengubah data halaman SIMPEG.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
