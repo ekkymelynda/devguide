@@ -445,45 +445,162 @@
 												<li><a href="">1.4 Lingkungan Pengembangan Sistem</a></li>
 												<li><a href="">1.5 Definisi dan Singkatan</a></li>
 											</ul>
-										<!--li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
+										<li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">2.1 Proses Bisnis Utama</a></li>
 												<ul>
-													<li><a href="">2.1.1 Proses Bisnis untuk Mahasiswa</a></li>
-													<li><a href="">2.1.2 Proses Bisnis untuk Verifikator Jurusan</a></li>
-													<li><a href="">2.1.3 Proses Bisnis untuk Admin BPS</a></li>
-							 						<ul>
-														<li><a href="">2.1.3.1 Proses Bisnis untuk Menu Daftar Mahasiswa</a></li>
-														<li><a href="">2.1.3.2 Proses Bisnis Untuk Menu Instalasi</a></li>
-														<li><a href="">2.1.3.3 Proses Bisnis untuk Menu Proses</a></li>
-														<li><a href="">2.1.3.4 Proses Bisnis untuk Menu Pelengkap</a></li>
+													<li><a href="">2.1.1 Proses Bisnis untuk Admin</a></li>
+													<ul>
+														<li><a href="">2.1.3.1 Proses Bisnis Surat</a></li>
 													</ul>
-													<li><a href="">2.1.4 Proses Bisnis untuk BAKP</a></li>
-													<li><a href="">2.1.5 Proses Bisnis untuk BKSP</a></li>
-													<li><a href="">2.1.6 Proses Bisnis untuk Verifikator BPS</a></li>
 												</ul>
-													<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
+												<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
 											</ul>
 										<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
 											<ul class="list-condensed list-unstyled">
-												<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
-												<li><a href="">3.2 Pengguna Sebagai Verifikator Jurusana</a></li>
-												<li><a href="">3.3 Pengguna Sebagai Admin BPS</a></li>
+												<li><a href="">3.1 Manajemen Profil Pengguna</a></li>
 												<ul>
-													<li><a href="">3.3.1 Daftar Mahasiswa</a></li>
-													<li><a href="">3.3.2 Instalasi</a></li>
-													<li><a href="">3.3.3 Proses</a></li>
-													<li><a href="">3.3.1 Pelengkap</a></li>
+													<li><a href="">3.3.1 Mengubah Kata Sandi</a></li>
+													<li><a href="">3.3.2 Mengubah Profil</a></li>
 												</ul>
-												<li><a href="">3.4 Pengguna Sebagai BAKP</a></li>
-												<li><a href="">3.5 Pengguna Sebagai BKSP</a></li>
-												<li><a href="">3.6 Pengguna Sebagai Verifikator BPS</a></li>
+												<li><a href="">3.2 Manajemen Surat</a></li>
+												<ul>
+													<li><a href="">3.2.1 Membuat Surat</a></li>
+													<li><a href="">3.2.2 Menampilkan Surat Masuk</a></li>
+													<li><a href="">3.2.3 Menampilkan Surat Keluar</a></li>
+													<li><a href="">3.2.4 Menampilkan Surat Belum Dibaca</a></li>
+													<li><a href="">3.2.5 Memasukkan Surat Masuk Eksternal</a></li>
+												</ul>
+												<li><a href="">3.3 Manajemen Dokumen</a></li>
+												<ul>
+													<li><a href="">3.3.1 Manajemen Nomor Pesanan</a></li>
+													<ul>
+														<li><a href="">3.3.1.1 Mengubah Nomor Pesanan</a></li>
+														<li><a href="">3.3.1.2 Menghapus Nomor Pesanan</a></li>
+													</ul>
+													<li><a href="">3.3.2 Manajemen Kelola Dokumen</a></li>
+													<ul>
+														<li><a href="">3.3.2.1 Mengubah Dokumen</a></li>
+														<li><a href="">3.3.2.2 Menghapus Dokumen</a></li>
+													</ul>
+												</ul>
+												<li><a href="">3.4 Manajemen Organisasi</a></li>
+												<ul>
+													<li><a href="">3.4.1 Menampilkan struktur organisasi</a></li>
+													<li><a href="">3.4.2 Manajemen Kelola Organisasi</a></li>
+													<ul>
+														<li><a href="">3.4.2.1 Menambah Organisasi</a></li>
+														<li><a href="">3.4.2.2 Mengubah Organisasi</a></li>
+														<li><a href="">3.4.2.3 Menghapus Organisasi</a></li>
+													</ul>
+													<li><a href="">3.4.3 Manajemen Pengurus</a></li>
+													<ul>
+														<li><a href="">3.4.3.1 Menambah Pengurus</a></li>
+														<li><a href="">3.4.3.2 Mengubah Pengurus</a></li>
+														<li><a href="">3.4.3.3 Menghapus Pengurus</a></li>
+													</ul>
+												</ul>
+												<li><a href="">3.5 Manajemen Perihal Surat</a></li>
+												<ul>
+													<li><a href="">3.5.1 Menambah Perihal Surat</a></li>
+													<li><a href="">3.5.2 Mengubah Perihal Surat</a></li>
+													<li><a href="">3.5.3 Menghapus Perihal Surat</a></li>
+												</ul>
+												<li><a href="">3.6 Manajemen Nomor Mundur</a></li>
+												<ul>
+													<li><a href="">3.6.1 Mencari Nomor Mundur</a></li>
+												</ul>
+												<li><a href="">3.7 Manajemen Pengaturan Esurat</a></li>
+												<ul>
+													<li><a href="">3.7.1 Manajemen Penanda tangan</a></li>
+													<ul>
+														<li><a href="">3.7.1.1 Menambah tipe template penanda tangan</a></li>
+														<li><a href="">3.7.1.2 Menambah penandatangan</a></li>
+													</ul>
+													<li><a href="">3.7.2 Manajemen Daftar Hari Libur</a></li>
+													<ul>
+														<li><a href="">3.7.2.1 Menggenerate libur akhir pekan</a></li>
+														<li><a href="">3.7.2.2 Mengubah hari libur</a></li>
+														<li><a href="">3.7.2.3 Menghapus hari libur</a></li>
+													</ul>
+													<li><a href="">3.7.3 Manajemen Pilihan Isi Disposisi</a></li>
+													<ul>
+														<li><a href="">3.7.3.1 Menambah Disposisi</a></li>
+														<li><a href="">3.7.3.2 Mengubah Disposisi</a></li>
+														<li><a href="">3.7.3.3 Menghapus Disposisi</a></li>
+													</ul>
+													<li><a href="">3.7.4 Manajemen Kontak</a></li>
+													<ul>
+														<li><a href="">3.7.4.1 Menambah Kontak</a></li>
+														<li><a href="">3.7.4.2 Mengubah Kontak</a></li>
+														<li><a href="">3.7.4.3 Menghapus Kontak</a></li>
+													</ul>
+													<li><a href="">3.7.5 Manajemen Unit</a></li>
+													<ul>
+														<li><a href="">3.7.5.1 Menambah Unit</a></li>
+														<li><a href="">3.7.5.2 Mengubah Unit</a></li>
+														<li><a href="">3.7.5.3 Menghapus unit</a></li>
+													</ul>
+													<li><a href="">3.7.6 Manajemen Nomor</a></li>
+													<li><a href="">3.7.7 Manajemen Jenis Surat</a></li>
+													<ul>
+														<li><a href="">3.7.7.1 Menambah Jenis Surat</a></li>
+														<li><a href="">3.7.7.2 Mengubah Jenis Surat</a></li>
+													</ul>
+													<li><a href="">3.7.8 Manajemen Prioritas Pengiriman</a></li>
+													<ul>
+														<li><a href="">3.7.8.1 Menambah Prioritas Pengiriman</a></li>
+														<li><a href="">3.7.8.2 Mengubah Prioritas Pengiriman</a></li>
+														<li><a href="">3.7.8.3 Menghapus Prioritas Pengiriman</a></li>
+													</ul>
+													<li><a href="">3.7.9 Manajemen Jenjang</a></li>
+													<ul>
+														<li><a href="">3.7.9.1 Menambah Jenjang</a></li>
+														<li><a href="">3.7.9.2 Mengubah Jenjang</a></li>
+														<li><a href="">3.7.9.3 Menghapus Jenjang</a></li>
+													</ul>
+													<li><a href="">3.7.10 Manajemen Karakteristik</a></li>
+													<ul>
+														<li><a href="">3.7.10.1 Menambah Karakteristik</a></li>
+														<li><a href="">3.7.10.2 Mengubah Karakteristik</a></li>
+														<li><a href="">3.7.10.3 Menghapus Karakteristik</a></li>
+													</ul>
+													<li><a href="">3.7.11 Manajemen Status Surat</a></li>
+													<ul>
+														<li><a href="">3.7.11.1 Menambah Status Surat</a></li>
+														<li><a href="">3.7.11.2 Mengubah Status Surat</a></li>
+														<li><a href="">3.7.11.3 Menghapus Status Surat</a></li>
+													</ul>
+													<li><a href="">3.7.12 Manajemen Daftar Lampiran</a></li>
+													<ul>
+														<li><a href="">3.7.12.1 Menambah Lampiran</a></li>
+														<li><a href="">3.7.12.2 Menambah Lampiran</a></li>
+														<li><a href="">3.7.12.3 Menambah Lampiran</a></li>
+													</ul>
+												</ul>
+												<li><a href="">3.8 Manajemen Nomor Cadangan</a></li>
+												<ul>
+													<li><a href="">3.8.1 Menampilkan Nomor Cadangan</a></li>
+													<li><a href="">3.8.2 Menambah Cadangan Nomor Surat</a></li>
+												</ul>
+												<li><a href="">3.9 Manajemen Statistik</a></li>
+												<ul>
+													<li><a href="">3.9.1 Menampilkan Statistik Surat</a></li>
+													<li><a href="">3.9.2 Menampilkan Statistik Unit</a></li>
+												</ul>
+												<li><a href="">3.10 Manajemen Akses Sistem</a></li>
+												<ul>
+													<li><a href="">3.10.1 Manajemen Pengguna</a></li>
+													<li><a href="">3.10.2 Manajemen Grup</a></li>
+													<li><a href="">3.10.3 Manajemen Menu</a></li>
+													<li><a href="">3.10.1 Manajemen Hak Akses</a></li>
+												</ul>
 											</ul>
 										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">4.1 Struktur Tabel</a></li>
 												<ul>
-													<li><a href="">4.1.1 data Master</a></li>
+													<li><a href="">4.1.1 Data Master</a></li>
 													<li><a href="">4.1.2 Data Transaksional</a></li>
 													<li><a href="">4.1.3 Data Referensi</a></li>
 													<li><a href="">4.1.4 Data Tambahan</a></li>
@@ -491,12 +608,16 @@
 												</ul>
 												<li><a href="">4.2 Struktur Basis Data</a></li>
 												<ul>
-													<li><a href="">4.2.1 Pengguna Sebagai Mahasiswa</a></li>
-													<li><a href="">4.2.2 Pengguna Sebagai Verifikator Jurusan</a></li>
-													<li><a href="">4.2.3 Pengguna Sebagai BPS Admin</a></li>
-													<li><a href="">4.2.4 Pengguna Sebagai BAKP</a></li>
-													<li><a href="">4.2.5 Pengguna Sebagai BKSP</a></li>
-													<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
+													<li><a href="">4.2.1 Manajemen Profil Pengguna</a></li>
+													<li><a href="">4.2.2 Manajemen Surat </a></li>
+													<li><a href="">4.2.3 Manajemen Dokumen </a></li>
+													<li><a href="">4.2.4 Manajemen Organisasi</a></li>
+													<li><a href="">4.2.5 Manajemen Perihal Surat</a></li>
+													<li><a href="">4.2.6 Manajemen Nomor Mundur</a></li>
+													<li><a href="">4.2.7 Manajemen Pengaturan Esurat</a></li>
+													<li><a href="">4.2.8 Manajemen Nomor Cadangan</a></li>
+													<li><a href="">4.2.9 Manajemen Statistika</a></li>
+													<li><a href="">4.2.10 Manajemen Akses Sistem</a></li>
 												</ul>
 											</ul>
 										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
@@ -507,7 +628,7 @@
 													<li><a href="">5.2.1 Struktur MVC</a></li>
 													<li><a href="">5.2.2 Detail Program</a></li>
 												</ul>
-											</ul-->
+											</ul>										
 									</ul>
 								</div>
 							</div>
