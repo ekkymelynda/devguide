@@ -74,22 +74,28 @@
 						            <th>Kategori</th>
 						            <th>Status</th>
 						            <th>Bab</th>
+						            <th>Sub Bab 1</th>
+						            <th>Sub Bab 2</th>
+						            <th>Sub Bab 3</th>
+						            <th>Pengguna</th>
 						            <th>Judul</th>
 						            <th>Isi</th>
 						            <th>Link</th>
 						            <th>Tanggal Buat</th>
 						            <th>Tanggal Ubah</th>
 						            <th>Aksi</th>
-						            <!--<th>Extn.</th>
-						            <th>E-mail</th>-->
 						        </tr>
 						    </thead>
 						    <tbody>
-						    	<?php foreach ($h->result() as $row){?>
+						    	<?php foreach ($h as $row){?>
 						        <tr>
-						            <td><?php echo $row->ID_KTG;?></td>
-						            <td><?php echo $row->ID_STS;?></td>
-						            <td><?php echo $row->ID_BAB;?></td>
+						            <td><?php echo $row->NAMA_KTG;?></td>
+						            <td><?php echo $row->NAMA_STS;?></td>
+						            <td><?php echo $row->NAMA_BAB;?></td>
+						            <td><?php echo $row->NAMA_SBAB1;?></td>
+						            <td><?php echo $row->NAMA_SBAB2;?></td>
+						            <td><?php echo $row->NAMA_SBAB3;?></td>
+						            <td><?php echo $row->USERNAME_PGN;?></td>
 						            <td><?php echo $row->JUDUL_PST;?></td>
 						            <td><?php echo $row->ISI_PST;?></td>
 						            <td><?php echo $row->LINK_PST;?></td>

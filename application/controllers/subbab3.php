@@ -49,20 +49,20 @@ class subbab3 extends CI_Controller {
 
 	public function buat()
     {
-        $no_sbab3=$this->input->post('no_sbab3');
-        $nama_sbab3= $this->input->post('nama_sbab3');
+        $NO_SBAB3=$this->input->post('NO_SBAB3');
+        $NAMA_SBAB3= $this->input->post('NAMA_SBAB3');
 
-        $this->subbab3_model->buat_subbab3($no_sbab3, $nama_sbab3);       
+        $this->subbab3_model->buat_subbab3($NO_SBAB3, $NAMA_SBAB3);       
 
         redirect(base_url()."subbab3/read");
     }
 
     public function ubah($ID_SBAB3)
     {
-    	$no_sbab3=$this->input->post('no_sbab3');
-    	$nama_sbab3= $this->input->post('nama_sbab3');
+    	$NO_SBAB3=$this->input->post('NO_SBAB3');
+    	$NAMA_SBAB3= $this->input->post('NAMA_SBAB3');
 
-        $this->subbab3_model->ubah_subbab3($ID_SBAB3, $no_sbab3, $nama_sbab3);
+        $this->subbab3_model->ubah_subbab3($ID_SBAB3, $NO_SBAB3, $NAMA_SBAB3);
 
         redirect(base_url()."subbab3/read");
     }

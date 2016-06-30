@@ -813,7 +813,7 @@
 
 					<!-- 2 columns form -->
 					<?php foreach ($h->result() as $row){?>
-					<form class="form-horizontal" action="<?php echo base_url(); ?>pengguna/hapus/<?php echo $row->ID_USR;?>">
+					<form class="form-horizontal" action="<?php echo base_url(); ?>pengguna/hapus/<?php echo $row->ID_PGN;?>">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Pengguna</h5>
@@ -835,42 +835,42 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Username pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->USERNAME_USR;?>">
+													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->USERNAME_PGN;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="password" class="form-control" disabled="disabled" placeholder="<?php echo $row->PASSWORD_USR;?>">
+													<input type="password" class="form-control" disabled="disabled" placeholder="<?php echo $row->PASSWORD_PGN;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">E-mail pengguna:</label>
 												<div class="col-lg-9">
-													<input type="email" class="form-control" disabled="disabled" placeholder="<?php echo $row->EMAIL_USR;?>">
+													<input type="email" class="form-control" disabled="disabled" placeholder="<?php echo $row->EMAIL_PGN;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Telp pengguna:</label>
 												<div class="col-lg-9">
-													<input type="telp" class="form-control" disabled="disabled" placeholder="<?php echo $row->NOTLP_USR;?>">
+													<input type="telp" class="form-control" disabled="disabled" placeholder="<?php echo $row->NOTLP_PGN;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Alamat pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->ALAMAT_USR;?>">
+													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->ALAMAT_PGN;?>">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Jabatan pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->JABATAN_USR;?>">
+													<input type="text" class="form-control" disabled="disabled" placeholder="<?php echo $row->JABATAN_PGN;?>">
 												</div>
 											</div>
 											<?php }?>

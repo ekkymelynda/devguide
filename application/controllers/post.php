@@ -44,18 +44,17 @@ class post extends CI_Controller {
 	public function update($ID_PST)
 	{
 		$data['h'] = $this->post_model->form_update_post($ID_PST);
-		$data['k'] = $this->post_model->lihat_kategori();
-		$data['s'] = $this->post_model->lihat_status();
-		$data['b'] = $this->post_model->lihat_bab();
+        $data['s'] = $this->post_model->lihat_status();
+        $data['b'] = $this->post_model->lihat_bab();
+        $data['sb1'] = $this->post_model->lihat_subbab1();
+        $data['sb2'] = $this->post_model->lihat_subbab2();
+        $data['sb3'] = $this->post_model->lihat_subbab3();
 		$this->load->view('user/header')->view('user/post/update', $data)->view('user/footer');
 	}
 
 	public function delete($ID_PST)
 	{
 		$data['h'] = $this->post_model->form_update_post($ID_PST);
-		$data['k'] = $this->post_model->lihat_kategori();
-		$data['s'] = $this->post_model->lihat_status();
-		$data['b'] = $this->post_model->lihat_bab();
 		$this->load->view('user/header')->view('user/post/delete', $data)->view('user/footer');
 	}
 
@@ -64,37 +63,17 @@ class post extends CI_Controller {
         $ID_KTG=$this->input->post('ID_KTG');
         $ID_STS= $this->input->post('ID_STS');
         $ID_BAB=$this->input->post('ID_BAB');
+        $ID_SBAB1=$this->input->post('ID_SBAB1');
+        $ID_SBAB2=$this->input->post('ID_SBAB2');
+        $ID_SBAB3=$this->input->post('ID_SBAB3');
+        $ID_PGN=$this->input->post('ID_PGN');
         $JUDUL_PST= $this->input->post('JUDUL_PST');
         $ISI_PST= $this->input->post('ISI_PST');
         $LINK_PST=$this->input->post('LINK_PST');
         $CREATE_PST= $this->input->post('CREATE_PST');
-        $UPDATE_PST=$this->input->post('UPDATE_PST');
+        
+        $this->post_model->buat_post($ID_KTG, $ID_STS, $ID_BAB, $ID_SBAB1, $ID_SBAB2, $ID_SBAB3, $ID_PGN, $JUDUL_PST, $ISI_PST, $LINK_PST, $CREATE_PST);
 
-        $ID_SBAB1=$this->input->post('ID_SBAB1');
-        $ID_SBAB2=$this->input->post('ID_SBAB2');
-        $ID_SBAB3=$this->input->post('ID_SBAB3');
-
-        $this->post_model->buat_post($ID_KTG, $ID_STS, $ID_BAB, $JUDUL_PST, $ISI_PST, $LINK_PST, $CREATE_PST);
-
-        if (!empty($ID_SBAB1))
-        {
-        	$this->post_model->buat_terdiri_subbab1($ID_BAB, $ID_SBAB1);
-        	
-        	if (!empty($ID_SBAB2))
-        	{
-        		$this->post_model->buat_terdiri_subbab2($ID_SBAB1, $ID_SBAB2);
-
-        		if (!empty($ID_SBAB3))
-    			{
-        			$this->post_model->buat_terdiri_subbab3($ID_SBAB2, $ID_SBAB3);
-        		}
-        		else
-        		redirect(base_url()."post/read");
-    		}
-    		else
-    		redirect(base_url()."post/read");
-    	}
-    	else
         redirect(base_url()."post/read");
     }
 
@@ -103,14 +82,17 @@ class post extends CI_Controller {
     	$ID_KTG=$this->input->post('ID_KTG');
         $ID_STS= $this->input->post('ID_STS');
         $ID_BAB=$this->input->post('ID_BAB');
+        $ID_SBAB1=$this->input->post('ID_SBAB1');
+        $ID_SBAB2=$this->input->post('ID_SBAB2');
+        $ID_SBAB3=$this->input->post('ID_SBAB3');
+        $ID_PGN=$this->input->post('ID_PGN');
         $JUDUL_PST= $this->input->post('JUDUL_PST');
         $ISI_PST= $this->input->post('ISI_PST');
         $LINK_PST=$this->input->post('LINK_PST');
-        $CREATE_PST= $this->input->post('CREATE_PST');
-        $UPDATE_PST=$this->input->post('UPDATE_PST');
-
-        $this->post_model->ubah_post($ID_PST, $ID_KTG, $ID_STS, $ID_BAB, $JUDUL_PST, $ISI_PST, $LINK_PST, $UPDATE_PST);
-
+        $UPDATE_PST= $this->input->post('UPDATE_PST');
+        
+        $this->post_model->ubah_post($ID_PST, $ID_KTG, $ID_STS, $ID_BAB, $ID_SBAB1, $ID_SBAB2, $ID_SBAB3, $ID_PGN, $JUDUL_PST, $ISI_PST, $LINK_PST, $UPDATE_PST);
+        
         redirect(base_url()."post/read");
     }
 
