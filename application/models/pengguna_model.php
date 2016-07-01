@@ -1,43 +1,65 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
-//BELUM BISA
 class pengguna_model extends CI_Model
 {
-	function lihat_pengguna()
-	{
-		$user = $this->db->get('user');
-		return $user;
-	}
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->database('default','true');
+    }
+    
+    function buat_pengguna($USERNAME_PGN, $PASSWORD_PGN, $EMAIL_PGN, $NOTLP_PGN, $ALAMAT_PGN, $JABATAN_PGN)
+    {
+        $data = array(
+            'USERNAME_PGN' => $USERNAME_PGN,
+            'PASSWORD_PGN' => $PASSWORD_PGN,
+            'EMAIL_PGN' => $EMAIL_PGN,
+            'NOTLP_PGN' => $NOTLP_PGN,
+            'ALAMAT_PGN' => $ALAMAT_PGN,
+            'JABATAN_PGN' => $JABATAN_PGN
+            );
+        $this->db->insert('pengguna', $data);
+    }
 
-	function form_update_pengguna($USERNAME_PGN)
-	{
-		return $this->db->get_where('user', array('USERNAME_USR' => $USERNAME_PGN));
-	}
+    function lihat_pengguna()
+    {
+        $query = $this->db->get('pengguna');
+        return $query;
+    }
 
+    function form_update_pengguna($USERNAME_PGN)
+    {
+        $this->db->where("USERNAME_PGN", $USERNAME_PGN);
+        $query = $this->db->get('pengguna');
+        return $query;
+    }
 
-	function buat_pengguna($USERNAME_PGN, $PASSWORD_PGN, $EMAIL_PGN, $NOTLP_PGN, $ALAMAT_PGN, $JABATAN_PGN)
-	{
-		$data['USERNAME_USR'] = $USERNAME_PGN;
-		$data['PASSWORD_USR'] = $PASSWORD_PGN;
-		$data['EMAIL_USR'] = $EMAIL_PGN;
-		$data['NOTLP_USR'] = $NOTLP_PGN;
-		$data['ALAMAT_USR'] = $ALAMAT_PGN;
-		$data['JABATAN_USR'] = $JABATAN_PGN;
-		$this->db->insert('user', $data);
-	}
+    function ubah_pengguna($USERNAME_PGN, $PASSWORD_PGN, $EMAIL_PGN, $NOTLP_PGN, $ALAMAT_PGN, $JABATAN_PGN)
+    {
+        $data = array(
+            'USERNAME_PGN' => $USERNAME_PGN,
+            'PASSWORD_PGN' => $PASSWORD_PGN,
+            'EMAIL_PGN' => $EMAIL_PGN,
+            'NOTLP_PGN' => $NOTLP_PGN,
+            'ALAMAT_PGN' => $ALAMAT_PGN,
+            'JABATAN_PGN' => $JABATAN_PGN
+            );
 
-	function ubah_pengguna($USERNAME_PGN, $PASSWORD_PGN, $EMAIL_PGN, $NOTLP_PGN, $ALAMAT_PGN, $JABATAN_PGN)
-	{		
-		$data['PASSWORD_USR'] = $PASSWORD_PGN;
-		$data['EMAIL_USR'] = $EMAIL_PGN;
-		$data['NOTLP_USR'] = $NOTLP_PGN;
-		$data['ALAMAT_USR'] = $ALAMAT_PGN;
-		$data['JABATAN_USR'] = $JABATAN_PGN;
-		$this->db->where('USERNAME_USR',$USERNAME_PGN)->update('user',$data);
-	}
+        $this->db->where("USERNAME_PGN", $USERNAME_PGN);
+        $this->db->update('pengguna', $data);
+    }
 
-	function hapus_pengguna($USERNAME_PGN)
-	{
-		$this->db->where('USERNAME_USR',$USERNAME_PGN)->delete('user');
-	}
+    function hapus_pengguna($USERNAME_PGN)
+    {
+        $this->db->where("USERNAME_PGN", $USERNAME_PGN);
+        $this->db->delete('pengguna');
+    }
+
+    function ambil_data($data){ 
+         $user = $this->db->get_where('pengguna', $data); 
+         return $user->num_rows();
+    }
+    
 }
+?>
