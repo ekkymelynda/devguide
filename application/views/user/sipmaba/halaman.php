@@ -1,38 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
-
-	<!-- Global stylesheets -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
-	<link href="<?php  echo base_url(); ?>LTR/assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
-	<link href="<?php  echo base_url(); ?>LTR/assets/css/minified/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php  echo base_url(); ?>LTR/assets/css/minified/core.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php  echo base_url(); ?>LTR/assets/css/minified/components.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php  echo base_url(); ?>LTR/assets/css/minified/colors.min.css" rel="stylesheet" type="text/css">
-	<!-- /global stylesheets -->
-
-	<!-- Core JS files -->
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/loaders/pace.min.js"></script>
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/libraries/jquery.min.js"></script>
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/libraries/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/loaders/blockui.min.js"></script>
-	<!-- /core JS files -->
-
-	<!-- Theme JS files -->
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/editors/summernote/summernote.min.js"></script>
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/styling/uniform.min.js"></script>
-
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/app.js"></script>
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/editor_summernote.js"></script>
-	<!-- /theme JS files -->
-
-</head>
-
-<body>
 			<!-- Main content -->
 			<div class="content-wrapper">
 
@@ -53,6 +18,7 @@
 					</div>
 
 					<div class="breadcrumb-line">
+						<?php foreach ($h as $row){?>
 						<ul class="breadcrumb">
 							<li><a href="index.html"><i class="icon-home2 position-left"></i> Halaman</a></li>
 							<li><a href="editors_summernote.html">SIPMABA</a></li>
@@ -163,10 +129,7 @@
 						</div>
 
 						<div class="panel-body">
-							<div class="form-group">
-								<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 position-left"></i> Edit</button>
-								<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 position-left"></i> Save</button>
-							</div>
+							
 
 							<div class="click2edit">
 								<h2>Apollo 11</h2>
@@ -216,7 +179,6 @@
 						</div>
 					</div>
 					<!-- /summernote click to edit -->
-
 
 					<!-- Summernote fixed height -->
 					<!--<div class="panel panel-flat">

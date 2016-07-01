@@ -812,6 +812,7 @@
 
 
 					<!-- 2 columns form -->
+					<?php foreach ($h->result() as $row){?>
 					<form class="form-horizontal" action="" method="">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
@@ -834,44 +835,45 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Username pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="" readonly="readonly">
+													<input type="text" class="form-control" value="<?php echo $row->USERNAME_PGN;?>" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="password" class="form-control" value="" readonly="readonly">
+													<input type="password" class="form-control" value="<?php echo $row->PASSWORD_PGN;?>" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">E-mail pengguna:</label>
 												<div class="col-lg-9">
-													<input type="email" class="form-control" value="" readonly="readonly">
+													<input type="email" class="form-control" value="<?php echo $row->EMAIL_PGN;?>" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Telp pengguna:</label>
 												<div class="col-lg-9">
-													<input type="telp" class="form-control" value="" readonly="readonly">
+													<input type="telp" class="form-control" value="<?php echo $row->NOTLP_PGN;?>" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Alamat pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="" readonly="readonly">
+													<input type="text" class="form-control" value="<?php echo $row->ALAMAT_PGN;?>" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Jabatan pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="" readonly="readonly">
+													<input type="text" class="form-control" value="<?php echo $row->JABATAN_PGN;?>" readonly="readonly">
 												</div>
 											</div>
+											<?php }?>
 
 											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Enter your password:</label>

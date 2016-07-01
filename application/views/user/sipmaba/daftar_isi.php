@@ -203,7 +203,7 @@
 										<!--<img src="assets/images/logo_demo.png" class="content-group mt-10" alt="" style="width: 120px;">-->
 										<h4>Daftar Isi</h4>
 			 							<ul class="list-condensed list-unstyled">
-											<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
+											<li><h5><a href="<?php echo base_url(); ?>sipmaba/halaman/5">BAB 1 Pendahuluan</a></h5></li>
 												<ul class="list-condensed list-unstyled">
 													<li><a href="">1.1 Deskripsi Umum Sistem</a></li>
 													<li><a href="">1.2 Fitur Sistem</a></li>

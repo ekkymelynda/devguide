@@ -963,6 +963,7 @@
 												</div>
 											</div>
 											<?php }?>
+											
 											<!-- /CKEditor default -->
 
 											<!--<div class="form-group">

@@ -56,14 +56,30 @@ class log extends CI_Controller {
 	 	redirect('log/index');
 	} 
 
-	public function read()
+	public function read($USERNAME_PGN)
 	{
-		$this->load->view('user/header')->view('user/profil/read')->view('user/footer');
+		$data['h'] = $this->pengguna_model->form_update_pengguna($USERNAME_PGN);
+		$this->load->view('user/header')->view('user/profil/read', $data)->view('user/footer');
 	}
 
-	public function update()
+	public function update($USERNAME_PGN)
 	{
-		$this->load->view('user/header')->view('user/profil/update')->view('user/footer');
+		$data['h'] = $this->pengguna_model->form_update_pengguna($USERNAME_PGN);
+		$this->load->view('user/header')->view('user/profil/update', $data)->view('user/footer');
 	}
+
+	public function ubah($USERNAME_PGN)
+    {
+    	$USERNAME_PGN=$this->input->post('USERNAME_PGN');
+        $PASSWORD_PGN= $this->input->post('PASSWORD_PGN');
+        $EMAIL_PGN=$this->input->post('EMAIL_PGN');
+        $NOTLP_PGN= $this->input->post('NOTLP_PGN');
+        $ALAMAT_PGN=$this->input->post('ALAMAT_PGN');
+        $JABATAN_PGN= $this->input->post('JABATAN_PGN');
+
+        $this->pengguna_model->ubah_pengguna($USERNAME_PGN, $PASSWORD_PGN, $EMAIL_PGN, $NOTLP_PGN, $ALAMAT_PGN, $JABATAN_PGN);
+
+        redirect(base_url()."home/dashboard");
+    }
 
 }

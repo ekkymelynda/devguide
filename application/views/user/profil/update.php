@@ -812,7 +812,8 @@
 
 
 					<!-- 2 columns form -->
-					<form class="form-horizontal" action="" method="post">
+					<?php foreach ($h->result() as $row){?>
+					<form class="form-horizontal" action="<?php echo base_url();?>log/ubah/<?php echo $row->USERNAME_PGN;?>" method="post">
 						<div class="panel panel-flat">
 							<div class="panel-heading">
 								<h5 class="panel-title">Data Pengguna</h5>
@@ -834,44 +835,45 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Username pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="" name="username_usr">
+													<input type="text" class="form-control" value="<?php echo $row->USERNAME_PGN;?>" name="username_usr" readonly="readonly">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="password" class="form-control" value="" name="password_usr">
+													<input type="password" class="form-control" value="<?php echo $row->PASSWORD_PGN;?>" name="PASSWORD_PGN">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">E-mail pengguna:</label>
 												<div class="col-lg-9">
-													<input type="email" class="form-control" value="" name="email_usr">
+													<input type="email" class="form-control" value="<?php echo $row->EMAIL_PGN;?>" name="EMAIL_PGN">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Telp pengguna:</label>
 												<div class="col-lg-9">
-													<input type="telp" class="form-control" value="" name="notlp_usr">
+													<input type="telp" class="form-control" value="<?php echo $row->NOTLP_PGN;?>" name="NOTLP_PGN">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Alamat pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="" name="alamat_usr">
+													<input type="text" class="form-control" value="<?php echo $row->ALAMAT_PGN;?>" name="ALAMAT_PGN">
 												</div>
 											</div>
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Jabatan pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="" name="jabatan_usr">
+													<input type="text" class="form-control" value="<?php echo $row->JABATAN_PGN;?>" name="JABATAN_PGN">
 												</div>
 											</div>
+											<?php }?>
 
 											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Enter your password:</label>

@@ -23,17 +23,25 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/editors/summernote/summernote.min.js"></script>
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/styling/uniform.min.js"></script>
+
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/app.js"></script>
+	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/editor_summernote.js"></script>
+	<!-- /theme JS files -->
+
+	<!-- Theme JS files -->
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/tables/datatables/datatables.min.js"></script>
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/tables/datatables/extensions/fixed_columns.min.js"></script>
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/selects/select2.min.js"></script>
 
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/app.js"></script>
+	<!--<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/app.js"></script>-->
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/datatables_extension_fixed_columns.js"></script>
 	<!-- /theme JS files -->
 
 	<!-- Theme JS files -->
 	<!--<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/selects/select2.min.js"></script>-->
-	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/styling/uniform.min.js"></script>
+	<!--<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/plugins/forms/styling/uniform.min.js"></script>-->
 
 	<!--<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/core/app.js"></script>-->
 	<script type="text/javascript" src="<?php  echo base_url(); ?>LTR/assets/js/pages/form_layouts.js"></script>
@@ -323,11 +331,11 @@
 						</a>
 
 						<ul class="dropdown-menu dropdown-menu-right">
-							<li><a href="<?php echo base_url(); ?>log/read"><i class="icon-user-plus"></i> Profil</a></li>
+							<li><a href="<?php echo base_url(); ?>log/read/<?php echo $this->session->userdata('USERNAME_PGN') ?>"><i class="icon-user-plus"></i> Profil</a></li>
 							<!--<li><a href="#"><i class="icon-coins"></i> My balance</a></li>
 							<li><a href="#"><span class="badge bg-blue pull-right">58</span> <i class="icon-comment-discussion"></i> Messages</a></li>-->
 							<li class="divider"></li>
-							<li><a href="<?php echo base_url(); ?>log/update"><i class="icon-cog5"></i> Pengaturan</a></li>
+							<li><a href="<?php echo base_url(); ?>log/update/<?php echo $this->session->userdata('USERNAME_PGN') ?>"><i class="icon-cog5"></i> Pengaturan</a></li>
 							<li><a href="<?php echo base_url(); ?>log/logout"><i class="icon-switch2"></i> Keluar</a></li>
 						</ul>
 					</li>
