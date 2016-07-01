@@ -836,7 +836,8 @@
 													<label class="col-lg-3 control-label">Kategori post:</label>
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih kategori" class="select" name="ID_KTG">
-					                                    <option value="<?php echo $row->ID_KTG;?>"><?php echo $row->NAMA_KTG;?></option> 
+					                                    <option value="<?php echo $row->ID_KTG;?>"><?php echo $row->NAMA_KTG;?></option>
+					                                    <option value=""></option> 
 					                                    <?php foreach ($k as $row1) {?>
 					                                    <option value="<?php echo $row1->ID_KTG;?>"><?php echo $row1->NAMA_KTG;?></option>
 					                                    <?php } ?> 
@@ -849,6 +850,7 @@
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih status" class="select" name="ID_STS">
 					                                    <option value="<?php echo $row->ID_STS;?>"><?php echo $row->NAMA_STS;?></option>
+					                                    <option value=""></option> 
 					                                    <?php foreach ($s as $row2) {?>
 					                                    <option value="<?php echo $row2->ID_STS;?>"><?php echo $row2->NAMA_STS;?></option>
 					                                    <?php } ?> 
@@ -860,9 +862,10 @@
 												<label class="col-lg-3 control-label">Bab post:</label>
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih bab" class="select" name="ID_BAB">
-					                                    <option value="<?php echo $row->ID_BAB;?>"><?php echo $row->NAMA_BAB;?></option> 
+					                                    <option value="<?php echo $row->ID_BAB;?>"><?php echo $row->NAMA_BAB;?></option>
+					                                    <option value=""></option>  
 					                                    <?php foreach ($b as $row3) {?>
-					                                    <option value="<?php echo $row3->ID_BAB;?>"><?php echo $row3->NAMA_BAB;?></option>
+					                                    <option value="<?php echo $row3->ID_BAB;?>"><?php echo $row3->NO_BAB;?>. <?php echo $row3->NAMA_BAB;?></option>
 					                                    <?php } ?>
 					                                </select>
 				                                </div>
@@ -873,6 +876,7 @@
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih sub bab 1" class="select" name="ID_SBAB1">
 					                                    <option value="<?php echo $row->ID_SBAB1;?>"><?php echo $row->NAMA_SBAB1;?></option>
+					                                    <option value=""></option> 
 					                                    <?php foreach ($sb1 as $row4) {?>
 					                                    <option value="<?php echo $row4->ID_SBAB1;?>"><?php echo $row4->NO_SBAB1;?>. <?php echo $row4->NAMA_SBAB1;?></option>
 					                                    <?php } ?>
@@ -885,6 +889,7 @@
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih sub bab 2" class="select" name="ID_SBAB2">
 					                                    <option value="<?php echo $row->ID_SBAB2;?>"><?php echo $row->NAMA_SBAB2;?></option>
+					                                    <option value=""></option> 
 					                                    <?php foreach ($sb2 as $row5) {?>
 					                                    <option value="<?php echo $row5->ID_SBAB2;?>"><?php echo $row5->NO_SBAB2;?>. <?php echo $row5->NAMA_SBAB2;?></option>
 					                                    <?php } ?>
@@ -897,6 +902,7 @@
 												<div class="col-lg-9">
 					                                <select data-placeholder="Pilih sub bab 3" class="select" name="ID_SBAB3">
 					                                    <option value="<?php echo $row->ID_SBAB3;?>"><?php echo $row->NAMA_SBAB3;?></option>
+					                                    <option value=""></option>
 					                                    <?php foreach ($sb3 as $row6) {?>
 					                                    <option value="<?php echo $row6->ID_SBAB3;?>"><?php echo $row6->NO_SBAB3;?>. <?php echo $row6->NAMA_SBAB3;?></option>
 					                                    <?php } ?>

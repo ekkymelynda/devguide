@@ -18,6 +18,12 @@ class home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('post_model');
+    }
+
 	public function bantuan()
 	{
 		$this->load->view('user/header')->view('user/bantuan')->view('user/footer');
@@ -30,6 +36,10 @@ class home extends CI_Controller {
 
 	public function dashboard()
 	{
-		$this->load->view('user/header')->view('user/dashboard')->view('user/footer');
+		$data['h'] = $this->post_model->lihat_post_sipmaba();
+		$data['e'] = $this->post_model->lihat_post_esurat();
+		$data['l'] = $this->post_model->lihat_post_silacak();
+		$data['p'] = $this->post_model->lihat_post_simpeg();
+		$this->load->view('user/header')->view('user/dashboard', $data)->view('user/footer');
 	}
 }

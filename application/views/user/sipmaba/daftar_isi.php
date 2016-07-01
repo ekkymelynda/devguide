@@ -203,7 +203,10 @@
 										<!--<img src="assets/images/logo_demo.png" class="content-group mt-10" alt="" style="width: 120px;">-->
 										<h4>Daftar Isi</h4>
 			 							<ul class="list-condensed list-unstyled">
-											<li><h5><a href="<?php echo base_url(); ?>sipmaba/halaman/5">BAB 1 Pendahuluan</a></h5></li>
+			 								<?php foreach ($h as $row){?>
+			 								<li><a href="<?php echo base_url(); ?>sipmaba/halaman/<?php echo $row->ID_PST;?>"><?php echo $row->LINK_PST;?> <?php echo $row->JUDUL_PST;?></a></li>
+			 								<?php }?>
+											<!--<li><h5><a href="<?php echo base_url(); ?>sipmaba/halaman/5">BAB 1 Pendahuluan</a></h5></li>
 												<ul class="list-condensed list-unstyled">
 													<li><a href="">1.1 Deskripsi Umum Sistem</a></li>
 													<li><a href="">1.2 Fitur Sistem</a></li>
@@ -230,7 +233,7 @@
 												</ul>
 													<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
 											</ul>
-										<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
+											<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
 												<ul>
@@ -304,7 +307,7 @@
 													<li><a href="">3.6.2 Memverifikasi Data Revisi Mahasiswa</a></li>
 												</ul>
 											</ul>
-										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
+											<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">4.1 Struktur Tabel</a></li>
 												<ul>
@@ -381,7 +384,7 @@
 													<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
 												</ul>
 											</ul>
-										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
+											<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">5.1 Skema Program</a></li>		
 												<li><a href="">5.2 Struktur Program</a></li>
@@ -397,7 +400,7 @@
 														<li><a href="">5.2.2.6 Pengguna Sebagai Verifikator BPS</a></li>
 													</ul>
 												</ul>
-											</u>
+											</ul>-->
 										</ul>
 									</div>
 

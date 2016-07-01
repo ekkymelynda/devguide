@@ -909,9 +909,9 @@
 									<a href=""><i class="icon-select2"></i> <span>Sistem Informasi</span></a>
 									<ul>
 										<li><a href="<?php echo base_url(); ?>sipmaba/daftar_isi">SIPMABA</a></li>
-										<li><a href="">E-SURAT</a></li>
-										<li><a href="">SILACAK</a></li>
-										<li><a href="">SIMPEG</a></li>
+										<li><a href="<?php echo base_url(); ?>esurat/daftar_isi">E-SURAT</a></li>
+										<li><a href="<?php echo base_url(); ?>silacak/daftar_isi">SILACAK</a></li>
+										<li><a href="<?php echo base_url(); ?>simpeg/daftar_isi">SIMPEG</a></li>
 									</ul>
 								</li>
 								<!--<li>

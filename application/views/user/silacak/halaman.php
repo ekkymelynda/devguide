@@ -5,7 +5,7 @@
 				<div class="page-header">
 					<div class="page-header-content">
 						<div class="page-title">
-							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Halaman</span> - SIPMABA</h4>
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Halaman</span> - SILACAK</h4>
 						</div>
 
 						<!--<div class="heading-elements">
@@ -20,7 +20,7 @@
 					<div class="breadcrumb-line"><?php foreach ($h as $row){?>
 						<ul class="breadcrumb">
 							<li><a href="index.html"><i class="icon-home2 position-left"></i> Halaman</a></li>
-							<li><a href="editors_summernote.html">SIPMABA</a></li>
+							<li><a href="editors_summernote.html">SILACAK</a></li>
 							<li class="active"><?php echo $row->NAMA_BAB;?></li>
 							<li class="active"><?php echo $row->NAMA_SBAB1;?></li>
 							<li class="active"><?php echo $row->NAMA_SBAB2;?></li>

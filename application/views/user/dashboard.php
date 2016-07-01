@@ -217,7 +217,10 @@
 							<div id="question1" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul class="list-condensed list-unstyled">
-										<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
+										<?php foreach ($h as $row){?>
+			 								<li><a href="<?php echo base_url(); ?>sipmaba/halaman/<?php echo $row->ID_PST;?>"><?php echo $row->LINK_PST;?> <?php echo $row->JUDUL_PST;?></a></li>
+			 								<?php }?>
+										<!--<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">1.1 Deskripsi Umum Sistem</a></li>
 												<li><a href="">1.2 Fitur Sistem</a></li>
@@ -225,7 +228,7 @@
 												<li><a href="">1.4 Lingkungan Pengembangan Sistem</a></li>
 												<li><a href="">1.5 Definisi dan Singkatan</a></li>
 											</ul>
-										<li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
+											<li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">2.1 Proses Bisnis Utama</a></li>
 												<ul>
@@ -244,7 +247,7 @@
 												</ul>
 													<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
 											</ul>
-										<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
+											<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
 												<ul>
@@ -273,7 +276,7 @@
 														<li><a href="">3.3.1.4 Menon Aktifkan Mahasiswa</a></li>
 														<li><a href="">3.3.1.5 Memutus Studikan Mahasiswa</a></li>
 														<li><a href="">3.3.1.6 Memindah Prodikan Mahasiswa</a></li>
-														<li><a href="">3.3.1.7 memindah Jalurkan Mahasiswa</a></li>
+														<li><a href="">3.3.1.7 Memindah Jalurkan Mahasiswa</a></li>
 														<li><a href="">3.3.1.8 Tidak Melakukan Permanen Data Mahasiswa</a></li>
 													</ul>
 													<li><a href="">3.3.2 Instalasi</a></li>
@@ -281,7 +284,7 @@
 														<li><a href="">3.3.2.1 Mengaktifkan Periode</a></li>
 														<li><a href="">3.3.2.2 Melakukan Penetapan Verifikator</a></li>
 														<li><a href="">3.3.2.3 Mengelompokkan Indikator</a></li>
-														<li><a href="">3.3.2.4 mengimport Data Mahasiswa</a></li>
+														<li><a href="">3.3.2.4 Mengimport Data Mahasiswa</a></li>
 													</ul>
 													<li><a href="">3.3.3 Proses</a></li>
 													<ul>
@@ -289,7 +292,7 @@
 														<li><a href="">3.3.3.2 Mengelola Transfer SPP</a></li>
 														<li><a href="">3.3.3.3 Melakukan Rekap UKT</a></li>
 													</ul>
-													<li><a href="">3.3.1 Pelengkap</a></li>
+													<li><a href="">3.3.4 Pelengkap</a></li>
 													<ul>
 														<li><a href="">3.3.4.1 Mengelola Data Pengumuman</a></li>
 														<li><a href="">3.3.4.1 Mengelola Data Tarif Non UKT</a></li>
@@ -318,7 +321,7 @@
 													<li><a href="">3.6.2 Memverifikasi Data Revisi Mahasiswa</a></li>
 												</ul>
 											</ul>
-										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
+											<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">4.1 Struktur Tabel</a></li>
 												<ul>
@@ -395,7 +398,7 @@
 													<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
 												</ul>
 											</ul>
-										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
+											<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">5.1 Skema Program</a></li>		
 												<li><a href="">5.2 Struktur Program</a></li>
@@ -403,7 +406,7 @@
 													<li><a href="">5.2.1 Struktur MVC</a></li>
 													<li><a href="">5.2.2 Detail Program</a></li>
 													<ul>
-														<li><a href="">5.2.2.1 pengguna Sebagai Mahasiswa</a></li>
+														<li><a href="">5.2.2.1 Pengguna Sebagai Mahasiswa</a></li>
 														<li><a href="">5.2.2.2 Pengguna Sebagai Verifikator Jurusan</a></li>
 														<li><a href="">5.2.2.3 Pengguna Sebagai BPS Admin</a></li>
 														<li><a href="">5.2.2.4 Pengguna Sebagai BAKP</a></li>
@@ -411,7 +414,7 @@
 														<li><a href="">5.2.2.6 Pengguna Sebagai Verifikator BPS</a></li>
 													</ul>
 												</ul>
-											</ul>
+											</ul>-->
 									</ul>
 								</div>
 							</div>
@@ -437,7 +440,10 @@
 							<div id="question2" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul class="list-condensed list-unstyled">
-										<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
+										<?php foreach ($e as $row1){?>
+			 								<li><a href="<?php echo base_url(); ?>esurat/halaman/<?php echo $row1->ID_PST;?>"><?php echo $row1->LINK_PST;?> <?php echo $row1->JUDUL_PST;?></a></li>
+			 								<?php }?>
+										<!--<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">1.1 Deskripsi Umum Sistem</a></li>
 												<li><a href="">1.2 Fitur Sistem</a></li>
@@ -445,7 +451,7 @@
 												<li><a href="">1.4 Lingkungan Pengembangan Sistem</a></li>
 												<li><a href="">1.5 Definisi dan Singkatan</a></li>
 											</ul>
-										<li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
+											<li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">2.1 Proses Bisnis Utama</a></li>
 												<ul>
@@ -596,7 +602,7 @@
 													<li><a href="">3.10.1 Manajemen Hak Akses</a></li>
 												</ul>
 											</ul>
-										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
+											<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">4.1 Struktur Tabel</a></li>
 												<ul>
@@ -620,7 +626,7 @@
 													<li><a href="">4.2.10 Manajemen Akses Sistem</a></li>
 												</ul>
 											</ul>
-										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
+											<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">5.1 Skema Program</a></li>		
 												<li><a href="">5.2 Struktur Program</a></li>
@@ -628,7 +634,7 @@
 													<li><a href="">5.2.1 Struktur MVC</a></li>
 													<li><a href="">5.2.2 Detail Program</a></li>
 												</ul>
-											</ul>										
+											</ul>-->										
 									</ul>
 								</div>
 							</div>
@@ -653,7 +659,10 @@
 							<div id="question3" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul class="list-condensed list-unstyled">
-										<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
+										<?php foreach ($l as $row2){?>
+			 								<li><a href="<?php echo base_url(); ?>silacak/halaman/<?php echo $row2->ID_PST;?>"><?php echo $row2->LINK_PST;?> <?php echo $row2->JUDUL_PST;?></a></li>
+			 								<?php }?>
+										<!--<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">1.1 Deskripsi Umum Sistem</a></li>
 												<li><a href="">1.2 Fitur Sistem</a></li>
@@ -661,7 +670,7 @@
 												<li><a href="">1.4 Lingkungan Pengembangan Sistem</a></li>
 												<li><a href="">1.5 Definisi dan Singkatan</a></li>
 											</ul>
-										<!--li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
+											<li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">2.1 Proses Bisnis Utama</a></li>
 												<ul>
@@ -680,7 +689,7 @@
 												</ul>
 													<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
 											</ul>
-										<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
+											<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
 												<li><a href="">3.2 Pengguna Sebagai Verifikator Jurusana</a></li>
@@ -695,7 +704,7 @@
 												<li><a href="">3.5 Pengguna Sebagai BKSP</a></li>
 												<li><a href="">3.6 Pengguna Sebagai Verifikator BPS</a></li>
 											</ul>
-										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
+											<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">4.1 Struktur Tabel</a></li>
 												<ul>
@@ -715,7 +724,7 @@
 													<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
 												</ul>
 											</ul>
-										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
+											<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">5.1 Skema Program</a></li>		
 												<li><a href="">5.2 Struktur Program</a></li>
@@ -748,7 +757,10 @@
 							<div id="question4" class="panel-collapse collapse">
 								<div class="panel-body">
 									<ul class="list-condensed list-unstyled">
-										<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
+										<?php foreach ($p as $row3){?>
+			 								<li><a href="<?php echo base_url(); ?>simpeg/halaman/<?php echo $row3->ID_PST;?>"><?php echo $row3->LINK_PST;?> <?php echo $row3->JUDUL_PST;?></a></li>
+			 								<?php }?>
+										<!--<li><h5><a href="">BAB 1 Pendahuluan</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">1.1 Deskripsi Umum Sistem</a></li>
 												<li><a href="">1.2 Fitur Sistem</a></li>
@@ -756,7 +768,7 @@
 												<li><a href="">1.4 Lingkungan Pengembangan Sistem</a></li>
 												<li><a href="">1.5 Definisi dan Singkatan</a></li>
 											</ul>
-										<!--li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
+											li><h5><a href="">BAB 2 Analisis Proses Bisnis</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">2.1 Proses Bisnis Utama</a></li>
 												<ul>
@@ -775,7 +787,7 @@
 												</ul>
 													<li><a href="">2.2 Sim dan Aplikasi Terkait</a></li>
 											</ul>
-										<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
+											<li><h5><a href="">Bab 3 Analisis Sistem</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">3.1 Pengguna Sebagai Mahsiswa</a></li>
 												<li><a href="">3.2 Pengguna Sebagai Verifikator Jurusana</a></li>
@@ -790,7 +802,7 @@
 												<li><a href="">3.5 Pengguna Sebagai BKSP</a></li>
 												<li><a href="">3.6 Pengguna Sebagai Verifikator BPS</a></li>
 											</ul>
-										<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
+											<li><h5><a href="">Bab 4 Implementasi Basis Data</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">4.1 Struktur Tabel</a></li>
 												<ul>
@@ -810,7 +822,7 @@
 													<li><a href="">4.2.6 Pengguna Sebagai Verifikator BPS</a></li>
 												</ul>
 											</ul>
-										<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
+											<li><h5><a href="">Bab 5 Implementasi Program</a></h5></li>
 											<ul class="list-condensed list-unstyled">
 												<li><a href="">5.1 Skema Program</a></li>		
 												<li><a href="">5.2 Struktur Program</a></li>

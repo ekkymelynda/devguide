@@ -18,13 +18,21 @@ class esurat extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        parent::__construct();
+        $this->load->model('post_model');
+    }
+
 	public function daftar_isi()
 	{
-		$this->load->view('user/header')->view('user/esurat/daftar_isi')->view('user/footer');
+		$data['h'] = $this->post_model->lihat_post_esurat();
+		$this->load->view('user/header')->view('user/esurat/daftar_isi', $data)->view('user/footer');
 	}
 
-	public function halaman()
+	public function halaman($ID_PST)
 	{
-		$this->load->view('user/header')->view('user/esurat/halaman')->view('user/footer');
+		$data['h'] = $this->post_model->form_update_post_esurat($ID_PST);
+		$this->load->view('user/header')->view('user/esurat/halaman', $data)->view('user/footer');
 	}
 }

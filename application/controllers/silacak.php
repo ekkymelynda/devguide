@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class sipmaba extends CI_Controller {
+class silacak extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -26,13 +26,13 @@ class sipmaba extends CI_Controller {
 
 	public function daftar_isi()
 	{
-		$data['h'] = $this->post_model->lihat_post_sipmaba();
-		$this->load->view('user/header')->view('user/sipmaba/daftar_isi', $data)->view('user/footer');
+		$data['h'] = $this->post_model->lihat_post_silacak();
+		$this->load->view('user/header')->view('user/silacak/daftar_isi', $data)->view('user/footer');
 	}
 
 	public function halaman($ID_PST)
 	{
-		$data['h'] = $this->post_model->form_update_post_sipmaba($ID_PST);
-		$this->load->view('user/header')->view('user/sipmaba/halaman', $data)->view('user/footer');
+		$data['h'] = $this->post_model->form_update_post_silacak($ID_PST);
+		$this->load->view('user/header')->view('user/silacak/halaman', $data)->view('user/footer');
 	}
 }

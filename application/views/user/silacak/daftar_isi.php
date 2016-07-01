@@ -5,12 +5,12 @@
 				<div class="page-header">
 					<div class="page-header-content">
 						<div class="page-title">
-							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Halaman</span> - E-Surat</h4>
+							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Halaman</span> - Silacak</h4>
 
 							<ul class="breadcrumb position-right">
 								<li><a href="index.html">Halaman</a></li>
 								<!--<li><a href="invoice_template.html">Invoices</a></li>-->
-								<li class="active">E-Surat</li>
+								<li class="active">Silacak</li>
 							</ul>
 						</div>
 
@@ -189,7 +189,7 @@
 					<!-- Editable invoice -->
 					<div class="panel panel-white">
 						<div class="panel-heading">
-							<h3 class="panel-title">E-Surat</h3>
+							<h3 class="panel-title">Sistem Informasi Pelacakan</h3>
 							<!--div class="heading-elements">
 								<button type="button" class="btn btn-default btn-xs heading-btn"><i class="icon-file-check position-left"></i> Save</button>
 								<button type="button" class="btn btn-default btn-xs heading-btn"><i class="icon-printer position-left"></i> Print</button>
@@ -204,7 +204,7 @@
 										<h4>Daftar Isi</h4>
 			 							<ul class="list-condensed list-unstyled">
 			 								<?php foreach ($h as $row){?>
-			 								<li><a href="<?php echo base_url(); ?>esurat/halaman/<?php echo $row->ID_PST;?>"><?php echo $row->LINK_PST;?> <?php echo $row->JUDUL_PST;?></a></li>
+			 								<li><a href="<?php echo base_url(); ?>silacak/halaman/<?php echo $row->ID_PST;?>"><?php echo $row->LINK_PST;?> <?php echo $row->JUDUL_PST;?></a></li>
 			 								<?php }?>
 											<!--<li><h5><a href="<?php echo base_url(); ?>sipmaba/halaman/5">BAB 1 Pendahuluan</a></h5></li>
 												<ul class="list-condensed list-unstyled">
