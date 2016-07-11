@@ -927,7 +927,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan tanggal buat post:</label>
 												<div class="col-lg-9">
-													<input type="date" class="form-control" name="CREATE_PST">
+													<input type="date" class="form-control" readonly="readonly" value="<?php echo date("Y-m-d");?>" name="CREATE_PST">
 												</div>
 											</div>
 
