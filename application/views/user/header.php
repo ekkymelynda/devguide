@@ -1,3 +1,12 @@
+<?php
+
+$s = $this->session->userdata('USERNAME_PGN');
+
+if (($s == NULL)) {
+    redirect('log/index');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

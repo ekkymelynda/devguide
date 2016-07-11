@@ -1,3 +1,12 @@
+<?php
+
+$s = $this->session->userdata('USERNAME_PGN');
+
+if (($s != NULL)) {
+    redirect('home/dashboard');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

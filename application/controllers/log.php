@@ -47,7 +47,7 @@ class log extends CI_Controller {
 		}
 		else
 			// Jika data yang diinput tidak valid maka akan dialihkan ke view login gagal
- 			$this->load->view('log/index');
+ 			redirect('log/index');
  	}
 
  	public function logout()

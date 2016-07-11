@@ -8,7 +8,7 @@
 							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Layanan</span> - Bantuan</h4>
 
 							<ul class="breadcrumb position-right">
-								<li><a href="index.html">Layanan</a></li>
+								<li><a href="">Layanan</a></li>
 								<!--<li><a href="support_faq.html">Support</a></li>-->
 								<li class="active">Bantuan</li>
 							</ul>
@@ -69,7 +69,7 @@
 
 					<!-- Questions area -->
 					<h4 class="text-center content-group">
-						Menu Konten Website
+						Menu Isi Website
 						<!--small class="display-block">Am if number no up period regard sudden better. Decisively surrounded all admiration</small-->
 					</h4>
 
@@ -89,7 +89,7 @@
 
 									<div id="question1" class="panel-collapse collapse">
 										<div class="panel-body">
-											Memiliki Menu Dashboard. Dashboard berisi daftar isi panduan pengembangan Sistem Informasi.
+											Memiliki Menu Dashboard. Dashboard berisi daftar isi semua panduan pengembangan Sistem Informasi.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -116,7 +116,7 @@
 
 									<div id="question2" class="panel-collapse collapse">
 										<div class="panel-body">
-											Berisi Menu Pengguna, Menu Kategori, Menu Status, Menu Bab, Menu Sub Bab dan Menu Post.
+											Berisi sub menu tabel Pengguna, Kategori, Status, Bab, Sub Bab dan Post.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -143,7 +143,7 @@
 
 									<div id="question3" class="panel-collapse collapse">
 										<div class="panel-body">
-											Berisi halaman SIPMABA, E_SURAT 2016, SILACAK, dan SIMPEG.
+											Berisi halaman panduan pengembangan SIPMABA, ESURAT, SILACAK, dan SIMPEG.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -170,7 +170,7 @@
 
 									<div id="question4" class="panel-collapse collapse">
 										<div class="panel-body">
-											Berisi bantuan dan kontak.
+											Berisi bantuan layanan menu isi website dan kontak penyedia layanan LPTSI.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -247,7 +247,7 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question6">
-												<i class="icon-help position-left text-slate"></i> Menu Pengguna
+												<i class="icon-help position-left text-slate"></i> Pengguna
 											</a>
 										</h6>
 									</div>
@@ -274,7 +274,7 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question7">
-												<i class="icon-help position-left text-slate"></i> Menu Kategori
+												<i class="icon-help position-left text-slate"></i> Kategori
 											</a>
 										</h6>
 									</div>
@@ -301,7 +301,7 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question8">
-												<i class="icon-help position-left text-slate"></i> Menu Status
+												<i class="icon-help position-left text-slate"></i> Status
 											</a>
 										</h6>
 									</div>
@@ -328,7 +328,7 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question9">
-												<i class="icon-help position-left text-slate"></i> Menu Bab
+												<i class="icon-help position-left text-slate"></i> Bab
 											</a>
 										</h6>
 									</div>
@@ -355,7 +355,7 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question10">
-												<i class="icon-help position-left text-slate"></i> Menu Sub Bab
+												<i class="icon-help position-left text-slate"></i> Sub Bab
 											</a>
 										</h6>
 									</div>
@@ -382,7 +382,7 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question12">
-												<i class="icon-help position-left text-slate"></i> Menu Post
+												<i class="icon-help position-left text-slate"></i> Post
 											</a>
 										</h6>
 									</div>
@@ -421,7 +421,7 @@
 									<div id="question14" class="panel-collapse collapse">
 										<div class="panel-body">
 											Sistem Informasi Pendataan Mahasiswa Baru. 
-											Di halaman SIPMABA, pengguna dapat menampilkan data halaman SIPMABA dan mengubah data halaman SIPMABA.
+											Di halaman SIPMABA, sistem dapat menampilkan daftar isi panduan pengembangan SIPMABA yang kemuadian akan merujuk pada setiap halaman panduan pengembangan SIPMABA.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -441,15 +441,15 @@
 									<div class="panel-heading">
 										<h6 class="panel-title">
 											<a class="collapsed" data-toggle="collapse" href="#question15">
-												<i class="icon-help position-left text-slate"></i> E-SURAT 2016
+												<i class="icon-help position-left text-slate"></i> E-SURAT
 											</a>
 										</h6>
 									</div>
 
 									<div id="question15" class="panel-collapse collapse">
 										<div class="panel-body">
-											E-Surat 2016. 
-											Di halaman E-Surat, pengguna dapat menampilkan data halaman E-Surat dan mengubah data halaman E-Surat.
+											E-SURAT. 
+											Di halaman E-SURAT, sistem dapat menampilkan daftar isi panduan pengembangan E-SURAT yang kemuadian akan merujuk pada setiap halaman panduan pengembangan E-SURAT.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -477,7 +477,7 @@
 									<div id="question16" class="panel-collapse collapse">
 										<div class="panel-body">
 											Sistem Informasi Pelacakan.
-											Di halaman SILACAK, pengguna dapat menampilkan data halaman SILACAK dan mengubah data halaman SILACAK.
+											Di halaman SILACAK, sistem dapat menampilkan daftar isi panduan pengembangan SILACAK yang kemuadian akan merujuk pada setiap halaman panduan pengembangan SILACAK.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
@@ -505,7 +505,7 @@
 									<div id="question17" class="panel-collapse collapse">
 										<div class="panel-body">
 											Sistem Informasi Kepegawaian
-											Di halaman SIMPEG. pengguna dapat menampilkan data halaman SIMPEG dan mengubah data halaman SIMPEG.
+											Di halaman SIMPEG, sistem dapat menampilkan daftar isi panduan pengembangan SIMPEG yang kemuadian akan merujuk pada setiap halaman panduan pengembangan SIMPEG.
 										</div>
 
 										<!--div class="panel-footer panel-footer-transparent">
