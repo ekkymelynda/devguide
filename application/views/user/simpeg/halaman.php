@@ -20,7 +20,7 @@
 					<div class="breadcrumb-line"><?php foreach ($h as $row){?>
 						<ul class="breadcrumb">
 							<li><a href="index.html"><i class="icon-home2 position-left"></i> Halaman</a></li>
-							<li><a href="editors_summernote.html">SIMPEG</a></li>
+							<li><a href="<?php echo base_url();?>simpeg/daftar_isi">SIMPEG</a></li>
 							<li class="active"><?php echo $row->NAMA_BAB;?></li>
 							<li class="active"><?php echo $row->NAMA_SBAB1;?></li>
 							<li class="active"><?php echo $row->NAMA_SBAB2;?></li>

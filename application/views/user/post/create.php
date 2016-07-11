@@ -920,7 +920,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Masukkan link post:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" placeholder="Contoh: localhost/devguide/trunk/post/create" name="LINK_PST">
+													<input type="text" class="form-control" placeholder="Contoh: 1.2.3" name="LINK_PST">
 												</div>
 											</div>
 
