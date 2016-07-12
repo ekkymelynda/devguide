@@ -125,6 +125,7 @@
 								<ul class="icons-list">
 			                		<li><a data-action="collapse"></a></li>
 			                		<li><a data-action="reload"></a></li>
+			                		<li><a href="<?php echo base_url(); ?>post/update/<?php echo $row->ID_PST;?>"><i class="icon-pencil"></i></a></li>
 			                		<!--<li><a data-action="close"></a></li>-->
 			                	</ul>
 		                	</div>

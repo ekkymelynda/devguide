@@ -56,7 +56,7 @@ class pengguna_model extends CI_Model
         $this->db->delete('pengguna');
     }
 
-    function ambil_data($data){ 
+    function ambil_data($data){
          $user = $this->db->get_where('pengguna', $data); 
          return $user->num_rows();
     }
