@@ -8,7 +8,7 @@
 							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Layanan</span> - Kontak</h4>
 
 							<ul class="breadcrumb position-right">
-								<li><a href="index.html">Layanan</a></li>
+								<li><a href="">Layanan</a></li>
 								<!--<li><a href="invoice_template.html">Invoices</a></li>-->
 								<li class="active">Kontak</li>
 							</ul>

@@ -31,9 +31,10 @@ class log extends CI_Controller {
 
 	public function validasi()
 	{
+		
 		$data=array(
 			'USERNAME_PGN'=>$this->input->post('USERNAME_PGN'),
-			'PASSWORD_PGN'=>$this->input->post('PASSWORD_PGN')
+			'PASSWORD_PGN'=>md5($this->input->post('PASSWORD_PGN'))
 		);
 		 
 		// Berfungsi untuk memanggil fungsi ambil_data pada class login_model
@@ -48,6 +49,7 @@ class log extends CI_Controller {
 		else
 			// Jika data yang diinput tidak valid maka akan dialihkan ke view login gagal
  			redirect('log/index');
+ 			//echo md5('PASSWORD_PGN');
  	}
 
  	public function logout()

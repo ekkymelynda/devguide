@@ -8,7 +8,7 @@
 							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Umum</span> - Dashboard</h4>
 
 							<ul class="breadcrumb position-right">
-								<li><a href="index.html">Umum</a></li>
+								<li><a href="">Umum</a></li>
 								<!--<li><a href="invoice_template.html">Invoices</a></li>-->
 								<li class="active">Dashboard</li>
 							</ul>

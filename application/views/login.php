@@ -113,7 +113,7 @@ if (($s != NULL)) {
 
 					<!-- Footer -->
 					<div class="footer text-white">
-						&copy; 2016. <a href="#" class="text-white">LPTSI - Panduan Pengembangan Sistem Informasi</a> oleh <a href="http://themeforest.net/user/Kopyov" class="text-white" target="_blank">Peserta Kerja Praktik LPTSI</a>
+						&copy; 2016. <a href="http://lptsi.its.ac.id/" class="text-white">LPTSI - Panduan Pengembangan Sistem Informasi</a> oleh <a href="" class="text-white" target="_blank">Peserta Kerja Praktik LPTSI</a>
 					</div>
 					<!-- /footer -->
 

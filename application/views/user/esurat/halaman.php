@@ -19,7 +19,7 @@
 
 					<div class="breadcrumb-line"><?php foreach ($h as $row){?>
 						<ul class="breadcrumb">
-							<li><a href="index.html"><i class="icon-home2 position-left"></i> Halaman</a></li>
+							<li><a href=""><i class="icon-home2 position-left"></i> Halaman</a></li>
 							<li><a href="<?php echo base_url();?>esurat/daftar_isi">E-SURAT</a></li>
 							<li class="active"><?php echo $row->NAMA_BAB;?></li>
 							<li class="active"><?php echo $row->NAMA_SBAB1;?></li>

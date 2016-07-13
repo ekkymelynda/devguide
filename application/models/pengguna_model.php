@@ -13,7 +13,7 @@ class pengguna_model extends CI_Model
     {
         $data = array(
             'USERNAME_PGN' => $USERNAME_PGN,
-            'PASSWORD_PGN' => $PASSWORD_PGN,
+            'PASSWORD_PGN' => md5($PASSWORD_PGN),
             'EMAIL_PGN' => $EMAIL_PGN,
             'NOTLP_PGN' => $NOTLP_PGN,
             'ALAMAT_PGN' => $ALAMAT_PGN,
@@ -39,7 +39,7 @@ class pengguna_model extends CI_Model
     {
         $data = array(
             'USERNAME_PGN' => $USERNAME_PGN,
-            'PASSWORD_PGN' => $PASSWORD_PGN,
+            'PASSWORD_PGN' => md5($PASSWORD_PGN),
             'EMAIL_PGN' => $EMAIL_PGN,
             'NOTLP_PGN' => $NOTLP_PGN,
             'ALAMAT_PGN' => $ALAMAT_PGN,

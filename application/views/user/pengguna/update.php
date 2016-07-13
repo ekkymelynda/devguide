@@ -835,7 +835,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Username pengguna:</label>
 												<div class="col-lg-9">
-													<input type="text" class="form-control" value="<?php echo $row->USERNAME_PGN;?>" name="USERNAME_PGN">
+													<input type="text" class="form-control" value="<?php echo $row->USERNAME_PGN;?>" name="USERNAME_PGN" readonly="readonly">
 												</div>
 											</div>
 

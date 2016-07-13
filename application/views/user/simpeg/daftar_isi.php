@@ -8,7 +8,7 @@
 							<h4><i class="icon-arrow-left52 position-left"></i> <span class="text-semibold">Halaman</span> - Simpeg</h4>
 
 							<ul class="breadcrumb position-right">
-								<li><a href="index.html">Halaman</a></li>
+								<li><a href="">Halaman</a></li>
 								<!--<li><a href="invoice_template.html">Invoices</a></li>-->
 								<li class="active">Simpeg</li>
 							</ul>
