@@ -136,7 +136,15 @@
 								<button type="button" id="edit" class="btn btn-primary"><i class="icon-pencil3 position-left"></i> Edit</button>
 								<button type="button" id="save" class="btn btn-success"><i class="icon-checkmark3 position-left"></i> Save</button>
 							</div>-->
-							<legend class="text"><i class="icon-reading position-left"></i> Terakhir diubah oleh <strong><?php echo $row->USERNAME_PGN;?></strong> pada tanggal <strong><?php echo $row->UPDATE_PST;?></strong></legend>
+							<legend class="text"><i class="icon-reading position-left"></i> Dibuat pada tanggal <strong><?php echo date("d-m-Y", strtotime($row->CREATE_PST));?></strong>, terakhir diubah oleh <strong><?php echo $row->USERNAME_PGN;?></strong> pada tanggal <strong>
+								<?php 
+									if ($row->UPDATE_PST == false){
+										echo "";
+									}
+									else
+										echo date("d-m-Y", strtotime($row->UPDATE_PST));
+								?>
+						</strong></legend>
 
 							<div class="click2edit">
 								<?php echo $row->ISI_PST;?>
