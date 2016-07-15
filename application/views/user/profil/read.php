@@ -839,12 +839,12 @@
 												</div>
 											</div>
 
-											<div class="form-group">
+											<!--<div class="form-group">
 												<label class="col-lg-3 control-label">Password pengguna:</label>
 												<div class="col-lg-9">
 													<input type="password" class="form-control" value="<?php echo $row->PASSWORD_PGN;?>" readonly="readonly">
 												</div>
-											</div>
+											</div>-->
 
 											<div class="form-group">
 												<label class="col-lg-3 control-label">E-mail pengguna:</label>

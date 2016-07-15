@@ -842,7 +842,7 @@
 											<div class="form-group">
 												<label class="col-lg-3 control-label">Password pengguna:</label>
 												<div class="col-lg-9">
-													<input type="password" class="form-control" value="<?php echo $row->PASSWORD_PGN;?>" name="PASSWORD_PGN">
+													<input type="password" class="form-control" value="" name="PASSWORD_PGN">
 												</div>
 											</div>
 

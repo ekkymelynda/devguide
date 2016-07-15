@@ -84,7 +84,7 @@
 						    	<?php foreach ($h->result() as $row){?>
 						        <tr>
 						            <td><?php echo $row->USERNAME_PGN;?></td>
-						            <td><?php echo $row->PASSWORD_PGN;?></td>
+						            <td><i class="glyphicon glyphicon-eye-close"></td>
 						            <td><?php echo $row->EMAIL_PGN;?></td>
 						            <td><?php echo $row->NOTLP_PGN;?></td>
 						            <td><?php echo $row->ALAMAT_PGN;?></td>
