@@ -113,17 +113,17 @@ class post_model extends CI_Model
         return $query->result();
     }
 
-    function lihat_post_sipmaba()
+    function lihat_daftar_isi($ID_KTG)
     {
         $query=$this->db->query("SELECT *
                                     FROM `post` p, `bab` b, `kategori` k, `status` s, `subbab1` sb1, `subbab2` sb2, `subbab3` sb3, `pengguna` u
-                                        WHERE p.`ID_STS` = '1' AND p.`ID_KTG` = '1' AND p.`ID_BAB` = b.`ID_BAB` AND p.`ID_KTG` = k.`ID_KTG` AND p.`ID_STS` = s.`ID_STS` AND p.`ID_SBAB1` = sb1.`ID_SBAB1` AND p.`ID_SBAB2` = sb2.`ID_SBAB2` AND p.`ID_SBAB3` = sb3.`ID_SBAB3` AND p.`USERNAME_PGN` = u.`USERNAME_PGN`
+                                        WHERE p.`ID_STS` = '1' AND p.`ID_KTG` = '$ID_KTG' AND p.`ID_BAB` = b.`ID_BAB` AND p.`ID_KTG` = k.`ID_KTG` AND p.`ID_STS` = s.`ID_STS` AND p.`ID_SBAB1` = sb1.`ID_SBAB1` AND p.`ID_SBAB2` = sb2.`ID_SBAB2` AND p.`ID_SBAB3` = sb3.`ID_SBAB3` AND p.`USERNAME_PGN` = u.`USERNAME_PGN`
                                             ORDER BY p.`LINK_PST` ASC;
         ");
         return $query->result();
     }
 
-    function lihat_post_esurat()
+    function lihat_post_esurat($ID_KTG)
     {
         $query=$this->db->query("SELECT *
                                     FROM `post` p, `bab` b, `kategori` k, `status` s, `subbab1` sb1, `subbab2` sb2, `subbab3` sb3, `pengguna` u
@@ -133,7 +133,7 @@ class post_model extends CI_Model
         return $query->result();
     }
 
-    function lihat_post_silacak()
+    function lihat_post_silacak($ID_KTG)
     {
         $query=$this->db->query("SELECT *
                                     FROM `post` p, `bab` b, `kategori` k, `status` s, `subbab1` sb1, `subbab2` sb2, `subbab3` sb3, `pengguna` u
@@ -153,11 +153,11 @@ class post_model extends CI_Model
         return $query->result();
     }
 
-    function form_update_post_sipmaba($ID_PST)
+    function form_update_post_halaman($ID_PST)
     {
         $query=$this->db->query("SELECT *
                                     FROM `post` p, `bab` b, `kategori` k, `status` s, `subbab1` sb1, `subbab2` sb2, `subbab3` sb3, `pengguna` u
-                                        WHERE p.`ID_PST` = $ID_PST AND p.`ID_STS` = '1' AND p.`ID_KTG` = '1' AND p.`ID_BAB` = b.`ID_BAB` AND p.`ID_KTG` = k.`ID_KTG` AND p.`ID_STS` = s.`ID_STS` AND p.`ID_SBAB1` = sb1.`ID_SBAB1` AND p.`ID_SBAB2` = sb2.`ID_SBAB2` AND p.`ID_SBAB3` = sb3.`ID_SBAB3` AND p.`USERNAME_PGN` = u.`USERNAME_PGN`;
+                                        WHERE p.`ID_PST` = '$ID_PST' AND p.`ID_BAB` = b.`ID_BAB` AND p.`ID_KTG` = k.`ID_KTG` AND p.`ID_STS` = s.`ID_STS` AND p.`ID_SBAB1` = sb1.`ID_SBAB1` AND p.`ID_SBAB2` = sb2.`ID_SBAB2` AND p.`ID_SBAB3` = sb3.`ID_SBAB3` AND p.`USERNAME_PGN` = u.`USERNAME_PGN`;
         ");
         return $query->result();
     }
@@ -188,5 +188,7 @@ class post_model extends CI_Model
         ");
         return $query->result();
     }
+
+
 }
 ?>
