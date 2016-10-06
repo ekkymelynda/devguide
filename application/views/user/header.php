@@ -917,10 +917,9 @@ if (($s == NULL)) {
 								<li>
 									<a href=""><i class="icon-select2"></i> <span>Sistem Informasi</span></a>
 									<ul>
-										<li><a href="<?php echo base_url(); ?>sipmaba/daftar_isi">SIPMABA</a></li>
-										<li><a href="<?php echo base_url(); ?>esurat/daftar_isi">E-SURAT</a></li>
-										<li><a href="<?php echo base_url(); ?>silacak/daftar_isi">SILACAK</a></li>
-										<li><a href="<?php echo base_url(); ?>simpeg/daftar_isi">SIMPEG</a></li>
+										<?php foreach ($h->result() as $row){?>
+										<li><a href="<?php echo base_url(); ?>post/daftar_isi/<?php echo $row->ID_KTG;?>"><?php echo $row->NAMA_KTG;?></a></li>
+										<?php }?>
 									</ul>
 								</li>
 								<!--<li>
