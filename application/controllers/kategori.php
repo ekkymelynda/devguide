@@ -27,7 +27,7 @@ class kategori extends CI_Controller {
 	public function read()
 	{
 		$data['h'] = $this->kategori_model->lihat_kategori();
-		$this->load->view('user/header')->view('user/kategori/read', $data)->view('user/footer');
+		$this->load->view('user/header', $data)->view('user/kategori/read', $data)->view('user/footer');
 	}
 	
 	public function create()
@@ -70,4 +70,6 @@ class kategori extends CI_Controller {
         $this->kategori_model->hapus_kategori($ID_KTG);
         redirect(base_url()."kategori/read");
     }
+
+    
 }

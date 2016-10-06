@@ -22,6 +22,7 @@ class post extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('post_model');
+        $this->load->model('kategori_model');
     }
 
 	public function read()
@@ -100,5 +101,19 @@ class post extends CI_Controller {
     {
         $this->post_model->hapus_post($ID_PST);
         redirect(base_url()."post/read");
+    }
+
+    public function daftar_isi($ID_KTG)
+    {
+        $data['l'] = $this->post_model->lihat_daftar_isi($ID_KTG);
+        $data['h'] = $this->kategori_model->lihat_kategori();
+        $this->load->view('user/header', $data)->view('user/post/daftar_isi', $data)->view('user/footer');
+    }
+
+    public function halaman($ID_PST)
+    {
+        $data['l'] = $this->post_model->form_update_post_halaman($ID_PST);
+        $data['h'] = $this->kategori_model->lihat_kategori();
+        $this->load->view('user/header', $data)->view('user/post/halaman', $data)->view('user/footer');
     }
 }
